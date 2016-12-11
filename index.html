@@ -91,7 +91,7 @@
 				googleSpreadsheetWorksheet: '10'
 	   },
 	   title: {
-	       text: 'PVP Death Average Level by Day'
+	       text: 'PVP Death Average Level by Wipe Day'
 	   },
 	   tooltip: {
 	       enabled: true,
@@ -99,9 +99,9 @@
 	       shared: true
 	   },
 	   xAxis: {
-	       type: 'datetime',
+	       type: 'linear',
 	       title: {
-	           text: 'Date',
+	           text: 'Wipe Day',
 	       },
 	       gridelineWidth: 0
 	   },
@@ -513,9 +513,7 @@
 	   tooltip: {
 	       enabled: true,
 	       crosshairs: [true],
-               formatter: function () {
-                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
-               }
+	       shared: true
 	   },
 	   xAxis: {
 	       allowDecimals: false,
