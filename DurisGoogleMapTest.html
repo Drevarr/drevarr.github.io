@@ -13,15 +13,15 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBehtw9n4JkxthV2IDM_P13gI27k_ees3I&sensor=false">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBehtw9n4JkxthV2IDM_P13gI27k_ees3I">
     </script>
     
-    <script type="text/javascript">
+<script type="text/javascript">
     //<![CDATA[
     var centreLat=0.0;
     var centreLon=0.0;
     var initialZoom=2;
-    var imageWraps=false; //SET THIS TO false TO PREVENT THE IMAGE WRAPPING AROUND
+    var imageWraps=true; //SET THIS TO false TO PREVENT THE IMAGE WRAPPING AROUND
 
     var map; //the GMap3 itself
     var gmicMapType;
@@ -136,36 +136,10 @@
         map = new google.maps.Map(document.getElementById("map"), myOptions);
 	gmicMapType = new GMICMapType();
         map.mapTypes.set("ImageCutter",gmicMapType);
-
-/////////////////////////////////////////////////////////////////////////////////////
-//Add any markers here e.g.
-//      var marker = new google.maps.Marker({
-//          map:map,
-//          position: new google.maps.LatLng(x,y),
-//          title: "My Marker"
-//      });
-/////////////////////////////////////////////////////////////////////////////////////
-	google.maps.event.addListener(map, 'click', function(event) {
-			addMarker(event.latLng);
-	});
-    
-	function addMarker(location) {
-		var marker = new google.maps.Marker({
-		position: location,
-		map: map
-	});
-	google.maps.event.addListener(marker, 'rightclick', function(event) {
-		marker.setMap(null);
-	});
-
-	markers.push(marker);
-	}
-
     }
 
-
     //]]>
-    </script>
+</script>
 
  
 
@@ -209,8 +183,10 @@
 												<h2>Duris Surface Map</h2>
 												<h3>Based on Google Map API</h3>
 											</header>
+											<p>
 											<div id="map">
 											</div>
+											</p>
 										</section>
 
 								</div>
