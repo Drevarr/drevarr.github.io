@@ -46,7 +46,7 @@
 				googleSpreadsheetWorksheet: '8'
 	   },
 	   title: {
-	       text: 'PVP Deaths by Wipe Day'
+	       text: 'PVP Total Deaths 2017 Wipe'
 	   },
 	   tooltip: {
 	       enabled: true,
@@ -77,6 +77,52 @@
 <h2>DurisMUD - 2017 Wipe Charts</h2>
 <a href="https://docs.google.com/spreadsheets/d/123emSzGmjckr-UpTu7I0c1aX9ZlWOcqOLzlnD0Qh1js">Google Sheet Source Data</a>
 	<div id="DurisChart1"></div>
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart1A',
+	       type: 'line',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '123emSzGmjckr-UpTu7I0c1aX9ZlWOcqOLzlnD0Qh1js',
+				googleSpreadsheetWorksheet: '9'
+	   },
+	   title: {
+	       text: 'PVP Deaths by Wipe Day'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+	       shared: true
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       type: 'datetime',
+	       title: {
+	           text: '2017 Wipe Date',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+<h2>DurisMUD - 2017 Wipe Charts</h2>
+<a href="https://docs.google.com/spreadsheets/d/123emSzGmjckr-UpTu7I0c1aX9ZlWOcqOLzlnD0Qh1js">Google Sheet Source Data</a>
+	<div id="DurisChart1A"></div>
 
 <script>
 	//setup chart definition
@@ -421,7 +467,7 @@
 				googleSpreadsheetWorksheet: '11'
 	   },
 	   title: {
-	       text: 'Comparison of Total PVP Deaths by Wipe (2014 - 2016)'
+	       text: 'Comparison of Total PVP Deaths by Wipe (2014 - 2017)'
 	   },
 	   tooltip: {
 	       enabled: true,
