@@ -457,6 +457,7 @@
 	   chart: {
 	       renderTo: 'DurisChart11',
 	       type: 'line',
+	       zoomType: 'x',
 	       height: 450,
 	       width: 1200,
 	       borderWidth: 1
@@ -468,6 +469,10 @@
 	   title: {
 	       text: 'Comparison of Total PVP Deaths by Wipe (2014 - 2017)'
 	   },
+	   subtitle" {
+		text: document.ontouchstart === undefined ?
+			'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+	  },
 	   tooltip: {
 	       enabled: true,
 	       crosshairs: [true],
