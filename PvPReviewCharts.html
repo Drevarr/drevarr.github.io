@@ -30,12 +30,57 @@
 <script src="//code.highcharts.com/highcharts.js"></script>
 <script src="//code.highcharts.com/modules/data.js"></script>
 <script src="javascripts/gray.js"></script>
-
 <script>
 	//setup chart definition
 	var options = {
 	   chart: {
 	       renderTo: 'DurisChart1',
+	       type: 'column',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1jgiTmubm_ans17fRIjPR5pE9sRczjhWc8KlcDO412R8',
+				googleSpreadsheetWorksheet: '2'
+	   },
+	   title: {
+	       text: 'PVP Deaths by Year / Month'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+	       shared: true
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Date',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+<h2>DurisMUD - PvP Review Oct 2013 - Jan 2017</h2>
+<a href="https://docs.google.com/spreadsheets/d/1jgiTmubm_ans17fRIjPR5pE9sRczjhWc8KlcDO412R8/pubhtml">Google Sheet Source Data</a>
+	<div id="DurisChart1"></div>	
+	
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart2',
 	       type: 'column',
 	       height: 450,
 	       width: 1200,
@@ -60,53 +105,6 @@
 	       allowDecimals: false,
 	       title: {
 	           text: 'Races',
-	       },
-	       gridelineWidth: 0
-	   },
-	   yAxis: {
-	       allowDecimals: false,
-	       min: 0,
-                 title: {
-		text: 'Deaths'
-                 },
-	   },	   
-	}
-
-	//build chart
-	var chart = new Highcharts.Chart(options);
-
-	</script>
-<h2>DurisMUD - PvP Review Oct 2013 - Jan 2017</h2>
-<a href="https://docs.google.com/spreadsheets/d/1jgiTmubm_ans17fRIjPR5pE9sRczjhWc8KlcDO412R8/pubhtml">Google Sheet Source Data</a>
-	<div id="DurisChart1"></div>
-<script>
-	//setup chart definition
-	var options = {
-	   chart: {
-	       renderTo: 'DurisChart2',
-	       type: 'line',
-	       height: 450,
-	       width: 1200,
-	       borderWidth: 1
-	   },
-	   data:{
-				googleSpreadsheetKey: '1jgiTmubm_ans17fRIjPR5pE9sRczjhWc8KlcDO412R8',
-				googleSpreadsheetWorksheet: '2'
-	   },
-	   title: {
-	       text: 'PVP Deaths by Year / Month'
-	   },
-	   tooltip: {
-	       enabled: true,
-	       crosshairs: [true],
-	       shared: true
-	   },
-	   xAxis: {
-	       allowDecimals: false,
-	       type: 'datetime',
-	       units: 'month',
-	       title: {
-	           text: '2013 - 2017 Death',
 	       },
 	       gridelineWidth: 0
 	   },
@@ -195,7 +193,6 @@
 	       enabled: true,
 	       crosshairs: [true],
 	       shared: true
-	   },
 	   },
 	   xAxis: {
 	       allowDecimals: false,
