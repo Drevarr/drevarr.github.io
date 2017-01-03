@@ -36,7 +36,7 @@
 	var options = {
 	   chart: {
 	       renderTo: 'DurisChart1',
-	       type: 'bar',
+	       type: 'column',
 	       height: 450,
 	       width: 1200,
 	       borderWidth: 1
@@ -46,20 +46,19 @@
 				googleSpreadsheetWorksheet: '1'
 	   },
 	   title: {
-	       text: 'PVP Total Deaths by Name'
+	       text: 'PVP Death by Name'
 	   },
-	   subtitle:{
-		text:'Top 100',
-	  }
 	   tooltip: {
 	       enabled: true,
 	       crosshairs: [true],
-	       shared: true
+               formatter: function () {
+                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+               }
 	   },
 	   xAxis: {
 	       allowDecimals: false,
-	  title: {
-	           text: 'null',
+	       title: {
+	           text: 'Races',
 	       },
 	       gridelineWidth: 0
 	   },
@@ -83,7 +82,7 @@
 	//setup chart definition
 	var options = {
 	   chart: {
-	       renderTo: 'DurisChart1A',
+	       renderTo: 'DurisChart2',
 	       type: 'line',
 	       height: 450,
 	       width: 1200,
@@ -123,14 +122,14 @@
 
 	</script>
 
-	<div id="DurisChart1A"></div>
+	<div id="DurisChart2"></div>
 
 <script>
 	//setup chart definition
 	var options = {
 	   chart: {
-	       renderTo: 'DurisChart2',
-	       type: column',
+	       renderTo: 'DurisChart3',
+	       type: 'column',
 	       height: 450,
 	       width: 1200,
 	       borderWidth: 1
@@ -148,10 +147,11 @@
                formatter: function () {
                    return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
                }
+	   },
 	   xAxis: {
 	       allowDecimals: false,
 	       title: {
-	           text: '2013 - 2017 Date',
+	           text: 'Races',
 	       },
 	       gridelineWidth: 0
 	   },
@@ -159,7 +159,7 @@
 	       allowDecimals: false,
 	       min: 0,
                  title: {
-		text: 'Race'
+		text: 'Deaths'
                  },
 	   },	   
 	}
@@ -169,13 +169,13 @@
 
 	</script>
 
-	<div id="DurisChart2"></div>
+	<div id="DurisChart3"></div>
 	
 <script>
 	//setup chart definition
 	var options = {
 	   chart: {
-	       renderTo: 'DurisChart5',
+	       renderTo: 'DurisChart4',
 	       type: 'column',
 	       height: 450,
 	       width: 1200,
@@ -216,7 +216,7 @@
 
 	</script>
 
-	<div id="DurisChart5"></div>			
+	<div id="DurisChart4"></div>			
 
       </section>
     </div>
