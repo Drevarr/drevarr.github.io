@@ -49,7 +49,7 @@
 	       text: 'PVP Total Deaths by Name'
 	   },
 	   subtitle:{
-		test:'Top 100'
+		text:'Top 100',
 	  }
 	   tooltip: {
 	       enabled: true,
@@ -130,7 +130,7 @@
 	var options = {
 	   chart: {
 	       renderTo: 'DurisChart2',
-	       type: 'bar',
+	       type: column',
 	       height: 450,
 	       width: 1200,
 	       borderWidth: 1
@@ -145,8 +145,9 @@
 	   tooltip: {
 	       enabled: true,
 	       crosshairs: [true],
-	       shared: true
-	   },
+               formatter: function () {
+                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+               }
 	   xAxis: {
 	       allowDecimals: false,
 	       title: {
