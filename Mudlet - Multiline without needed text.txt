@@ -1,0 +1,15 @@
+
+Re: Multiline trigger on Absence of something?
+
+Postby Belgarath » Sat Dec 28, 2013 4:11 am
+
+
+First Trigger:
+Line 0: ^.+ panics, and attempts to flee\.$
+Line 1: 1 (line spacer)
+Line 2: ^.+ leaves (.+)\.$
+
+Second Trigger
+Line 0: ^.+ panics, and attempts to flee\.$
+Line 1: 1 (line spacer)
+Line 2: return not line:find("leaves") (lua function)
