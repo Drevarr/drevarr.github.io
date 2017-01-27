@@ -9,13 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <script src="./javascripts/jquery-3.0.0.min.js"></script>
     <script src="./javascripts/sheetrock.min.js"></script>
-    <script>
-	var Spreadsheet = 'https://docs.google.com/spreadsheets/d/1GdhhLxi66u7mg4VkqnUe8pu4Ml71bhJQ_Z9Wdyb-uDw/edit#gid=0';
-	
-		$('#quests').sheetrock({
-		url: Spreadsheet
-		});
-    </script>
+
  
 	<title>Drevarr.GitHub.io by Drevarr</title>
   </head>
@@ -37,7 +31,13 @@
       <section id="main_content">
 
 	<table id="quests"></table>
+	<script>
+		var Spreadsheet = 'https://docs.google.com/spreadsheets/d/1GdhhLxi66u7mg4VkqnUe8pu4Ml71bhJQ_Z9Wdyb-uDw/edit#gid=0';
 	
+		$('#quests').sheetrock({
+		url: Spreadsheet
+		});
+	</script>
       </section>
     </div>
 
