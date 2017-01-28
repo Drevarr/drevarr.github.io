@@ -14,11 +14,22 @@
   box-sizing: border-box;
 }
 
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
 #QuestsTable {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 #QuestsTable th, #myTable td {
@@ -53,16 +64,34 @@
 
     <div class="container">
       <section id="main_content">
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for zone.." title="Type in a zone name">
 	<table id="QuestsTable"></table>
 	<script>
 		var Spreadsheet = 'https://docs.google.com/spreadsheets/d/1GdhhLxi66u7mg4VkqnUe8pu4Ml71bhJQ_Z9Wdyb-uDw/edit#gid=0';
 	
 		$('#QuestsTable').sheetrock({
-		url: Spreadsheet,
-		query: "select A,B,C,D,E, order by A desc"
+		url: Spreadsheet
 		});
 	</script>
-
+	<script>
+	function myFunction() {
+		var input, filter, table, tr, td, i;
+		input = document.getElementById("myInput");
+		filter = input.value.toUpperCase();
+		table = document.getElementById("QuestsTable");
+		tr = table.getElementsByTagName("tr");
+		for (i = 0; i < tr.length; i++) {
+			td = tr[i].getElementsByTagName("td")[0];
+			if (td) {
+				if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+					tr[i].style.display = "";
+				} else {
+					tr[i].style.display = "none";
+				}
+			}       
+		}
+	}
+	</script>
       </section>
     </div>
 
