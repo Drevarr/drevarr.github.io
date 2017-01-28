@@ -62,25 +62,7 @@
 		query: "select A,B,C,D,E, order by A desc"
 		});
 	</script>
-<script src="./javascripts/tablefilter.js"></script>
 
-<script data-config>
-    var filtersConfig = {
-        base_path: 'javascripts/',
-        auto_filter: true,
-        auto_filter_delay: 1100, //milliseconds
-        filters_row_index: 1,
-        state: true,
-        alternate_rows: true,
-        rows_counter: true,
-        rows_counter_text: "Rows: ",
-        btn_reset: true,
-        status_bar: true,
-        msg_filter: 'Filtering...'
-    };
-    var tf = new TableFilter('QuestsTable', filtersConfig);
-    tf.init();
-</script>
       </section>
     </div>
 
