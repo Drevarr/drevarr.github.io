@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DurisMUD Epic Zone List - Aravne</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <style type="text/css">
+      body { background: #F5FCFF; color: #333666; }
+      section { text-align: center; margin: 50px 0; }
+      .panzoom-parent { border: 2px solid #333; }
+      .panzoom-parent .panzoom { border: 2px dashed #666; }
+      .buttons { margin: 40px 0 0; }
+    </style>
+    <script src="../test/libs/jquery.js"></script>
+    <script src="./javascripts/jquery-3.0.0.min.js"></script> 
+    <script src="./javascripts/jquery.panzoom.js"></script> 
+    <script src="./javascripts/jquery.mousewheel.js"></script> 
+  </head>
+  <body>
+
+      <header>
+      <div class="container">
+        <h1>Drevarr.GitHub.io</h1>
+        <h2>a place to hold the tidbits I keep forgetting</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Drevarr" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+
+    <div class="container">
+      <section id="main_content">      
+    <hr>
+    <section id="focal">
+      <h1>Use the mousewheel to zoom on a focal point</h1>
+      <div class="parent">
+        <div class="panzoom">
+          <img src="./images/zoneMaps/Aravne.jpg" width="900" height="900">
+        </div>
+      </div>
+      <script>
+        (function() {
+          var $section = $('#focal');
+          var $panzoom = $section.find('.panzoom').panzoom();
+          $panzoom.parent().on('mousewheel.focal', function( e ) {
+            e.preventDefault();
+            var delta = e.delta || e.originalEvent.wheelDelta;
+            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+            $panzoom.panzoom('zoom', zoomOut, {
+              increment: 0.1,
+              animate: false,
+              focal: e
+            });
+          });
+        })();
+      </script>
+     </section>
+    </section>
+   </div>	
+  </body>
+</html>
