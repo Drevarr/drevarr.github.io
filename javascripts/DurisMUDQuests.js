@@ -1,8 +1,7 @@
 //Edit 'key' and 'columns' to connect your spreadsheet
 
 //enter google sheets key here
-var key =
-  "https://docs.google.com/spreadsheets/d/1GdhhLxi66u7mg4VkqnUe8pu4Ml71bhJQ_Z9Wdyb-uDw";
+var key = "https://docs.google.com/spreadsheets/d/1GdhhLxi66u7mg4VkqnUe8pu4Ml71bhJQ_Z9Wdyb-uDw/edit#gid=0";
 
 //"data" refers to the column name with no spaces and no capitals
 //punctuation or numbers in your column name
