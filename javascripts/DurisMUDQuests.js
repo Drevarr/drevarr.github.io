@@ -7,25 +7,25 @@ var key = "https://docs.google.com/spreadsheets/d/1GdhhLxi66u7mg4VkqnUe8pu4Ml71b
 //punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [{
-  "data": "ZoneName",
+  "data": "zonename",
   "title": "Zone Name"
 }, {
-  "data": "MobName",
+  "data": "mobname",
   "title": "Mob Name"
 }, {
-  "data": "QuestName",
+  "data": "questname",
   "title": "Quest Name"
 }, {
-  "data": "Keywords",
+  "data": "keywords",
   "title": "Quest Keywords"
 }, {
-  "data": "Rewards",
+  "data": "rewards",
   "title": "Quest Rewards"
 }, {
-  "data": "Difficulty",
+  "data": "difficulty",
   "title": "Quest Difficulty"
 }, {	
-  "data": "Comments",
+  "data": "comments",
   "title": "Quest Comments"
 }];
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
   function writeTable(data) {
     //select main div and put a table there
     //use bootstrap css to customize table style: http://getbootstrap.com/css/#tables
-    $('#DurisQuestTable').html(
+    $('#durisquesttable').html(
       '<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-condensed table-responsive" id="mySelection"></table>'
     );
 
