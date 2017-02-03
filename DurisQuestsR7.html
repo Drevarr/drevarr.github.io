@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <style>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">       
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>    
+
+ 
+  <title>DurisMUD Quests by Drevarr</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Drevarr.GitHub.io</h1>
+        <h2>a place to hold the tidbits I keep forgetting</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Drevarr" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+	
+	<table id="QuestsTable" class="table table-striped" >
+		<tbody>
+			<tr>
+			<td><strong>Zone Name</strong></td>
+			<td><strong>Mob Name&nbsp;</strong></td>
+			<td><strong>Quest Name</strong></td>
+			<td><strong>Keywords</strong></td>
+			<td><strong>Reward</strong></td>
+			<td><strong>Difficulty</strong></td>
+			<td><strong>Comments</strong></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script>
+		var Spreadsheet = 'https://docs.google.com/spreadsheets/d/1GdhhLxi66u7mg4VkqnUe8pu4Ml71bhJQ_Z9Wdyb-uDw/edit#gid=0';
+	
+		$('#QuestsTable').sheetrock({
+		url: Spreadsheet
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+		$('#myTable').dataTable();
+	});
+	</script>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
