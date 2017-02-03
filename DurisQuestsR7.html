@@ -3,13 +3,12 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <style>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">       
-    </style>
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -36,19 +35,7 @@
     <div class="container">
       <section id="main_content">
 	
-	<table id="QuestsTable" class="table table-striped" >
-		<tbody>
-			<tr>
-			<td><strong>Zone Name</strong></td>
-			<td><strong>Mob Name&nbsp;</strong></td>
-			<td><strong>Quest Name</strong></td>
-			<td><strong>Keywords</strong></td>
-			<td><strong>Reward</strong></td>
-			<td><strong>Difficulty</strong></td>
-			<td><strong>Comments</strong></td>
-			</tr>
-		</tbody>
-	</table>
+	<table id="QuestsTable" class="table table-striped" ></table>
 
 	<script>
 		var Spreadsheet = 'https://docs.google.com/spreadsheets/d/1GdhhLxi66u7mg4VkqnUe8pu4Ml71bhJQ_Z9Wdyb-uDw/edit#gid=0';
@@ -59,7 +46,7 @@
 	</script>
 	<script>
 	$(document).ready(function(){
-		$('#myTable').dataTable();
+		$('#QuestsTable').dataTable();
 	});
 	</script>
       </section>
