@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>DurisMUD 2018 PvP Charts by Drevarr</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47236641-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Drevarr.GitHub.io</h1>
+        <h2>a place to hold the tidbits I keep forgetting</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Drevarr" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.highcharts.com/highcharts.js"></script>
+<script src="//code.highcharts.com/modules/data.js"></script>
+<script src="javascripts/gray.js"></script>
+
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart1',
+	       type: 'line',
+	       zoomType: 'x',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '8'
+	   },
+	   title: {
+	       text: 'PVP Total Deaths 2018 Wipe'
+	   },
+	   subtitle: {
+		text: document.ontouchstart === undefined ?
+			'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+	       shared: true
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       type: 'datetime',
+	       title: {
+	           text: '2018 Wipe Date',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+<h2>DurisMUD - 2018 Wipe Charts</h2>
+<a href="https://docs.google.com/spreadsheets/d/1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI">Google Sheet Source Data</a>
+	<div id="DurisChart1"></div>
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart1A',
+	       type: 'line',
+	       zoomType: 'x',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '9'
+	   },
+	   title: {
+	       text: 'PVP Deaths by Wipe Day'
+	   },
+	   subtitle: {
+		text: document.ontouchstart === undefined ?
+			'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+	       shared: true
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       type: 'datetime',
+	       title: {
+	           text: '2018 Wipe Date',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart1A"></div>
+
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart2',
+	       type: 'line',
+	       zoomType: 'x',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '10'
+	   },
+	   title: {
+	       text: 'PVP Death Average Level by Wipe Day'
+	   },
+	   subtitle: {
+		text: document.ontouchstart === undefined ?
+			'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+	       shared: true
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       type: 'datetime',
+	       title: {
+	           text: '2018 Wipe Date',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Average Level'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart2"></div>
+	
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart5',
+	       type: 'column',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '5'
+	   },
+	   title: {
+	       text: 'PVP Death by Evil Race'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+               formatter: function () {
+                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+               }
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Evil Races',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart5"></div>			
+	
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart6',
+	       type: 'column',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '6'
+	   },
+	   title: {
+	       text: 'PVP Death by Goodie Race'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+               formatter: function () {
+                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+               }
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Goodie Races',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart6"></div>				
+	
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart7',
+	       type: 'column',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '3'
+	   },
+	   title: {
+	       text: 'Top PVP Deaths by Evil Class'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+               formatter: function () {
+                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+               }
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Evil Classes',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart7"></div>					
+	
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart8',
+	       type: 'column',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '4'
+	   },
+	   title: {
+	       text: 'Top PVP Deaths by Goodie Class'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+               formatter: function () {
+                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+               }
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Goodie Classes',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart8"></div>						
+	
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart9',
+	       type: 'column',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '1'
+	   },
+	   title: {
+	       text: 'Top PVP Deaths by Evil Player'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+               formatter: function () {
+                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+               }
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Evil Player Name',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart9"></div>							
+
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart10',
+	       type: 'column',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '2'
+	   },
+	   title: {
+	       text: 'Top PVP Deaths by Goodie Player'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+               formatter: function () {
+                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+               }
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Goodie Player Name',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart10"></div>		
+	
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart11',
+	       type: 'line',
+	       zoomType: 'x',
+	       height: 450,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1bzI5-3aTwmLMzByRjN4TiBK5rmj4F-mn6izrQzZe5nI',
+				googleSpreadsheetWorksheet: '11'
+	   },
+	   title: {
+	       text: 'Comparison of Total PVP Deaths by Wipe (2014 - 2018)'
+	   },
+	   subtitle: {
+		text: document.ontouchstart === undefined ?
+			'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+	  },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+	       shared: true
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Wipe Day',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Deaths'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+	<div id="DurisChart11"></div>
+	
+      </section>
+    </div>
+
+    
+  </body>
+</html>
