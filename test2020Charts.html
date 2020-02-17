@@ -84,13 +84,13 @@
 
 	</script>
 
-	<div id="DurisChart2"></div>
+	<div id="DurisChart1A"></div>
 	
 <script>
 	//setup chart definition
 	var options = {
 	   chart: {
-	       renderTo: 'DurisChart2',
+	       renderTo: 'DurisChart1A',
 	       type: 'line',
 	       zoomType: 'x',
 	       height: 450,
@@ -136,13 +136,13 @@
 	</script>
 
 
-	<div id="DurisChart3"></div>
+	<div id="DurisChart2"></div>
 
 <script>
 	//setup chart definition
 	var options = {
 	   chart: {
-	       renderTo: 'DurisChart3',
+	       renderTo: 'DurisChart2',
 	       type: 'line',
 	       zoomType: 'x',
 	       height: 450,
@@ -187,53 +187,7 @@
 
 	</script>
 
-	<div id="DurisChart4"></div>
-	
-<script>
-	//setup chart definition
-	var options = {
-	   chart: {
-	       renderTo: 'DurisChart4',
-	       type: 'column',
-	       height: 450,
-	       width: 1200,
-	       borderWidth: 1
-	   },
-	   data:{
-				googleSpreadsheetKey: '1axng8HwtOneB_8Y14UqrzbEcX36Sjhq1D6vjFkf6bjw',
-				googleSpreadsheetWorksheet: '12'
-	   },
-	   title: {
-	       text: 'Top PVP Deaths by Race - Class Combo'
-	   },
-	   tooltip: {
-	       enabled: true,
-	       crosshairs: [true],
-               formatter: function () {
-                   return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
-               }
-	   },
-	   xAxis: {
-	       allowDecimals: false,
-	       title: {
-	           text: 'Race - Class',
-	       },
-	       gridelineWidth: 0
-	   },
-	   yAxis: {
-	       allowDecimals: false,
-	       min: 0,
-                 title: {
-		text: 'Deaths'
-                 },
-	   },	   
-	}
 
-	//build chart
-	var chart = new Highcharts.Chart(options);
-
-	</script>
-	
 	<div id="DurisChart5"></div>
 	
 <script>
@@ -571,7 +525,52 @@
 
 	</script>
 
+	<div id="DurisChart12"></div>		
 	
+<script>
+	//setup chart definition
+	var options = {
+	   chart: {
+	       renderTo: 'DurisChart12',
+	       type: 'bar',
+	       height: 800,
+	       width: 1200,
+	       borderWidth: 1
+	   },
+	   data:{
+				googleSpreadsheetKey: '1axng8HwtOneB_8Y14UqrzbEcX36Sjhq1D6vjFkf6bjw',
+				googleSpreadsheetWorksheet: '12'
+	   },
+	   title: {
+	       text: 'Race - Class PvP Deaths for the 2020 Wipe'
+	   },
+	   tooltip: {
+	       enabled: true,
+	       crosshairs: [true],
+	       shared: true
+	   },
+	   xAxis: {
+	       allowDecimals: false,
+	       title: {
+	           text: 'Deaths',
+	       },
+	       gridelineWidth: 0
+	   },
+	   yAxis: {
+	       allowDecimals: false,
+	       min: 0,
+                 title: {
+		text: 'Race-Class combo'
+                 },
+	   },	   
+	}
+
+	//build chart
+	var chart = new Highcharts.Chart(options);
+
+	</script>
+
+
       </section>
     </div>
 
