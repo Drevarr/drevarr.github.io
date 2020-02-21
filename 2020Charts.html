@@ -218,13 +218,20 @@
 	       },
 	       gridelineWidth: 0
 	   },
-	   yAxis: {
+	   yAxis: {// Primary yAxis
 	       allowDecimals: false,
 	       min: 0,
                  title: {
 		text: 'Deaths'
                  },
-	   },	   
+	   }, { // Secondary yAxis
+		allowDecimals: false,
+		min: 0,
+		title: {
+			text: 'Avg Level'   
+		},
+		opposite: true
+		},
 	}
 
 	//build chart
