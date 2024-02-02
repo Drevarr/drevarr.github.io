@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Darkward - Duris PVP Charts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+</head>
+<body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/data.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/227385601/gray.js"></script>
+
+
+<div class="container-fluid">
+	<div class="row clearfix">
+	</div>
+	<table style="width: 80%" align="center">
+		<tr>
+			<td class="text-center" colspan="2" valign="middle">
+			<h3 class="text-center">
+				Darkward - PVP Charts for Duris MUD
+			</h3>
+			<p class="text-center text-muted">
+				<small>The Fotenak Project</small>
+			</p>
+			<p class="text-center text-muted">
+				<small>1st Level 56 on wipe day ??? - (???????)</small>
+			</p>
+			<p><a href="https://docs.google.com/spreadsheets/d/1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U/pubhtml"><h4>Duris 2016 PVP Data Set</h4></a></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-center" valign="middle"><div id="DurisChart1" style="width:90%"></div>
+			</td>
+			<td class="text-center" valign="middle"><div id="DurisChart2" style="width:90%"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-center" valign="middle"><div id="DurisChart3" style="width:90%"></div>
+			</td>
+			<td class="text-center" valign="middle"><div id="DurisChart4" style="width:90%"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-center" valign="middle"><div id="DurisChart5" style="width:90%"></div>
+			</td>
+			<td class="text-center" valign="middle"><div id="DurisChart6" style="width:90%"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-center" valign="middle"><div id="DurisChart7" style="width:90%"></div>
+			</td>
+			<td class="text-center" valign="middle"><div id="DurisChart8" style="width:90%"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-center" valign="middle"><div id="DurisChart9" style="width:90%"></div>
+			</td>
+			<td class="text-center" valign="middle"><div id="DurisChart10" style="width:90%"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-center" colspan="2" valign="middle">
+			<div id="DurisChart11" style="width:90%"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-center" colspan="2" valign="middle">
+			<div id="DurisChart12" style="width:90%"></div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<script>
+$(function () {
+    $('#DurisChart1').highcharts({
+        data: {
+           googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+			googleSpreadsheetWorksheet: 8
+        },
+        chart: {
+            type: 'line',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'PVP Deaths by Day'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	type: 'datetime',
+            dateTimeLabelFormats: {
+                day: '%e of %b'
+            },        	
+        	labels: {
+            	formatter: function() {
+                	return Highcharts.dateFormat('%Y-%m-%d', this.value);
+            	}
+        	},        	
+        	title: {
+        		text: 'Date'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+			shared: true,
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart2').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 10
+        },
+        chart: {
+            type: 'line',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'PVP Death Average Level by Day'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	type: 'datetime',
+        	title: {
+        		text: 'Date'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+			shared: true,
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart3').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 7
+        },
+        chart: {
+            type: 'line',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'Total PVP Deaths by Day'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	type: 'datetime',
+        	title: {
+        		text: 'Date'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+			shared: true,
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart4').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 9
+        },
+        chart: {
+            type: 'line',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'Total PVP Deaths by Racewar Side'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+        	title: {
+        		text: 'Wipe Day'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+			shared: true,
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart5').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 5
+        },
+        chart: {
+            type: 'column',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'PVP Death by Evil Race'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+        	title: {
+        		text: 'Evil Races'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+            formatter: function () {
+                return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+            }
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart6').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 6
+        },
+        chart: {
+            type: 'column',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'PVP Death by Goodie Race'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+        	title: {
+        		text: 'Goodie Races'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+            formatter: function () {
+                return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+            }
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart7').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 3
+        },
+        chart: {
+            type: 'column',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'Top PVP Deaths by Evil Class'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+        	title: {
+        		text: 'Evil Classes'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+            formatter: function () {
+                return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+            }
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart8').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 4
+        },
+        chart: {
+            type: 'column',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'Top PVP Deaths by Goodie Class'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+        	title: {
+        		text: 'Goodie Classes'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+            formatter: function () {
+                return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+            }
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart9').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 1
+        },
+        chart: {
+            type: 'column',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'Top PVP Deaths by Evil Player'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+        	title: {
+        		text: 'Evil Player Name'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+            formatter: function () {
+                return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+            }
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart10').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 2
+        },
+        chart: {
+            type: 'column',
+            width: 800,
+            borderWidth: 1
+        },
+        title: {
+            text: 'Top PVP Deaths by Goodie Player'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+        	title: {
+        		text: 'Goodie Player Name'
+        	}
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Deaths'
+            }
+        },
+        tooltip: {
+   			crosshairs: [true],
+            formatter: function () {
+                return this.point.y + '<b> Deaths of ' + this.point.name + '</b><br/>';
+            }
+        }
+    });
+});
+
+$(function () {
+    $('#DurisChart11').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 11
+        },
+        chart: {
+           type: 'line',
+           width: 1600,
+           borderWidth: 1
+        },
+        title: {
+           text: 'Comparison of Total PVP Deaths by Wipe Year'
+        },
+        credits: {
+           enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+	max: 200,		
+        	title: {
+        		text: 'Wipe Day'
+        	}
+        },
+        yAxis: {
+           allowDecimals: false,
+           min: 0,
+           title: {
+               text: 'Deaths'
+           }
+        },
+        tooltip: {
+   			crosshairs: [true],
+			shared: true,
+        }
+    });
+});
+$(function () {
+    $('#DurisChart12').highcharts({
+        data: {
+				googleSpreadsheetKey: '1OlWSUI6gKA6NIJkxJCf8J9yhnCqJ1jmXf5HdPAB0Y4U',
+				googleSpreadsheetWorksheet: 11
+        },
+        chart: {
+           type: 'line',
+           width: 1600,
+           borderWidth: 1
+        },
+        title: {
+           text: 'Comparison of Total PVP Deaths by Wipe Year'
+        },
+        credits: {
+           enabled: false
+        },
+        xAxis: {
+        	allowDecimals: false,
+	max: 200,		
+        	title: {
+        		text: 'Wipe Day'
+        	}
+        },
+        yAxis: {
+           allowDecimals: false,
+           min: 0,
+           title: {
+               text: 'Deaths'
+           }
+        },
+        tooltip: {
+   			crosshairs: [true],
+			shared: true,
+        }
+    });
+});
+$(window).resize();
+</script>
+</body>
+</html>

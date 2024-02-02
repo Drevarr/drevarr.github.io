@@ -1,0 +1,3302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<title>Undead on GC</title>
+<style>
+<!--
+SPAN.bolddefaultfore {color: #00FF00}
+SPAN.reversedefaultfore {background-color: #00B300}
+SPAN.reversebolddefaultfore {background-color: #00FF00}
+SPAN.reversedefaultback {color: #000000}
+SPAN.fore0 {color: #000000}
+SPAN.reversefore0 {background-color: #000000}
+SPAN.fore1 {color: #000080}
+SPAN.reversefore1 {background-color: #000080}
+SPAN.fore2 {color: #00B300}
+SPAN.reversefore2 {background-color: #00B300}
+SPAN.fore3 {color: #008080}
+SPAN.reversefore3 {background-color: #008080}
+SPAN.fore4 {color: #800000}
+SPAN.reversefore4 {background-color: #800000}
+SPAN.fore5 {color: #800080}
+SPAN.reversefore5 {background-color: #800080}
+SPAN.fore6 {color: #808000}
+SPAN.reversefore6 {background-color: #808000}
+SPAN.fore7 {color: #C0C0C0}
+SPAN.reversefore7 {background-color: #C0C0C0}
+SPAN.fore8 {color: #808080}
+SPAN.reversefore8 {background-color: #808080}
+SPAN.fore9 {color: #0000FF}
+SPAN.reversefore9 {background-color: #0000FF}
+SPAN.fore10 {color: #00FF00}
+SPAN.reversefore10 {background-color: #00FF00}
+SPAN.fore11 {color: #00FFFF}
+SPAN.reversefore11 {background-color: #00FFFF}
+SPAN.fore12 {color: #FF0000}
+SPAN.reversefore12 {background-color: #FF0000}
+SPAN.fore13 {color: #FF00FF}
+SPAN.reversefore13 {background-color: #FF00FF}
+SPAN.fore14 {color: #FFFF00}
+SPAN.reversefore14 {background-color: #FFFF00}
+SPAN.fore15 {color: #FFFFFF}
+SPAN.reversefore15 {background-color: #FFFFFF}
+SPAN.back0 {background-color: #000000}
+SPAN.reverseback0 {color: #000000}
+SPAN.back1 {background-color: #000080}
+SPAN.reverseback1 {color: #000080}
+SPAN.back2 {background-color: #008000}
+SPAN.reverseback2 {color: #008000}
+SPAN.back3 {background-color: #008080}
+SPAN.reverseback3 {color: #008080}
+SPAN.back4 {background-color: #800000}
+SPAN.reverseback4 {color: #800000}
+SPAN.back5 {background-color: #800080}
+SPAN.reverseback5 {color: #800080}
+SPAN.back6 {background-color: #808000}
+SPAN.reverseback6 {color: #808000}
+SPAN.back7 {background-color: #FFFFFF0F0000}
+SPAN.reverseback7 {color: #FFFFFF0F0000}
+BODY {color: #00B300; background-color: #000000}
+PRE {font-family: "Courier New", monospace}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function doBlink() {
+	var blink = document.all.tags("BLINK")
+	for (var i=0; i<blink.length; i++)
+		blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : "" 
+}
+function startBlink() {
+	if (document.all)
+		setInterval("doBlink()",1000)
+}
+window.onload = startBlink;
+// -->
+</script>
+</head>
+
+<body>
+
+<table border="0" width="100%" bgcolor="#000000" bordercolor="#000000">
+  <tr>
+    <td width="100%"><pre><font color="#00FFFF"><strong>Undead on GC 26FEB03</strong></font>
+ 
+                <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>      
+              <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM   </span></span> 
+             <span class="fore0"><span
+class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1"> </span></span>   
+             <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>   
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">  </span></span>  
+            <span
+class="fore0"><span class="back2">*</span></span><span class="back0"><span class="fore8">++++++</span><span
+class="fore15"><blink>PP</blink></span>@<blink>P</blink></span><span class="fore8">++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+             <span
+class="fore8">+</span><span class="fore0"><span class="back2">**************</span></span><span
+class="fore9"><span class="back1">  </span></span>   
+             <span class="fore8">+</span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+              <span class="fore0"><span class="back2">************</span></span><span
+class="fore9"><span class="back1">   </span></span>    
+                <span class="fore2">.</span><span
+class="fore9"><blink>M</blink><span class="back1">         </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span>Osk (<span
+class="fore11">Human</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+*Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+Osk leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore8">+</span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M     </span></span> 
+              <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMMM   </span></span> 
+             <span class="fore0"><span class="back2">***</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM</span></span><span class="fore9"><span class="back1">  </span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>   
+            <span
+class="fore9"><blink>M</blink></span><span class="fore0"><span class="back2">***</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back7">^</span><span
+class="back2">********</span></span><span class="fore6"><span class="back0">MM</span></span><span
+class="fore9"><span class="back1">   </span></span>  
+            <span class="fore8">++++++</span><span
+class="fore15"><blink>P</blink></span><span class="fore8">+</span><span class="fore15"><blink>P</blink>@</span><span
+class="fore8">++</span><span class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+            <span
+class="fore8">+</span><span class="fore0"><span class="back2">***********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+             <span
+class="fore0"><span class="back2">**************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+             <span class="fore0"><span class="back2">*************</span></span><span
+class="fore9"><span class="back1">    </span></span>   
+              <span class="fore0"><span
+class="back2">***********</span></span><span class="fore9"><span class="back1">    </span></span>    
+                <span
+class="fore9"><blink>M</blink><span class="back1">          </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span>Osk (<span
+class="fore11">Human</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+*Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+*Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> is stunned!
+Niz <span class="fore3">tackles</span> A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> square in the chest knocking the <span
+class="fore11">wind</span> out of him!
+
+<span class="fore2">&lt; 715h/715H 138v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz snaps into visibility.
+Upon being struck, A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> disappears into thin air.
+Niz attacks someone. [<span
+class="fore12">3</span> hits]
+Krecik leaves east.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> leaves east.
+A <span class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><span class="fore14">cast 'sunray' phantom
+
+</span><span
+class="fore11">You failed.
+</span><span class="fore14">look
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>You stop regenerating.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><font color="#00FFFF">-=-=-=-=-= REGEN IS OUT =-=-=-=-=-</font>
+
+ 
+                <span
+class="fore8">+</span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M     </span></span> 
+              <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMMM   </span></span> 
+             <span class="fore0"><span class="back2">***</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span><span class="fore0"><span
+class="back2">*****</span></span><span class="fore6"><span class="back0">MMM</span></span><span
+class="fore9"><span class="back1">  </span></span>   
+             <span class="fore0"><span
+class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>   
+            <span
+class="fore9"><blink>M</blink></span><span class="fore0"><span class="back2">***</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back7">^</span><span
+class="back2">********</span></span><span class="fore6"><span class="back0">MM</span></span><span
+class="fore9"><span class="back1">   </span></span>  
+            <span class="fore8">++++++</span><span
+class="fore15"><blink>P</blink></span><span class="fore8">++</span><span class="fore15">@</span><span
+class="fore8">++</span><span class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+            <span
+class="fore8">+</span><span class="fore0"><span class="back2">***********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+             <span
+class="fore0"><span class="back2">**************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+             <span class="fore0"><span class="back2">*************</span></span><span
+class="fore9"><span class="back1">    </span></span>   
+              <span class="fore0"><span
+class="back2">***********</span></span><span class="fore9"><span class="back1">    </span></span>    
+                <span
+class="fore9"><blink>M</blink><span class="back1">          </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Blood splatters cover the area.</span> 
+Vane (<span class="fore3">Grey Elf</span>)(small)(<span
+class="fore9">B</span>) stands in mid-air here.
+Osk (<span class="fore11">Human</span>)(medium)(<span
+class="fore12">F</span>) stands in mid-air here.
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore10">Niz group-says in common 'target lich'
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves west.
+Kema leaves west.
+Osk leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>      
+              <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM   </span></span> 
+             <span class="fore0"><span
+class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1"> </span></span>   
+             <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>   
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">  </span></span>  
+            <span
+class="fore0"><span class="back2">*</span></span><span class="back0"><span class="fore8">++++++</span><span
+class="fore15"><blink>P</blink></span></span><span class="fore8">+</span><span class="fore15">@<blink>P</blink></span><span
+class="fore8">++</span><span class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+             <span
+class="fore8">+</span><span class="fore0"><span class="back2">**************</span></span><span
+class="fore9"><span class="back1">  </span></span>   
+             <span class="fore8">+</span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+              <span class="fore0"><span class="back2">************</span></span><span
+class="fore9"><span class="back1">   </span></span>    
+                <span class="fore2">.</span><span
+class="fore9"><blink>M</blink><span class="back1">         </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span>Osk (<span
+class="fore11">Human</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves west.
+Kema leaves west.
+Osk leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>      
+              <span
+class="fore8"><span class="back5">**</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM   </span></span> 
+             <span class="fore0"><span
+class="back2">*****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM  </span></span> 
+             <span class="fore0"><span class="back2">*****</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1"> </span></span>   
+            <span
+class="fore0"><span class="back2">**</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1"> </span></span>  
+            <span
+class="fore0"><span class="back2">**</span></span><span class="back0"><span class="fore8">++++++</span><span
+class="fore15"><blink>P</blink></span>@<blink>P</blink></span><span class="fore8">+++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1"> </span></span>  
+            <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1"> </span></span>  
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">**************</span></span><span class="fore9"><span
+class="back1"> </span></span>   
+             <span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*************</span></span><span
+class="fore9"><span class="back1">  </span></span>   
+              <span class="fore8">+</span><span
+class="fore0"><span class="back2">************</span></span><span class="fore9"><span
+class="back1">  </span></span>    
+                <span class="fore9"><blink>M</blink></span><span
+class="fore2">.</span><span class="fore9"><blink>M</blink><span class="back1">        </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span>Osk (<span
+class="fore11">Human</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves west.
+Kema leaves west.
+Osk leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore8"><span class="back5">**</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*******</span></span>      
+              <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M   </span></span> 
+             <span class="fore0"><span
+class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MM  </span></span> 
+             <span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="back0"><span class="fore8">++++++</span><span
+class="fore15">@<blink>P</blink></span></span><span class="fore8">++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+             <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">**************</span></span>   
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1"> </span></span>   
+              <span class="fore8">++</span><span class="fore0"><span
+class="back2">************</span></span><span class="fore9"><span class="back1"> </span></span>    
+                <span
+class="fore2">.</span><span class="fore9"><blink>M</blink></span><span class="fore2">.</span><span
+class="fore9"><blink>M</blink><span class="back1">       </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span>Osk (<span
+class="fore11">Human</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+*Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+*The wraith of <span
+class="fore4">a guard of Nizari</span> stands here.(<span class="fore12">F</span>)
+*The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel stands here.(<span class="fore12">F</span>)
+*The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel stands here.(<span class="fore12">F</span>)
+*A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> (medium)(<span
+class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span class="fore2">&lt; 715h/715H 139v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> is stunned!
+Niz <span
+class="fore3">tackles</span> A <span class="fore8">L</span><span class="fore5">ic</span><span
+class="fore8">h</span> square in the chest knocking the <span class="fore11">wind</span> out of him!
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span class="fore8">L</span><span class="fore5">ic</span><span
+class="fore8">h</span> snaps into visibility.
+A <span class="fore8">L</span><span class="fore5">ic</span><span
+class="fore8">h</span> is knocked to the ground by Osk's mighty bash!
+
+<span class="fore2">&lt; 715h/715H 139v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel heroically rescues A <span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span>.
+The vampire of a <span class="fore4">Crimson Watch </span>sentinel snaps into visibility.
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel attacks Osk. [<span class="fore12">2</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Osk
+</span>Krecik starts casting an offensive spell.
+Krecik snaps into visibility.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>You start chanting...
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A gnome merchant</span> snaps into visibility.
+<span
+class="fore8">A gnome merchant</span> places <span class="fore8">the granite dagger '</span><span
+class="fore12">Bl</span><span class="fore4">oo</span><span class="fore12">dFe</span><span
+class="fore4">a</span><span class="fore12">st</span><span class="fore8">'</span> in the back of Osk, resulting in some strange noises and some blood.
+<span
+class="fore8">A gnome merchant</span> twists the blade causing Osk to writhe in agony,
+<span
+class="fore8">A gnome merchant</span> places <span class="fore15">a dragon tooth trident</span> in the back of Osk, resulting in some strange noises and some blood.
+<span
+class="fore8">A gnome merchant</span> twists the blade causing Osk to writhe in agony,
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore3">Jlad tells your guild '</span><span
+class="fore11">(jlad)  sup folks</span><span class="fore3">'
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Krecik <span
+class="fore15">completes his spell...
+</span>Krecik utters the word 'pawwzf'
+Krecik creates a <span
+class="fore9">hammer</span> out of thin air that smashes into Osk, bits of <span class="fore6">flesh</span> and <span
+class="fore15">bone</span> fly everywhere!
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A faint hum can be heard from</span> <span
+class="fore8">the granite dagger '</span><span class="fore12">Bl</span><span class="fore4">oo</span><span
+class="fore12">dFe</span><span class="fore4">a</span><span class="fore12">st</span><span
+class="fore8">' carried by a gnome merchant</span>.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Casting: sunray 
+<span
+class="fore8">A gnome merchant</span> attacks Osk. [<span class="fore12">2</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Osk
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="reversefore15"><span class="reverseback4"><blink>-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Spell Complete...!!
+</blink></span></span><span
+class="fore13">Your spell flows around A </span><span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span><span class="fore13">, leaving him unharmed!
+Your spell flows around A </span><span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span><span
+class="fore13">, leaving him unharmed!
+</span>Niz attacks A <span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span>. [<span class="fore12">3</span> hits]
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><span class="fore14">
+</span><span class="fore10">You feel nature's energy flow into your 9th circle of knowledge.
+</span>Osk attacks <span
+class="fore8">a gnome merchant</span>. [<span class="fore12">1</span> hits]
+Osk deflects the vampire of a <span
+class="fore4">Crimson Watch </span>sentinel's blow and strikes back at it!
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel attacks Osk. [<span class="fore12">1</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Osk
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Krecik starts casting an offensive spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A gnome merchant</span> attempts to flee.
+<span
+class="fore8">A gnome merchant</span> leaves west.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel snaps into visibility.
+You start chanting...
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Kema starts casting a spell.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Krecik <span
+class="fore15">completes his spell...
+</span>Krecik utters the word 'pawwzf'
+Krecik creates a <span
+class="fore9">hammer</span> out of thin air that smashes into Osk, bits of <span class="fore6">flesh</span> and <span
+class="fore15">bone</span> fly everywhere!
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> attacks Niz. [<span
+class="fore12">0</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Niz
+</span><span
+class="fore8">A gnome merchant</span> places <span class="fore8">the granite dagger '</span><span
+class="fore12">Bl</span><span class="fore4">oo</span><span class="fore12">dFe</span><span
+class="fore4">a</span><span class="fore12">st</span><span class="fore8">'</span> in the back of Osk, resulting in some strange noises and some blood.
+<span
+class="fore8">A gnome merchant</span> places <span class="fore15">a dragon tooth trident</span> in the back of Osk, resulting in some strange noises and some blood.
+<span
+class="fore8">A gnome merchant</span> twists the blade causing Osk to writhe in agony,
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Casting: creeping doom *
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel attacks Osk. [<span class="fore12">1</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Osk
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A gnome merchant</span> pierces the heart of Osk who falls to the ground clutching at the wound.
+<span
+class="fore8">A gnome merchant</span>'s killing blow completely destroyed Osk's <span
+class="fore4">satanic </span><span class="fore8">amulet</span>!
+Osk is dead! R.I.P.
+<span
+class="fore4">You feel the bloodlust in your heart as you hear the death cry of</span> Osk.
+Osk stops following Niz.
+<span
+class="fore8">A gnome merchant</span> attacks a red shape. [<span class="fore12">1</span> hits]
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="reversefore15"><span
+class="reverseback4"><blink>-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Spell Complete...!!
+</blink></span></span><span
+class="fore8">You send out a </span><span class="fore5">wave of insects</span><span
+class="fore8"> against A L</span><span class="fore5">ic</span><span class="fore8">h</span>!
+<span
+class="fore4">Kema stops chanting abruptly!
+</span>The vampire of a <span class="fore4">Crimson Watch </span>sentinel attacks Niz. [<span
+class="fore12">0</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Niz
+</span>Niz notices that he has moved up towards the battle lines!
+Niz attacks A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span>. [<span
+class="fore12">3</span> hits]
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="fore13">Your spell flows around A </span><span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span><span class="fore13">, leaving him unharmed!
+</span><span
+class="fore3">Niz tells your guild '</span><span class="fore11">(Horsehung) ow lich</span><span
+class="fore3">'
+</span>Vane stops using <span class="fore2">a b</span><span class="fore10">a</span><span
+class="fore2">ck</span><span class="fore10">p</span><span class="fore2">ack </span><span
+class="fore10">m</span><span class="fore2">a</span><span class="fore10">de o</span><span
+class="fore2">f </span><span class="fore6">hemp</span>.
+A <span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span> clambers to his feet.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="fore10">You feel nature's energy flow into your 10th circle of knowledge.
+</span>Vane gets a small pile of coins from the corpse of Osk.
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> gives an order to his followers..
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore10">Niz group-says in common 'target gnome'
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>The wraith of <span class="fore4">a guard of Nizari</span> snaps into visibility.
+The wraith of <span
+class="fore4">a guard of Nizari</span> attacks Niz. [<span class="fore12">1</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Niz
+</span><span class="fore10">Niz group-says in common 'target gnome'
+</span>You start chanting...
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> gives an order to his followers..
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz attempts to flee.
+Niz leaves east.
+Kema leaves east.
+<span
+class="fore8">A gnome merchant</span> places <span class="fore8">the granite dagger '</span><span
+class="fore12">Bl</span><span class="fore4">oo</span><span class="fore12">dFe</span><span
+class="fore4">a</span><span class="fore12">st</span><span class="fore8">'</span> in the back of Vane, resulting in some strange noises and some blood.
+<span
+class="fore8">A gnome merchant</span> twists the blade causing Vane to writhe in agony,
+<span
+class="fore8">A gnome merchant</span> places <span class="fore15">a dragon tooth trident</span> in the back of Vane, resulting in some strange noises and some blood.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Vane attacks <span class="fore8">a gnome merchant</span>. [<span
+class="fore12">0</span> hits]
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> puts some coins into <span
+class="fore6">a large leather backpack</span>.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Casting: creeping doom *
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">You send </span><span
+class="fore5">a wave of insects and arachnids </span><span class="fore8">against A L</span><span
+class="fore5">ic</span><span class="fore8">h</span>!
+A <span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span> starts casting an offensive spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="reversefore15"><span
+class="reverseback4"><blink>-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Spell Complete...!!
+</blink></span></span><span
+class="fore8">You send out a </span><span class="fore5">wave of insects</span><span
+class="fore8"> against A L</span><span class="fore5">ic</span><span class="fore8">h</span>!
+Krecik starts casting an offensive spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">You send </span><span
+class="fore5">a wave of insects and arachnids </span><span class="fore8">against A L</span><span
+class="fore5">ic</span><span class="fore8">h</span>!
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A gnome merchant</span> attacks Vane. [<span
+class="fore12">3</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Vane
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore10">You feel nature's energy flow into your 10th circle of knowledge.
+</span><span
+class="fore8">A gnome merchant</span> attempts to flee.
+<span class="fore8">A gnome merchant</span> tries to flee, but can't make it out of here!
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span class="fore8">L</span><span class="fore5">ic</span><span
+class="fore8">h</span> <span class="fore15">completes his spell...
+</span>A <span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span> utters the words 'izoahuzz qaijudigguai bragh'
+<span
+class="fore8">A L</span><span class="fore5">ic</span><span class="fore8">h</span>'s concussion <span
+class="fore14">blast</span><span class="fore8"> rips into Vane, </span><span class="fore15">sh</span><span
+class="fore8">at</span>te<span class="fore15">ri</span><span class="fore8">ng her</span><span
+class="fore4"> soul</span><span class="fore8">!
+</span><span class="fore3">Osk tells your guild '</span><span
+class="fore11">wtf</span><span class="fore3">'
+</span><span class="fore8">A gnome merchant</span> attempts to flee.
+<span
+class="fore8">A gnome merchant</span> leaves west.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Krecik <span
+class="fore15">completes his spell...
+</span>Krecik utters the word 'pawwzf'
+Krecik creates a <span
+class="fore9">hammer</span> out of thin air that smashes into Vane, bits of <span
+class="fore6">flesh</span> and <span class="fore15">bone</span> fly everywhere!
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz enters from the east.
+Kema enters from the east.
+<span
+class="fore8">A gnome merchant</span> enters from the west.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz places <span
+class="fore8">the </span><span class="fore11">blade </span><span class="fore8">of the entwined d</span><span
+class="fore2">ar</span><span class="fore8">k </span><span class="fore2">ser</span><span
+class="fore8">p</span><span class="fore2">ent</span> in the back of <span class="fore8">a gnome merchant</span>, resulting in some strange noises and some blood.
+Niz is burned severely as he hits <span
+class="fore8">a gnome merchant</span>!
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="fore13">Your spell flows around A </span><span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span><span class="fore13">, leaving him unharmed!
+</span>A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> starts casting an offensive spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><span class="fore14">cast 'sunray' gnome
+
+</span>Krecik starts casting an offensive spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">You send </span><span
+class="fore5">a wave of insects and arachnids </span><span class="fore8">against A L</span><span
+class="fore5">ic</span><span class="fore8">h</span>!
+<span class="fore8">A gnome merchant</span> attempts to flee.
+<span
+class="fore8">A gnome merchant</span> leaves south.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>The wraith of <span
+class="fore4">a guard of Nizari</span> fades from your mortal viewing...
+<span class="fore11">You failed.
+</span><span
+class="fore14">look
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> <span
+class="fore15">completes his spell...
+</span>A <span class="fore8">L</span><span class="fore5">ic</span><span
+class="fore8">h</span> utters the words 'izoahuzz qaijudigguai bragh'
+<span class="fore13">A </span><span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span><span
+class="fore13">'s spell flows around Kema, leaving him unharmed!
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Krecik <span
+class="fore15">completes his spell...
+</span>Krecik utters the word 'pawwzf'
+Krecik creates a <span
+class="fore9">hammer</span> out of thin air that smashes into Kema, bits of <span
+class="fore6">flesh</span> and <span class="fore15">bone</span> fly everywhere!
+<span
+class="fore8">A gnome merchant</span> enters from the south.
+ 
+                <span
+class="fore8"><span class="back5">**</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*******</span></span>      
+              <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M   </span></span> 
+             <span class="fore0"><span
+class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MM  </span></span> 
+             <span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+            <span class="fore0"><span
+class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">+++++</span><span class="fore15">@</span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+             <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">**************</span></span>   
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1"> </span></span>   
+              <span class="fore8">++</span><span class="fore0"><span
+class="back2">************</span></span><span class="fore9"><span class="back1"> </span></span>    
+                <span
+class="fore2">.</span><span class="fore9"><blink>MM</blink></span><span class="fore2">.</span><span
+class="fore9"><span class="back1">       </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span><span class="fore4">Puddles of blood cover the ground.</span> 
+The corpse of a Human is lying here. 
+<span
+class="fore8">A gnome merchant</span> is standing here, busy with his own matters.(<span
+class="fore12">F</span>)
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+*The wraith of <span
+class="fore4">a guard of Nizari</span> stands here.(<span class="fore12">F</span>)
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel stands here.(<span class="fore12">F</span>)
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel stands here.(<span class="fore12">F</span>)
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> (medium)(<span
+class="fore12">F</span>) stands in mid-air here.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz attempts to flee.
+Niz leaves west.
+Kema leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">******</span></span>      
+              <span
+class="fore8"><span class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+             <span class="fore0"><span
+class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>   
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@<blink>P</blink></span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore9"><blink>M</blink></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*************</span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>MM</blink></span><span
+class="fore2">.</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span>Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Kema starts casting a spell.
+
+<span class="fore2">&lt; 715h/715H 139v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="fore13">Your spell flows around A </span><span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span><span class="fore13">, leaving him unharmed!
+
+</span><span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><span class="fore14">
+</span><span class="fore8">You send </span><span
+class="fore5">a wave of insects and arachnids </span><span class="fore8">against A L</span><span
+class="fore5">ic</span><span class="fore8">h</span>!
+<span class="fore11">You failed.
+</span><span
+class="fore14">
+</span><span class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A gnome merchant</span> enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Kema <span class="fore15">completes his spell...
+</span>Kema utters the words 'yjrr pzar'
+Kema does a full heal on Vane.
+<span
+class="fore8">A gnome merchant</span> places <span class="fore15">a dragon tooth trident</span> in the back of Vane, resulting in some strange noises and some blood.
+<span
+class="fore8">A gnome merchant</span> twists the blade causing Vane to writhe in agony,
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><span class="fore14">
+</span>Niz is burned severely as he hits <span
+class="fore8">a gnome merchant</span>!
+ 
+                <span class="fore8"><span class="back5">***</span></span><span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">******</span></span>      
+              <span class="fore8"><span
+class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+             <span class="fore0"><span
+class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>   
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@<blink>P</blink></span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore9"><blink>M</blink></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*************</span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>MM</blink></span><span
+class="fore2">.</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore8">A gnome merchant</span> is standing here, busy with his own matters.(<span
+class="fore12">F</span>)
+Vane (<span class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here, fighting <span
+class="fore8">a gnome merchant</span>.
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here, fighting <span
+class="fore8">a gnome merchant</span>.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A gnome merchant</span> attacks Vane. [<span
+class="fore12">0</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Vane
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz attacks <span class="fore8">a gnome merchant</span>. [<span
+class="fore12">1</span> hits]
+You start chanting...
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">You send </span><span
+class="fore5">a wave of insects and arachnids </span><span class="fore8">against A L</span><span
+class="fore5">ic</span><span class="fore8">h</span>!
+Vane attacks <span class="fore8">a gnome merchant</span>. [<span
+class="fore12">0</span> hits]
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">The sea of </span><span
+class="fore5">arachnids</span><span class="fore8"> fades away...
+
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Casting: sunray 
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="reversefore15"><span
+class="reverseback4"><blink>-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Spell Complete...!!
+</blink></span></span><span
+class="fore15">You unleash </span><span class="fore14">light</span><span class="fore15"> in a focused, searing </span><span
+class="fore14">ray</span><span class="fore15"> at </span><span class="fore8">a gnome merchant</span>!
+<span
+class="fore8">A gnome merchant</span> attempts to flee.
+<span class="fore8">A gnome merchant</span> leaves south.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore3">Fara tells your guild '</span><span
+class="fore11">lure ?</span><span class="fore3">'
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; </span><span
+class="fore14">
+</span><span class="fore10">You feel nature's energy flow into your 9th circle of knowledge.
+</span>Kema starts casting a spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore11">You failed.
+</span><span
+class="fore14">
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">You send </span><span
+class="fore5">a wave of insects and arachnids </span><span class="fore8">against A L</span><span
+class="fore5">ic</span><span class="fore8">h</span>!
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; </span><span
+class="fore14">
+</span><span class="fore8">A gnome merchant</span> enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span> 
+                <span class="fore8"><span
+class="back5">***</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">******</span></span>      
+              <span
+class="fore8"><span class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+             <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore15"><span class="back0"><blink>P</blink></span></span><span
+class="fore0"><span class="back2">**</span></span>   
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@</span><span class="fore8">++++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore9"><blink>M</blink></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*************</span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>MM</blink></span><span
+class="fore2">.</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Puddles of blood cover the ground.</span> 
+<span class="fore8">A gnome merchant</span> is standing here, busy with his own matters.(<span
+class="fore12">F</span>)
+Vane (<span class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here, fighting <span
+class="fore8">a gnome merchant</span>.
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here. (<span class="fore5">casting</span>) 
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>You start chanting...
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Kema <span
+class="fore15">completes his spell...
+</span>Kema utters the words 'yjrr pzar'
+Kema does a full heal on Vane.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A gnome merchant</span> attacks Vane. [<span
+class="fore12">1</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Vane
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">A gnome merchant</span> is stunned!
+Niz <span
+class="fore3">tackles</span> <span class="fore8">a gnome merchant</span> square in the chest knocking the <span
+class="fore11">wind</span> out of her!
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Casting: sunray 
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="reversefore15"><span
+class="reverseback4"><blink>-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Spell Complete...!!
+</blink></span></span><span
+class="fore15">You unleash </span><span class="fore14">light</span><span class="fore15"> in a focused, searing </span><span
+class="fore14">ray</span><span class="fore15"> at </span><span class="fore8">a gnome merchant</span>!
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore8">The sea of </span><span
+class="fore5">arachnids</span><span class="fore8"> fades away...
+
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; </span><span
+class="fore14">
+</span><span class="fore10">You feel nature's energy flow into your 9th circle of knowledge.
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Vane attacks <span class="fore8">a gnome merchant</span>. [<span
+class="fore12">0</span> hits]
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>You start chanting...
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz is burned severely as he hits <span
+class="fore8">a gnome merchant</span>!
+A <span class="fore8">Shadow </span><span class="fore4">Beast</span>'s disguise falls apart!
+Niz is burned severely as he hits A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>!
+Niz attacks A <span class="fore8">Shadow </span><span
+class="fore4">Beast</span>. [<span class="fore12">2</span> hits]
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="fore11">You failed.
+</span><span class="fore4">You abort your prayer before it's done!
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span class="fore8">Shadow </span><span
+class="fore4">Beast</span> attacks Niz. [<span class="fore12">2</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Niz
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Vane starts casting an offensive spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span> 
+                <span class="fore8"><span
+class="back5">***</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">******</span></span>      
+              <span
+class="fore8"><span class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+             <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>   
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@</span><span class="fore8">++++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore9"><blink>M</blink></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*************</span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>MM</blink></span><span
+class="fore2">.</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Puddles of blood cover the ground.</span> 
+A <span class="fore8">Shadow </span><span
+class="fore4">Beast</span> (medium) <span class="fore8">Glabrezu of </span><span class="fore4">Legion</span><span
+class="fore8"> of</span><span class="fore4"> Hate</span>(<span class="fore12">F</span>) sits in mid-air here, fighting Niz.
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here, fighting A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>. (<span class="fore5">casting</span>) 
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here, fighting A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz is burned severely as he hits A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>!
+Niz is burned severely as he hits A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>!
+Niz attacks A <span class="fore8">Shadow </span><span
+class="fore4">Beast</span>. [<span class="fore12">2</span> hits]
+<span class="fore3">Osk tells your guild '</span><span
+class="fore11">couldn't even lay hands</span><span class="fore3">'
+</span> 
+                <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">******</span></span>      
+              <span
+class="fore8"><span class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+             <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>   
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@</span><span class="fore8">++++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>M</blink></span><span
+class="fore2">..</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Puddles of blood cover the ground.</span> 
+A <span class="fore8">Shadow </span><span
+class="fore4">Beast</span> (medium) <span class="fore8">Glabrezu of </span><span class="fore4">Legion</span><span
+class="fore8"> of</span><span class="fore4"> Hate</span>(<span class="fore12">F</span>) sits in mid-air here, fighting Niz.
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here, fighting A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>. (<span class="fore5">casting</span>) 
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here, fighting A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Vane <span
+class="fore15">completes her spell...
+</span>Vane utters the words 'buoblg qfjgpuio paie'
+A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span> is encircled by a huge fist sent by Vane, which begins to crush her body.
+Vane attacks A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>. [<span class="fore12">0</span> hits]
+ 
+                <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">******</span></span>      
+              <span
+class="fore8"><span class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+             <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>   
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">*******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@</span><span class="fore8">++++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>M</blink></span><span
+class="fore2">..</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Puddles of blood cover the ground.</span> 
+A <span class="fore8">Shadow </span><span
+class="fore4">Beast</span> (medium) <span class="fore8">Glabrezu of </span><span class="fore4">Legion</span><span
+class="fore8"> of</span><span class="fore4"> Hate</span>(<span class="fore12">F</span>) sits in mid-air here, fighting Niz.
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here, fighting A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>.
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here, fighting A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span>.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; </span><span
+class="fore14">
+</span>A <span class="fore8">Shadow </span><span class="fore4">Beast</span> attacks Niz. [<span
+class="fore12">0</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Niz
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore3">Niz tells your guild '</span><span
+class="fore11">(Horsehung) own gnome</span><span class="fore3">'
+</span>Looking panicked, A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span> scrambles madly to her feet!
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore3">Niz tells your guild '</span><span
+class="fore11">(Horsehung) own gnome</span><span class="fore3">'
+</span>You start chanting...
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore3">Niz tells your guild '</span><span
+class="fore11">(Horsehung) own gnome</span><span class="fore3">'
+</span>Vane starts casting an offensive spell.
+A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span> attempts to flee.
+A <span
+class="fore8">Shadow </span><span class="fore4">Beast</span> leaves east.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore4">Vane stops invoking abruptly!
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span> 
+                <span class="fore8"><span
+class="back5">***</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">******</span></span>      
+              <span
+class="fore8"><span class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+             <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>   
+            <span class="fore0"><span
+class="back2">*</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@<blink>P</blink></span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>M</blink></span><span
+class="fore2">..</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Puddles of blood cover the ground.</span> 
+Vane (<span class="fore3">Grey Elf</span>)(small)(<span
+class="fore12">F</span>) stands in mid-air here.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="fore11">You failed.
+</span><span class="fore14">
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Vane leaves east.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span> 
+                <span class="fore8"><span
+class="back5">***</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">******</span></span>      
+              <span
+class="fore8"><span class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span>   
+             <span
+class="fore9"><blink>M</blink></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span>   
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@<blink>P</blink></span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*****</span></span><span class="fore15"><span class="back0"><blink>P</blink></span></span><span
+class="fore0"><span class="back2">*******</span></span>   
+             <span class="fore0"><span
+class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>M</blink></span><span
+class="fore2">..</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Puddles of blood cover the ground.</span> 
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt;</span><span class="fore14">
+</span> 
+                <span
+class="fore8"><span class="back5">**</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*******</span></span>      
+              <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M   </span></span> 
+             <span class="fore0"><span
+class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MM  </span></span> 
+             <span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">***</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span><span class="fore0"><span
+class="back2">****</span></span><span class="fore6"><span class="back0">MM </span></span> 
+            <span
+class="fore0"><span class="back2">***</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">+++++</span><span class="fore15">@</span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+             <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">**************</span></span>   
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1"> </span></span>   
+              <span class="fore8">++</span><span class="fore0"><span
+class="back2">************</span></span><span class="fore9"><span class="back1"> </span></span>    
+                <span
+class="fore2">.</span><span class="fore9"><blink>M</blink></span><span class="fore2">..</span><span
+class="fore9"><span class="back1">       </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span><span class="fore4">Puddles of blood cover the ground.</span> 
+The corpse of a Human is lying here. 
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Krecik enters from the east.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> enters from the east.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> enters from the east.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> enters from the east.
+
+<span class="fore2">&lt; 715h/715H 139v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span> 
+                <span
+class="fore8"><span class="back5">**</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*******</span></span>      
+              <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M   </span></span> 
+             <span class="fore0"><span
+class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MM  </span></span> 
+             <span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">+++++</span><span class="fore15">@</span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+             <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">**************</span></span>   
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1"> </span></span>   
+              <span class="fore8">++</span><span class="fore0"><span
+class="back2">************</span></span><span class="fore9"><span class="back1"> </span></span>    
+                <span
+class="fore2">.</span><span class="fore9"><blink>M</blink></span><span class="fore2">..</span><span
+class="fore9"><span class="back1">       </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span><span class="fore4">Puddles of blood cover the ground.</span> 
+The corpse of a Human is lying here. 
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here.
+Krecik leaves west.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> leaves west.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> leaves west.
+A <span class="fore15">Pha</span><span class="fore8">ntom</span> leaves west.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves west.
+Kema leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">******</span></span>      
+              <span
+class="fore8"><span class="back5">****</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>    
+             <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+             <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>   
+            <span class="fore0"><span
+class="back2">*</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">****</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15">@<blink>P</blink></span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span>  
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span>  
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span>   
+              <span
+class="fore8">+++</span><span class="fore0"><span class="back2">************</span></span>    
+                <span
+class="fore8">+</span><span class="fore2">.</span><span class="fore9"><blink>M</blink></span><span
+class="fore2">..</span><span class="fore9"><span class="back1">      </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Puddles of blood cover the ground.</span> 
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Krecik leaves east.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> leaves east.
+A <span class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+
+<span class="fore2">&lt; 715h/715H 138v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; </span><span
+class="fore14">
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore8"><span class="back5">**</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*******</span></span>      
+              <span
+class="fore8"><span class="back5">***</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span>    
+             <span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MM  </span></span> 
+             <span class="fore0"><span class="back2">******</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M  </span></span> 
+            <span class="fore9"><blink>M</blink></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++</span><span class="fore15"><blink>P</blink>@</span><span class="fore8">+++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M </span></span> 
+             <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">**************</span></span>   
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1"> </span></span>   
+              <span class="fore8">++</span><span class="fore0"><span
+class="back2">************</span></span><span class="fore9"><span class="back1"> </span></span>    
+                <span
+class="fore2">.</span><span class="fore9"><blink>M</blink></span><span class="fore2">..</span><span
+class="fore9"><span class="back1">       </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span><span class="fore4">Puddles of blood cover the ground.</span> 
+The corpse of a Human is lying here. 
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 137v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Krecik leaves east.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> leaves east.
+A <span class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span>      
+              <span
+class="fore8"><span class="back5">**</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span><span class="fore6">M   </span> 
+             <span
+class="fore0"><span class="back2">*****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM  </span></span> 
+             <span class="fore0"><span class="back2">*****</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1"> </span></span>   
+            <span
+class="fore0"><span class="back2">******</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1"> </span></span>  
+            <span
+class="fore0"><span class="back2">**</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">+++++</span><span class="fore15"><blink>P</blink>@</span><span class="fore8">++++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1"> </span></span>  
+            <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1"> </span></span>  
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">**************</span></span><span class="fore9"><span
+class="back1"> </span></span>   
+             <span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*************</span></span><span
+class="fore9"><span class="back1">  </span></span>   
+              <span class="fore8">+</span><span
+class="fore0"><span class="back2">************</span></span><span class="fore9"><span
+class="back1">  </span></span>    
+                <span class="fore9"><blink>M</blink></span><span
+class="fore2">..</span><span class="fore9"><span class="back1">        </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span>Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+Krecik leaves east.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> leaves east.
+A <span class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>      
+              <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM   </span></span> 
+             <span class="fore0"><span
+class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore15"><span
+class="back0"><blink>P</blink></span></span><span class="fore6">MM</span><span class="fore9"><span
+class="back1"> </span></span>   
+             <span class="fore0"><span class="back2">****</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>   
+            <span
+class="fore0"><span class="back2">*****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">  </span></span>  
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">++++++</span><span class="fore15"><blink>P</blink>@</span><span class="fore8">+++</span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+             <span
+class="fore8">+</span><span class="fore0"><span class="back2">**************</span></span><span
+class="fore9"><span class="back1">  </span></span>   
+             <span class="fore8">+</span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+              <span class="fore0"><span class="back2">************</span></span><span
+class="fore9"><span class="back1">   </span></span>    
+                <span class="fore2">..</span><span
+class="fore9"><span class="back1">         </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span>Kema (<span class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+Krecik leaves east.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> leaves east.
+A <span class="fore15">Pha</span><span class="fore8">ntom</span> leaves east.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span> 
+                <span class="fore0"><span
+class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span>      
+              <span
+class="fore8"><span class="back5">*</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM   </span></span> 
+             <span class="fore0"><span
+class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1"> </span></span>   
+             <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore15"><span
+class="back0"><blink>P</blink></span></span><span class="fore6">M</span><span class="fore9"><span
+class="back1">  </span></span>   
+            <span class="fore0"><span class="back2">*****</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back7">^</span><span
+class="back2">********</span></span><span class="fore6"><span class="back0">MM</span></span><span
+class="fore9"><span class="back1">  </span></span>  
+            <span class="fore0"><span
+class="back2">*</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">+++++++</span><span class="fore15">@</span><span class="fore8">+</span><span
+class="fore15"><blink>P</blink></span><span class="fore8">+</span><span class="fore0"><span
+class="back7">^</span><span class="back2">**</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+             <span
+class="fore8">+</span><span class="fore0"><span class="back2">**************</span></span><span
+class="fore9"><span class="back1">  </span></span>   
+             <span class="fore8">+</span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+              <span class="fore0"><span class="back2">************</span></span><span
+class="fore9"><span class="back1">   </span></span>    
+                <span class="fore2">..</span><span
+class="fore9"><span class="back1">         </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span>Vane (<span class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore8">+</span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M     </span></span> 
+              <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMMM   </span></span> 
+             <span class="fore0"><span class="back2">***</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM</span></span><span class="fore9"><span class="back1">  </span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>   
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">*******</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span><span class="fore6">MM</span><span
+class="fore9"><span class="back1">   </span></span>  
+            <span class="fore9"><blink>M</blink></span><span
+class="fore8">+++++++</span><span class="fore15"><blink>P</blink>@<blink>P</blink></span><span
+class="fore8">+</span><span class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+            <span
+class="fore8">+</span><span class="fore0"><span class="back2">***********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+             <span
+class="fore0"><span class="back2">**************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+             <span class="fore0"><span class="back2">*************</span></span><span
+class="fore9"><span class="back1">    </span></span>   
+              <span class="fore0"><span
+class="back2">***********</span></span><span class="fore9"><span class="back1">    </span></span>    
+                <span
+class="fore2">.</span><span class="fore9"><span class="back1">          </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Blood splatters cover the area.</span> 
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 137v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">MM     </span></span> 
+              <span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMMM</span></span><span class="fore9"><span class="back1"> </span></span>    
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1">   </span></span>   
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">    </span></span>   
+            <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">*******</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span><span class="fore6">MM</span><span
+class="fore9"><span class="back1">    </span></span>  
+            <span class="fore8">++++++++</span><span
+class="fore15"><blink>P</blink>@</span><span class="fore8">+</span><span class="fore0"><span
+class="back7">^</span><span class="back2">**</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">    </span></span>  
+            <span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">    </span></span>  
+             <span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1">    </span></span>   
+             <span class="fore0"><span class="back2">************</span></span><span
+class="fore9"><span class="back1">     </span></span>   
+              <span class="fore0"><span
+class="back2">**********</span></span><span class="fore9"><span class="back1">     </span></span>    
+                <span
+class="fore9"><span class="back1">           </span></span>      
+<span class="fore6">A Break in an Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-N</span> <span class="fore3">-E</span> <span
+class="fore3">-S</span> <span class="fore3">-W
+</span>Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 136v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore3">Fara tells your guild '</span><span
+class="fore11">lich above hall</span><span class="fore3">'
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; </span><span
+class="fore14">
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM     </span></span> 
+              <span class="fore8">+</span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMMM</span></span><span class="fore9"><span class="back1">  </span></span>    
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1">    </span></span>   
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>   
+            <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">****</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span><span class="fore0"><span
+class="back2">***</span></span><span class="fore6"><span class="back0">MM</span></span><span
+class="fore9"><span class="back1">     </span></span>  
+            <span class="fore8">++++++++</span><span
+class="fore15"><blink>P</blink>@</span><span class="fore0"><span class="back7">^</span><span
+class="back2">**</span></span><span class="fore6"><span class="back0">M</span></span><span
+class="fore9"><span class="back1">     </span></span>  
+            <span class="fore0"><span
+class="back2">**********</span></span><span class="fore6"><span class="back0">MM</span></span><span
+class="fore0"><span class="back7">^</span></span><span class="fore6"><span class="back0">M</span></span><span
+class="fore9"><span class="back1">     </span></span>  
+             <span class="fore0"><span
+class="back2">************</span></span><span class="fore9"><span class="back1">     </span></span>   
+             <span
+class="fore0"><span class="back2">***********</span></span><span class="fore9"><span
+class="back1">      </span></span>   
+              <span class="fore0"><span class="back2">*********</span></span><span
+class="fore9"><span class="back1">      </span></span>    
+                <span class="fore9"><span
+class="back1">           </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span>Kema (<span class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+<span
+class="fore2">A Trade Path Heading into a Ravine
+Obvious exits:</span> <span class="fore3">-W</span> <span
+class="fore3">-D
+</span><span class="fore6">A large wooden sign stands here.</span> 
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+A Trade Path Heading into a Ravine
+Obvious exits:</span> <span
+class="fore3">-W</span> <span class="fore3">-D
+</span><span class="fore6">A large wooden sign stands here.</span> 
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+<span
+class="fore3">Fara tells your guild '</span><span class="fore11">necro</span><span
+class="fore3">'
+
+</span><span class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM     </span></span> 
+              <span class="fore8">+</span><span
+class="fore0"><span class="back2">*******</span></span><span class="fore15"><span
+class="back0"><blink>P</blink></span></span><span class="fore6">MMMM</span><span class="fore9"><span
+class="back1">  </span></span>    
+             <span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM</span></span><span class="fore9"><span class="back1">    </span></span>   
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>   
+            <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">     </span></span>  
+            <span
+class="fore8">++++</span><span class="fore15"><blink>P</blink></span><span class="fore8">++++</span><span
+class="fore15">@</span><span class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>  
+            <span
+class="fore0"><span class="back2">**********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>  
+             <span
+class="fore0"><span class="back2">************</span></span><span class="fore9"><span
+class="back1">     </span></span>   
+             <span class="fore0"><span class="back2">***********</span></span><span
+class="fore9"><span class="back1">      </span></span>   
+              <span class="fore0"><span
+class="back2">*********</span></span><span class="fore9"><span class="back1">      </span></span>    
+                <span
+class="fore9"><span class="back1">           </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span>Kema (<span class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span class="fore8">L</span><span class="fore5">ic</span><span
+class="fore8">h</span> enters from the west.
+The vampire of a <span class="fore4">Crimson Watch </span>sentinel enters from the west.
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel enters from the west.
+The wraith of <span
+class="fore4">a guard of Nizari</span> enters from the west.
+
+<span class="fore2">&lt; 715h/715H 139v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves west.
+Kema leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">MM     </span></span> 
+              <span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">*******</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span><span class="fore6">MMMM</span><span
+class="fore9"><span class="back1"> </span></span>    
+             <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1">   </span></span>   
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">    </span></span>   
+            <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">    </span></span>  
+            <span
+class="fore8">+++++++++</span><span class="fore15">@<blink>P</blink></span><span class="fore0"><span
+class="back7">^</span><span class="back2">**</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">    </span></span>  
+            <span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">    </span></span>  
+             <span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1">    </span></span>   
+             <span class="fore0"><span class="back2">************</span></span><span
+class="fore9"><span class="back1">     </span></span>   
+              <span class="fore0"><span
+class="back2">**********</span></span><span class="fore9"><span class="back1">     </span></span>    
+                <span
+class="fore9"><span class="back1">           </span></span>      
+<span class="fore6">A Break in an Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-N</span> <span class="fore3">-E</span> <span
+class="fore3">-S</span> <span class="fore3">-W
+</span>Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves west.
+Kema leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore8">+</span><span class="fore0"><span class="back2">*******</span></span><span
+class="fore15"><span class="back0"><blink>P</blink></span></span><span class="fore0"><span
+class="back2">*</span></span><span class="fore6"><span class="back0">M     </span></span> 
+              <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMMM   </span></span> 
+             <span class="fore0"><span class="back2">***</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM</span></span><span class="fore9"><span class="back1">  </span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>   
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">   </span></span>  
+            <span
+class="fore9"><blink>M</blink></span><span class="fore8">++++++++</span><span class="fore15">@<blink>PP</blink></span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+            <span
+class="fore8">+</span><span class="fore0"><span class="back2">***********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+             <span
+class="fore0"><span class="back2">**************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+             <span class="fore0"><span class="back2">*************</span></span><span
+class="fore9"><span class="back1">    </span></span>   
+              <span class="fore0"><span
+class="back2">***********</span></span><span class="fore9"><span class="back1">    </span></span>    
+                <span
+class="fore2">.</span><span class="fore9"><span class="back1">          </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Blood splatters cover the area.</span> 
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 139v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves west.
+Kema leaves west.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore15"><span
+class="back0"><blink>P</blink></span></span>      
+              <span class="fore8"><span
+class="back5">*</span></span><span class="fore0"><span class="back2">**</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM   </span></span> 
+             <span class="fore0"><span
+class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1"> </span></span>   
+             <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>   
+            <span
+class="fore0"><span class="back2">*****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">  </span></span>  
+            <span
+class="fore0"><span class="back2">*</span></span><span class="fore9"><span class="back0"><blink>M</blink></span></span><span
+class="fore8">+++++++</span><span class="fore15">@<blink>P</blink></span><span class="fore8">+</span><span
+class="fore15"><blink>P</blink></span><span class="fore0"><span class="back7">^</span><span
+class="back2">**</span></span><span class="fore6"><span class="back0">M</span></span><span
+class="fore9"><span class="back1">  </span></span>  
+            <span class="fore0"><span
+class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">  </span></span>  
+             <span
+class="fore8">+</span><span class="fore0"><span class="back2">**************</span></span><span
+class="fore9"><span class="back1">  </span></span>   
+             <span class="fore8">+</span><span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+              <span class="fore0"><span class="back2">************</span></span><span
+class="fore9"><span class="back1">   </span></span>    
+                <span class="fore2">..</span><span
+class="fore9"><span class="back1">         </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span>Kema (<span class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the east.
+
+<span
+class="fore2">&lt; 715h/715H 138v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore8">+</span><span class="fore0"><span class="back2">*********</span></span><span
+class="fore6"><span class="back0">M     </span></span> 
+              <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMMM   </span></span> 
+             <span class="fore0"><span class="back2">***</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMM</span></span><span class="fore9"><span class="back1">  </span></span>   
+             <span
+class="fore0"><span class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*******</span></span><span class="fore15"><span
+class="back0"><blink>P</blink></span></span><span class="fore0"><span class="back2">*</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>   
+            <span
+class="fore0"><span class="back2">****</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">   </span></span>  
+            <span
+class="fore9"><blink>M</blink></span><span class="fore8">+++++++</span><span class="fore15"><blink>P</blink>@</span><span
+class="fore8">+</span><span class="fore15"><blink>P</blink></span><span class="fore0"><span
+class="back7">^</span><span class="back2">**</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+            <span
+class="fore8">+</span><span class="fore0"><span class="back2">***********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">   </span></span>  
+             <span
+class="fore0"><span class="back2">**************</span></span><span class="fore9"><span
+class="back1">   </span></span>   
+             <span class="fore0"><span class="back2">*************</span></span><span
+class="fore9"><span class="back1">    </span></span>   
+              <span class="fore0"><span
+class="back2">***********</span></span><span class="fore9"><span class="back1">    </span></span>    
+                <span
+class="fore2">.</span><span class="fore9"><span class="back1">          </span></span>      
+<span
+class="fore6">An Old Dirt Path
+</span><span class="fore2">Obvious exits:</span> <span
+class="fore3">-E</span> <span class="fore3">-S</span> <span class="fore3">-W
+</span><span
+class="fore4">Blood splatters cover the area.</span> 
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 137v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">MM     </span></span> 
+              <span class="fore0"><span class="back2">*</span></span><span
+class="fore8"><span class="back0">+</span></span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMMM</span></span><span class="fore9"><span class="back1"> </span></span>    
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1">   </span></span>   
+             <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">******</span></span><span class="fore15"><span class="back0"><blink>P</blink></span></span><span
+class="fore0"><span class="back2">**</span></span><span class="fore6"><span class="back0">M</span></span><span
+class="fore9"><span class="back1">    </span></span>   
+            <span class="fore0"><span
+class="back2">***</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">    </span></span>  
+            <span
+class="fore8">++++++++</span><span class="fore15"><blink>P</blink>@<blink>P</blink></span><span
+class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">    </span></span>  
+            <span
+class="fore0"><span class="back2">***********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">    </span></span>  
+             <span
+class="fore0"><span class="back2">*************</span></span><span class="fore9"><span
+class="back1">    </span></span>   
+             <span class="fore0"><span class="back2">************</span></span><span
+class="fore9"><span class="back1">     </span></span>   
+              <span class="fore0"><span
+class="back2">**********</span></span><span class="fore9"><span class="back1">     </span></span>    
+                <span
+class="fore9"><span class="back1">           </span></span>      
+<span class="fore6">A Break in an Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-N</span> <span class="fore3">-E</span> <span
+class="fore3">-S</span> <span class="fore3">-W
+</span>Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span
+class="fore2">&lt; 715h/715H 136v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz leaves east.
+Kema leaves east.
+You follow Niz.
+
+ 
+                <span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM     </span></span> 
+              <span class="fore8">+</span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMMM</span></span><span class="fore9"><span class="back1">  </span></span>    
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1">    </span></span>   
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*****</span></span><span class="fore15"><span class="back0"><blink>P</blink></span></span><span
+class="fore0"><span class="back2">***</span></span><span class="fore6"><span class="back0">M</span></span><span
+class="fore9"><span class="back1">     </span></span>   
+            <span class="fore0"><span
+class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">     </span></span>  
+            <span
+class="fore8">++++++++</span><span class="fore15"><blink>P</blink>@</span><span class="fore0"><span
+class="back7">^</span><span class="back2">**</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>  
+            <span
+class="fore0"><span class="back2">**********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>  
+             <span
+class="fore0"><span class="back2">************</span></span><span class="fore9"><span
+class="back1">     </span></span>   
+             <span class="fore0"><span class="back2">***********</span></span><span
+class="fore9"><span class="back1">      </span></span>   
+              <span class="fore0"><span
+class="back2">*********</span></span><span class="fore9"><span class="back1">      </span></span>    
+                <span
+class="fore9"><span class="back1">           </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span>Kema (<span class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+*The wraith of <span
+class="fore4">a guard of Nizari</span> stands here.(<span class="fore12">F</span>)
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel stands here.(<span class="fore12">F</span>)
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel stands here.(<span class="fore12">F</span>)
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> (medium)(<span
+class="fore12">F</span>) stands in mid-air here.
+Vane enters from the west.
+
+<span class="fore2">&lt; 715h/715H 135v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> is stunned!
+Niz <span
+class="fore3">tackles</span> A <span class="fore8">L</span><span class="fore5">ic</span><span
+class="fore8">h</span> square in the chest knocking the <span class="fore11">wind</span> out of him!
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><span class="fore14">
+</span>The wraith of <span
+class="fore4">a guard of Nizari</span> says in common 'I must assist my master!'
+Niz attacks A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span>. [<span
+class="fore12">3</span> hits]
+Krecik enters from the west.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> enters from the west.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> enters from the west.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> enters from the west.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Vane starts casting an offensive spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span> 
+                <span class="fore0"><span
+class="back2">********</span></span><span class="fore6"><span class="back0">MMM     </span></span> 
+              <span
+class="fore8">+</span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMMM</span></span><span class="fore9"><span class="back1">  </span></span>    
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1">    </span></span>   
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>   
+            <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">     </span></span>  
+            <span
+class="fore8">+++++++++</span><span class="fore15">@</span><span class="fore0"><span
+class="back7">^</span><span class="back2">**</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>  
+            <span
+class="fore0"><span class="back2">**********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>  
+             <span
+class="fore0"><span class="back2">************</span></span><span class="fore9"><span
+class="back1">     </span></span>   
+             <span class="fore0"><span class="back2">***********</span></span><span
+class="fore9"><span class="back1">      </span></span>   
+              <span class="fore0"><span
+class="back2">*********</span></span><span class="fore9"><span class="back1">      </span></span>    
+                <span
+class="fore9"><span class="back1">           </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span>A <span class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> (medium) stands in mid-air here.
+Krecik (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(medium)(<span class="fore12">F</span>) stands in mid-air here.
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here. (<span
+class="fore5">casting</span>) 
+Kema (<span class="fore3">Grey Elf</span>)(medium)(<span
+class="fore9">B</span>) stands in mid-air here.
+Niz (<span class="fore15">S</span>t<span
+class="fore15">o</span>r<span class="fore15">m </span>G<span class="fore15">i</span>a<span
+class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here, fighting A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span>.
+*The wraith of <span
+class="fore4">a guard of Nizari</span> stands here.(<span class="fore12">F</span>)
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel stands here.(<span class="fore12">F</span>)
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel stands here.(<span class="fore12">F</span>)
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> (medium)(<span
+class="fore12">F</span>) sits with a stunned look in mid-air here, fighting Niz.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span class="fore8">L</span><span class="fore5">ic</span><span
+class="fore8">h</span> attacks Niz. [<span class="fore12">0</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Niz
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>You start chanting...
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Vane <span
+class="fore15">completes her spell...
+</span>Vane utters the words 'buoblg qfjgpuio paie'
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> is encircled by a huge fist sent by Vane, which begins to crush his body.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Casting: sunray 
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="reversefore15"><span class="reverseback4"><blink>-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Spell Complete...!!
+</blink></span></span><span
+class="fore13">Your spell flows around A </span><span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span><span class="fore13">, leaving him unharmed!
+Your spell flows around A </span><span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span><span
+class="fore13">, leaving him unharmed!
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span
+class="fore10">You feel nature's energy flow into your 9th circle of knowledge.
+</span>Niz attacks A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span>. [<span
+class="fore12">3</span> hits]
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel attacks Niz. [<span class="fore12">1</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Niz
+</span>Vane starts casting an offensive spell.
+Fara trots in from elsewhere.
+Krecik starts casting an offensive spell.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><span class="fore14">
+</span>It's hot out here.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Fara starts casting a spell.
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>You start chanting...
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; </span><span class="fore14">
+</span>Vane <span
+class="fore15">completes her spell...
+</span>Vane utters the words 'buoblg qrunsoqpze yugh'
+<span
+class="fore13">Vane's spell flows around A </span><span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span><span class="fore13">, leaving him unharmed!
+</span>Krecik <span
+class="fore15">completes his spell...
+</span>Krecik utters the word 'pawwzf'
+Krecik creates a <span
+class="fore9">hammer</span> out of thin air that smashes into Vane, bits of <span
+class="fore6">flesh</span> and <span class="fore15">bone</span> fly everywhere!
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore3">Niz tells your guild '</span><span
+class="fore11">(Horsehung) own lich</span><span class="fore3">'
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> attacks Niz. [<span
+class="fore12">0</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Niz
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Casting: creeping doom *
+The wraith of <span
+class="fore4">a guard of Nizari</span> snaps into visibility.
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel attacks Niz. [<span class="fore12">1</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Niz
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Fara <span
+class="fore15">completes his spell...
+</span>Fara utters the word 'gjifal'
+<span class="fore15">Fara unleashes </span><span
+class="fore14">light</span><span class="fore15"> in a focused, searing </span><span
+class="fore14">ray</span><span class="fore15"> at A </span><span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span>!
+
+<span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Vane starts casting an offensive spell.
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> clambers to his feet.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>Niz attacks A <span class="fore8">L</span><span
+class="fore5">ic</span><span class="fore8">h</span>. [<span class="fore12">3</span> hits]
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> attempts to flee.
+A <span
+class="fore8">L</span><span class="fore5">ic</span><span class="fore8">h</span> leaves west.
+Krecik leaves west.
+A <span
+class="fore15">Pha</span><span class="fore8">ntom</span> leaves west.
+A <span class="fore15">Pha</span><span
+class="fore8">ntom</span> leaves west.
+A <span class="fore15">Pha</span><span class="fore8">ntom</span> leaves west.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore11">You failed.
+</span><span
+class="fore4">You abort your prayer before it's done!
+
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span
+class="fore3">Pos:</span><span class="fore2"> standing &gt;
+&lt;&gt; 
+</span><span class="fore4">Vane stops invoking abruptly!
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>The vampire of a <span class="fore4">Crimson Watch </span>sentinel attacks Niz. [<span
+class="fore12">2</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Niz
+
+</span><span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span>The wraith of <span class="fore4">a guard of Nizari</span> attacks Niz. [<span
+class="fore12">0</span> hits]
+<span class="fore11">-=-=-=-= Now Tanking: Niz
+</span>The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel is burned severely as it hits Niz!
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel is burned severely as it hits Niz!
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel attacks Niz. [<span class="fore12">2</span> hits]
+<span
+class="fore11">-=-=-=-= Now Tanking: Niz
+</span>The vampire of a <span class="fore4">Crimson Watch </span>sentinel's <span
+class="fore4">eyes</span> glow <span class="fore12">red</span> as it gazes at Niz!
+<span
+class="fore14">
+</span><span class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span> 
+                <span class="fore0"><span
+class="back2">********</span></span><span class="fore6"><span class="back0">MMM     </span></span> 
+              <span
+class="fore8">+</span><span class="fore0"><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MMMM</span></span><span class="fore9"><span class="back1">  </span></span>    
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">********</span></span><span class="fore6"><span
+class="back0">MMM</span></span><span class="fore9"><span class="back1">    </span></span>   
+             <span
+class="fore0"><span class="back2">*</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back2">*********</span></span><span class="fore6"><span
+class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>   
+            <span
+class="fore0"><span class="back2">**</span></span><span class="fore8"><span class="back0">+</span></span><span
+class="fore0"><span class="back7">^</span><span class="back2">********</span></span><span
+class="fore6"><span class="back0">MM</span></span><span class="fore9"><span class="back1">     </span></span>  
+            <span
+class="fore8">+++++++</span><span class="fore15"><blink>P</blink></span><span class="fore8">+</span><span
+class="fore15">@</span><span class="fore0"><span class="back7">^</span><span class="back2">**</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>  
+            <span
+class="fore0"><span class="back2">**********</span></span><span class="fore6"><span
+class="back0">MM</span></span><span class="fore0"><span class="back7">^</span></span><span
+class="fore6"><span class="back0">M</span></span><span class="fore9"><span class="back1">     </span></span>  
+             <span
+class="fore0"><span class="back2">************</span></span><span class="fore9"><span
+class="back1">     </span></span>   
+             <span class="fore0"><span class="back2">***********</span></span><span
+class="fore9"><span class="back1">      </span></span>   
+              <span class="fore0"><span
+class="back2">*********</span></span><span class="fore9"><span class="back1">      </span></span>    
+                <span
+class="fore9"><span class="back1">           </span></span>      
+<span class="fore6">An Old Dirt Path
+</span><span
+class="fore2">Obvious exits:</span> <span class="fore3">-E</span> <span class="fore3">-S</span> <span
+class="fore3">-W
+</span><span class="fore4">Puddles of blood cover the ground.</span> 
+Fara (<span
+class="fore2">Cen</span><span class="fore8">taur</span>)(huge) stands in mid-air here.
+Vane (<span
+class="fore3">Grey Elf</span>)(small)(<span class="fore12">F</span>) stands in mid-air here.
+Kema (<span
+class="fore3">Grey Elf</span>)(medium)(<span class="fore9">B</span>) stands in mid-air here.
+Niz (<span
+class="fore15">S</span>t<span class="fore15">o</span>r<span class="fore15">m </span>G<span
+class="fore15">i</span>a<span class="fore15">nt</span>)(large)(<span class="fore12">F</span>) stands in mid-air here.
+The wraith of <span
+class="fore4">a guard of Nizari</span>(<span class="fore12">F</span>) stands in mid-air here, fighting Niz.
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel(<span class="fore12">F</span>) stands in mid-air here, fighting Niz.
+The vampire of a <span
+class="fore4">Crimson Watch </span>sentinel(<span class="fore12">F</span>) stands in mid-air here, fighting Niz.
+
+<span
+class="fore2">&lt; 715h/715H 140v/140V </span><span class="fore3">Pos:</span><span
+class="fore2"> standing &gt;
+&lt;&gt; 
+</span></pre>
+    <p><!-- The HTML specification states that closing the BODY and HTML elements is optional.
+I have chosen to leave them out in order to more easily support appending to logs.
+See http://www.w3.org/TR/1998/REC-html40-19980424/struct/global.html#h-7.3 --> </td>
+  </tr>
+</table>
+
+<p><font color="#FF0000"><a
+href="http://www.darkward.com/modules.php?name=Content&amp;pa=showpage&amp;pid=5">Back to
+Index of Duris Mud Logs</a></font></p>
+</body>
+</html>

@@ -1,0 +1,162 @@
+BODY {color:#C0C0C0; background-color: #000000}
+.ab {background-color: #000000}
+.ac {background-color: #800000}
+.ad {background-color: #008000}
+.ae {background-color: #808000}
+.af {background-color: #000080}
+.ag {background-color: #800080}
+.ah {background-color: #008080}
+.ai {background-color: #C0C0C0}
+.ba {color: #000000}
+.ca {color: #800000}
+.da {color: #008000}
+.ea {color: #808000}
+.fa {color: #000080}
+.ga {color: #800080}
+.ha {color: #008080}
+.ia {color: #C0C0C0}
+.ja {color: #808080}
+.ka {color: #FF0000}
+.la {color: #00FF00}
+.ma {color: #FFFF00}
+.na {color: #0000FF}
+.oa {color: #FF00FF}
+.pa {color: #00FFFF}
+.qa {color: #FFFFFF}
+.ra {color: #FFFFFF}
+.bb {color: #000000; background-color: #000000}
+.cb {color: #800000; background-color: #000000}
+.db {color: #008000; background-color: #000000}
+.eb {color: #808000; background-color: #000000}
+.fb {color: #000080; background-color: #000000}
+.gb {color: #800080; background-color: #000000}
+.hb {color: #008080; background-color: #000000}
+.ib {color: #C0C0C0; background-color: #000000}
+.jb {color: #808080; background-color: #000000}
+.kb {color: #FF0000; background-color: #000000}
+.lb {color: #00FF00; background-color: #000000}
+.mb {color: #FFFF00; background-color: #000000}
+.nb {color: #0000FF; background-color: #000000}
+.ob {color: #FF00FF; background-color: #000000}
+.pb {color: #00FFFF; background-color: #000000}
+.qb {color: #FFFFFF; background-color: #000000}
+.rb {color: #FFFFFF; background-color: #000000}
+.bc {color: #000000; background-color: #800000}
+.cc {color: #800000; background-color: #800000}
+.dc {color: #008000; background-color: #800000}
+.ec {color: #808000; background-color: #800000}
+.fc {color: #000080; background-color: #800000}
+.gc {color: #800080; background-color: #800000}
+.hc {color: #008080; background-color: #800000}
+.ic {color: #C0C0C0; background-color: #800000}
+.jc {color: #808080; background-color: #800000}
+.kc {color: #FF0000; background-color: #800000}
+.lc {color: #00FF00; background-color: #800000}
+.mc {color: #FFFF00; background-color: #800000}
+.nc {color: #0000FF; background-color: #800000}
+.oc {color: #FF00FF; background-color: #800000}
+.pc {color: #00FFFF; background-color: #800000}
+.qc {color: #FFFFFF; background-color: #800000}
+.rc {color: #FFFFFF; background-color: #800000}
+.bd {color: #000000; background-color: #008000}
+.cd {color: #800000; background-color: #008000}
+.dd {color: #008000; background-color: #008000}
+.ed {color: #808000; background-color: #008000}
+.fd {color: #000080; background-color: #008000}
+.gd {color: #800080; background-color: #008000}
+.hd {color: #008080; background-color: #008000}
+.id {color: #C0C0C0; background-color: #008000}
+.jd {color: #808080; background-color: #008000}
+.kd {color: #FF0000; background-color: #008000}
+.ld {color: #00FF00; background-color: #008000}
+.md {color: #FFFF00; background-color: #008000}
+.nd {color: #0000FF; background-color: #008000}
+.od {color: #FF00FF; background-color: #008000}
+.pd {color: #00FFFF; background-color: #008000}
+.qd {color: #FFFFFF; background-color: #008000}
+.rd {color: #FFFFFF; background-color: #008000}
+.be {color: #000000; background-color: #808000}
+.ce {color: #800000; background-color: #808000}
+.de {color: #008000; background-color: #808000}
+.ee {color: #808000; background-color: #808000}
+.fe {color: #000080; background-color: #808000}
+.ge {color: #800080; background-color: #808000}
+.he {color: #008080; background-color: #808000}
+.ie {color: #C0C0C0; background-color: #808000}
+.je {color: #808080; background-color: #808000}
+.ke {color: #FF0000; background-color: #808000}
+.le {color: #00FF00; background-color: #808000}
+.me {color: #FFFF00; background-color: #808000}
+.ne {color: #0000FF; background-color: #808000}
+.oe {color: #FF00FF; background-color: #808000}
+.pe {color: #00FFFF; background-color: #808000}
+.qe {color: #FFFFFF; background-color: #808000}
+.re {color: #FFFFFF; background-color: #808000}
+.bf {color: #000000; background-color: #000080}
+.cf {color: #800000; background-color: #000080}
+.df {color: #008000; background-color: #000080}
+.ef {color: #808000; background-color: #000080}
+.ff {color: #000080; background-color: #000080}
+.gf {color: #800080; background-color: #000080}
+.hf {color: #008080; background-color: #000080}
+.if {color: #C0C0C0; background-color: #000080}
+.jf {color: #808080; background-color: #000080}
+.kf {color: #FF0000; background-color: #000080}
+.lf {color: #00FF00; background-color: #000080}
+.mf {color: #FFFF00; background-color: #000080}
+.nf {color: #0000FF; background-color: #000080}
+.of {color: #FF00FF; background-color: #000080}
+.pf {color: #00FFFF; background-color: #000080}
+.qf {color: #FFFFFF; background-color: #000080}
+.rf {color: #FFFFFF; background-color: #000080}
+.bg {color: #000000; background-color: #800080}
+.cg {color: #800000; background-color: #800080}
+.dg {color: #008000; background-color: #800080}
+.eg {color: #808000; background-color: #800080}
+.fg {color: #000080; background-color: #800080}
+.gg {color: #800080; background-color: #800080}
+.hg {color: #008080; background-color: #800080}
+.ig {color: #C0C0C0; background-color: #800080}
+.jg {color: #808080; background-color: #800080}
+.kg {color: #FF0000; background-color: #800080}
+.lg {color: #00FF00; background-color: #800080}
+.mg {color: #FFFF00; background-color: #800080}
+.ng {color: #0000FF; background-color: #800080}
+.og {color: #FF00FF; background-color: #800080}
+.pg {color: #00FFFF; background-color: #800080}
+.qg {color: #FFFFFF; background-color: #800080}
+.rg {color: #FFFFFF; background-color: #800080}
+.bh {color: #000000; background-color: #008080}
+.ch {color: #800000; background-color: #008080}
+.dh {color: #008000; background-color: #008080}
+.eh {color: #808000; background-color: #008080}
+.fh {color: #000080; background-color: #008080}
+.gh {color: #800080; background-color: #008080}
+.hh {color: #008080; background-color: #008080}
+.ih {color: #C0C0C0; background-color: #008080}
+.jh {color: #808080; background-color: #008080}
+.kh {color: #FF0000; background-color: #008080}
+.lh {color: #00FF00; background-color: #008080}
+.mh {color: #FFFF00; background-color: #008080}
+.nh {color: #0000FF; background-color: #008080}
+.oh {color: #FF00FF; background-color: #008080}
+.ph {color: #00FFFF; background-color: #008080}
+.qh {color: #FFFFFF; background-color: #008080}
+.rh {color: #FFFFFF; background-color: #008080}
+.bi {color: #000000; background-color: #C0C0C0}
+.ci {color: #800000; background-color: #C0C0C0}
+.di {color: #008000; background-color: #C0C0C0}
+.ei {color: #808000; background-color: #C0C0C0}
+.fi {color: #000080; background-color: #C0C0C0}
+.gi {color: #800080; background-color: #C0C0C0}
+.hi {color: #008080; background-color: #C0C0C0}
+.ii {color: #C0C0C0; background-color: #C0C0C0}
+.ji {color: #808080; background-color: #C0C0C0}
+.ki {color: #FF0000; background-color: #C0C0C0}
+.li {color: #00FF00; background-color: #C0C0C0}
+.mi {color: #FFFF00; background-color: #C0C0C0}
+.ni {color: #0000FF; background-color: #C0C0C0}
+.oi {color: #FF00FF; background-color: #C0C0C0}
+.pi {color: #00FFFF; background-color: #C0C0C0}
+.qi {color: #FFFFFF; background-color: #C0C0C0}
+.ri {color: #FFFFFF; background-color: #C0C0C0}
