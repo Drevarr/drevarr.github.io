@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">    
+    <title>Drevarr.GitHub.io - DurisMUD Surface Map - Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+    html, body, #map {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    #map {
+        background: transparent;
+    }
+    .hotspot-overlay {
+        border: 2px solid #333;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        image-rendering: -webkit-optimize-contrast; /* For Safari */
+        image-rendering: crisp-edges; /* For other browsers */
+        image-rendering: pixelated; /* Fallback for pixel art */
+    }
+    .hotspot-rectangle {
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <h1>Drevarr.GitHub.io</h1>
+        <h2>a place to hold the tidbits I keep forgetting</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Drevarr" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+
+
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// Initialize Leaflet map with CRS.Simple
+var map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -1,
+    maxZoom: 2,
+    zoomControl: true,
+    attributionControl: true
+});
+
+// Image dimensions
+var imageWidth = 2298;
+var imageHeight = 2277;
+
+// Define image bounds in CRS.Simple ([y, x] format)
+var bounds = [[0, 0], [imageHeight, imageWidth]];
+
+// Add image overlay
+var imageOverlay = L.imageOverlay('./files/Sniktiorg.gif', bounds).addTo(map);
+
+// Add attribution control
+map.attributionControl.addAttribution('Duris Surface Map by -  © Your Attribution Here');
+
+// Fit map to image bounds
+map.fitBounds(bounds);
+
+// Hotspot data from <area> tags
+var hotspots = [
+    { coords: [361,153,422,177], href: './files/myrabolus.jpg', name: 'Myrabolus' },
+    { coords: [476,159,531,185], href: './files/charing.jpg', name: 'Charing' },
+    { coords: [464,187,523,220], href: './files/forgottenforest.jpg', name: 'Forgotten Forest' },
+    { coords: [369,195,435,235], href: './files/darkfall.jpg', name: 'Darkfall' },
+    { coords: [327,236,383,264], href: './files/hauntedwoods.jpg', name: 'Haunted Woods' },
+    { coords: [193,211,245,248], href: './files/arcium.jpg', name: 'Arcium' },
+    { coords: [626,230,686,273], href: './files/tos.jpg', name: 'Tos' },
+    { coords: [538,286,612,318], href: './files/longhollow.jpg', name: 'Longhollow' },
+    { coords: [428,256,481,305], href: './files/blackthorne.jpg', name: 'Blackthorne' },
+    { coords: [493,232,531,364], href: './files/darkmore.jpg', name: 'Darkmore' },
+    { coords: [346,340,417,374], href: './files/highmoor.jpg', name: 'Highmoor' },
+    { coords: [289,346,338,418], href: './files/neverwindvalley.jpg', name: 'Neverwind Valley' },
+    { coords: [340,386,403,427], href: './files/neverwinterwoods.jpg', name: 'Neverwinter Woods' },
+    { coords: [493,417,545,459], href: './files/faerierealms.jpg', name: 'Faerie Realms' },
+    { coords: [397,440,461,479], href: './files/elementalgroves.jpg', name: 'Elemental Groves' },
+    { coords: [217,433,271,503], href: './files/mir.jpg', name: 'Mir' },
+    { coords: [104,364,158,403], href: './files/towersorcery.jpg', name: 'Tower Sorcery' },
+    { coords: [84,407,135,439], href: './files/fenaline.jpg', name: 'Fenaline' },
+    { coords: [321,503,377,547], href: './files/banditcanyon.jpg', name: 'Bandit Canyon' },
+    { coords: [405,534,465,560], href: './files/meopham.jpg', name: 'Meopham' },
+    { coords: [370,585,435,618], href: './files/lylrmeop.jpg', name: 'Lylrmeop' },
+    { coords: [452,564,498,609], href: './files/brokenbladetavern.jpg', name: 'Broken Blade Tavern' },
+    { coords: [269,584,329,631], href: './files/kimordril.jpg', name: 'Kimordril' },
+    { coords: [514,587,554,623], href: './files/ugta.jpg', name: 'Ugta' },
+    { coords: [372,661,435,691], href: './files/harrow.jpg', name: 'Harrow' },
+    { coords: [226,652,300,700], href: './files/abandonedelvenhomestead.jpg', name: 'Abandoned Elven Homestead' },
+    { coords: [77,673,142,721], href: './files/MotteAndBailey.jpg', name: 'Motte and Bailey' },
+    { coords: [401,694,463,729], href: './files/GnomeHometown.jpg', name: 'Gnome Hometown' },
+    { coords: [445,732,511,763], href: './files/dumaathe.jpg', name: 'Dumaathe' },
+    { coords: [323,730,375,769], href: './files/outcasttower.jpg', name: 'Outcast Tower' },
+    { coords: [190,742,262,778], href: './files/newhaven.jpg', name: 'Newhaven' },
+    { coords: [562,647,616,690], href: './files/shadowclave.jpg', name: 'Shadowclave' },
+    { coords: [616,631,668,678], href: './files/banditcamp.jpg', name: 'Bandit Camp' },
+    { coords: [738,597,777,629], href: './files/salol.jpg', name: 'Salol' },
+    { coords: [783,614,818,640], href: './files/akovillage.jpg', name: 'Ako Village' },
+    { coords: [777,657,843,689], href: './files/canderthalharbor.jpg', name: 'Canderthal Harbor' },
+    { coords: [718,680,775,719], href: './files/valleyofcrushk.jpg', name: 'Valley of Crushk' },
+    { coords: [607,733,657,775], href: './files/Cloud_giant_kingdom.jpg', name: 'Cloud Giant Kingdom' },
+    { coords: [517,831,566,872], href: './files/goldenhalls.jpg', name: 'Golden Halls' },
+    { coords: [452,801,503,846], href: './files/tentro.jpg', name: 'Tentro' },
+    { coords: [301,810,373,844], href: './files/Skelenak.jpg', name: 'Skelenak' },
+    { coords: [204,838,257,874], href: './files/twintowers.jpg', name: 'Twin Towers' },
+    { coords: [126,890,180,937], href: './files/vellasbordello.jpg', name: 'Vellas Bordello' },
+    { coords: [51,1008,120,1043], href: './files/Tharnadia.jpg', name: 'Tharnadia' },
+    { coords: [196,1108,270,1172], href: './files/fogenshroudedwoods.jpg', name: 'Fogen Shrouded Woods' },
+    { coords: [340,1053,409,1095], href: './files/jennas.jpg', name: 'Jennas' },
+    { coords: [330,969,395,1012], href: './files/fishermanswarf.jpg', name: 'Fishermans Wharf' },
+    { coords: [350,887,413,913], href: './files/savannah.jpg', name: 'Savannah' },
+    { coords: [403,1179,463,1214], href: './files/torhan.jpg', name: 'Torhan' },
+    { coords: [486,1201,555,1239], href: './files/cimmeriannomads.jpg', name: 'Cimmerian Nomads' },
+    { coords: [594,1132,637,1173], href: './files/pitlions.jpg', name: 'Pit Lions' },
+    { coords: [688,1101,733,1130], href: './files/Nizari.png', name: 'Nizari' },
+    { coords: [632,1031,690,1064], href: './files/wemics.jpg', name: 'Wemics' },
+    { coords: [579,960,628,993], href: './files/twistedwoods.jpg', name: 'Twisted Woods' },
+    { coords: [576,1006,634,1034], href: './files/woodseer.jpg', name: 'Woodseer' },
+    { coords: [633,981,694,1011], href: './files/rift.jpg', name: 'Rift' },
+    { coords: [702,951,757,994], href: './files/newhope.jpg', name: 'Village of New Hope' },
+    { coords: [602,860,669,901], href: './files/arbresforest.jpg', name: 'Arbres Forest' },
+    { coords: [686,863,729,911], href: './files/pitofcerebus.jpg', name: 'Pit of Cerebus' },
+    { coords: [743,864,823,902], href: './files/desolate.jpg', name: 'Desolate' },
+    { coords: [139,1236,202,1277], href: './files/turolopolis.jpg', name: 'Turolopolis' },
+    { coords: [96,1321,156,1360], href: './files/farseeroutpost.jpg', name: 'Farseer Outpost' },
+    { coords: [74,1236,127,1276], href: './files/lareth.jpg', name: 'Lareth' },
+    { coords: [678,364,755,405], href: './files/shaledrieth.jpg', name: 'Shaledrieth' },
+    { coords: [19,781,103,822], href: './files/tt.jpg', name: 'Tt' },
+    { coords: [18,830,103,866], href: './files/moonshae.jpg', name: 'Moonshae' },
+    { coords: [308,1452,384,1491], href: './files/strathorvalley.jpg', name: 'Strathor Valley' },
+    { coords: [234,1520,292,1551], href: './files/khhiytik.jpg', name: 'Khhiytik' },
+    { coords: [254,1626,325,1652], href: './files/mosswood.jpg', name: 'Mosswood' },
+    { coords: [278,1657,328,1684], href: './files/basinwastes.jpg', name: 'Basin Wastes' },
+    { coords: [479,1614,533,1654], href: './files/tribaloasis.jpg', name: 'Tribal Oasis' },
+    { coords: [535,1519,594,1559], href: './files/asunwajaguar.jpg', name: 'Asunwa Jaguar' },
+    { coords: [329,1678,368,1717], href: './files/divinehome.jpg', name: 'Divine Home' },
+    { coords: [355,1719,405,1754], href: './files/khazanjungle.jpg', name: 'Khazan Jungle' },
+    { coords: [406,1761,450,1790], href: './files/aravne.jpg', name: 'Aravne' },
+    { coords: [439,1806,510,1842], href: './files/battlefields.jpg', name: 'Battlefields' },
+    { coords: [245,1754,295,1792], href: './files/jindoniumcarnival.jpg', name: 'Jindonium Carnival' },
+    { coords: [165,1732,237,1776], href: './files/harpysettlement.jpg', name: 'Harpy Settlement' },
+    { coords: [133,1831,209,1867], href: './files/naxvaran.jpg', name: 'Naxvaran' },
+    { coords: [149,1882,213,1920], href: './files/villageofrefugees.jpg', name: 'Village of Refugees' },
+    { coords: [213,1945,265,1989], href: './files/opalphoenix.jpg', name: 'Opal Phoenix' },
+    { coords: [298,1883,345,1928], href: './files/shadowforest.jpg', name: 'Shadow Forest' },
+    { coords: [369,1886,419,1927], href: './files/halfcuthills.jpg', name: 'Halfcut Hills' },
+    { coords: [340,1936,383,1979], href: './files/tribalforest.jpg', name: 'Tribal Forest' },
+    { coords: [60,1883,129,1928], href: './files/trakkiamountains.jpg', name: 'Trakkia Mountains' },
+    { coords: [60,2024,136,2070], href: './files/mistychasm.jpg', name: 'Misty Chasm' },
+    { coords: [438,2164,517,2208], href: './files/mitashi.jpg', name: 'Mitashi' },
+    { coords: [535,2090,607,2123], href: './files/jadeempire.jpg', name: 'Jade Empire' },
+    { coords: [479,2080,534,2120], href: './files/ricefields.jpg', name: 'Rice Fields' },
+    { coords: [509,2048,588,2076], href: './files/oberon.jpg', name: 'Oberon' },
+    { coords: [850,1984,912,2024], href: './files/quietusquay.jpg', name: 'Quietus Quay' },
+    { coords: [774,1931,845,1970], href: './files/malchhorgani.jpg', name: 'Malchhorgani' },
+    { coords: [740,1853,817,1885], href: './files/moregeeth.jpg', name: 'Moregeeth' },
+    { coords: [689,1767,761,1809], href: './files/kobold_settlement.jpg', name: 'Kobold Settlement' },
+    { coords: [924,1846,975,1892], href: './files/trollhills.jpg', name: 'Troll Hills' },
+    { coords: [907,1774,954,1821], href: './files/trollcaves.jpg', name: 'Troll Caves' },
+    { coords: [790,1692,855,1741], href: './files/thurguraxport.jpg', name: 'Thurgurax Port' },
+    { coords: [961,1694,1013,1744], href: './files/goblincamp.jpg', name: 'Goblin Camp' },
+    { coords: [1030,1651,1097,1693], href: './files/smokeveilforest.jpg', name: 'Smokeveil Forest' },
+    { coords: [1145,1714,1248,1766], href: './files/krethikkeep.jpg', name: 'Krethik Keep' },
+    { coords: [1097,1931,1154,1968], href: './files/deepanddarkhole.jpg', name: 'Deep and Dark Hole' },
+    { coords: [1184,2014,1240,2060], href: './files/knightstest.jpg', name: 'Knights Test' },
+    { coords: [1175,1936,1241,1991], href: './files/kvarkstunnels.jpg', name: 'Kvarks Tunnels' },
+    { coords: [1202,1895,1285,1926], href: './files/moriashaft.jpg', name: 'Moria Shaft' },
+    { coords: [1305,1809,1367,1848], href: './files/arliksinn.jpg', name: 'Arliks Inn' },
+    { coords: [1265,1947,1337,1994], href: './files/clavikordswamp.jpg', name: 'Clavikord Swamp' },
+    { coords: [1339,1930,1409,1967], href: './files/skulldrach.jpg', name: 'Skulldrach' },
+    { coords: [1294,1598,1358,1643], href: './files/orrak.jpg', name: 'Orrak' },
+    { coords: [1336,1716,1388,1766], href: './files/wormcrater.jpg', name: 'Worm Crater' },
+    { coords: [1413,1697,1474,1740], href: './files/templeoflizizania.jpg', name: 'Temple of Lizizania' },
+    { coords: [1379,1584,1438,1614], href: './files/vargan.jpg', name: 'Vargan' },
+    { coords: [1446,1623,1502,1670], href: './files/kingdomoftorg.jpg', name: 'Kingdom of Torg' },
+    { coords: [1481,1974,1551,2019], href: './files/prisonsofcarthapia.jpg', name: 'Prisons of Carthapia' },
+    { coords: [1596,1989,1668,2023], href: './files/stormportstronghold.jpg', name: 'Stormport Stronghold' },
+    { coords: [1627,1916,1692,1948], href: './files/fieldsbetween.jpg', name: 'Fields Between' },
+    { coords: [1635,1861,1702,1898], href: './files/ceothia.jpg', name: 'Ceothia' },
+    { coords: [1551,1790,1639,1831], href: './files/Sarmiz.jpg', name: 'Sarmiz' },
+    { coords: [1517,1508,1591,1562], href: './files/bloodstonekeep.jpg', name: 'Bloodstone Keep' },
+    { coords: [1411,1465,1471,1522], href: './files/villageofthedamned.jpg', name: 'Village of the Damned' },
+    { coords: [1653,1523,1703,1558], href: './files/urds.jpg', name: 'Urds' },
+    { coords: [1425,1376,1484,1418], href: './files/drustls.jpg', name: 'Drustls' },
+    { coords: [1535,1285,1605,1322], href: './files/bugentolen.jpg', name: 'Bugentolen' },
+    { coords: [1709,1263,1761,1308], href: './files/splitshield.jpg', name: 'Split Shield' },
+    { coords: [1605,1425,1673,1457], href: './files/faang.jpg', name: 'Faang' },
+    { coords: [1738,1751,1836,1799], href: './files/lostrealmsofshadowfall.jpg', name: 'Lost Realms of Shadowfall' },
+    { coords: [1743,1598,1818,1669], href: './files/barrowofthequiosho.jpg', name: 'Barrow of the Quiosho' },
+    { coords: [1858,1566,1912,1605], href: './files/shadowswamp.jpg', name: 'Shadow Swamp' },
+    { coords: [1759,1338,1816,1380], href: './files/ogreraiders.jpg', name: 'Ogre Raiders' },
+    { coords: [1884,1260,1946,1300], href: './files/stormport.jpg', name: 'Stormport' },
+    { coords: [1686,1196,1738,1235], href: './files/shadygrove.jpg', name: 'Shady Grove' },
+    { coords: [2120,2073,2200,2127], href: './files/dragonnia.jpg', name: 'Dragonnia' },
+    { coords: [1906,888,1991,933], href: './files/mountbanishment.jpg', name: 'Mount Banishment' },
+    { coords: [1813,883,1875,925], href: './files/fortboyard.jpg', name: 'Fort Boyard' },
+    { coords: [1821,813,1879,851], href: './files/seacaves.jpg', name: 'Sea Caves' },
+    { coords: [1015,1405,1077,1451], href: './files/headlesshorde.jpg', name: 'Headless Horde' },
+    { coords: [1167,1394,1224,1437], href: './files/vencastomb.jpg', name: 'Vencas Tomb' },
+    { coords: [948,1312,1011,1356], href: './files/undeadoutpost.jpg', name: 'Undead Outpost' },
+    { coords: [1050,1331,1119,1379], href: './files/oldgraveyard.jpg', name: 'Old Graveyard' },
+    { coords: [1174,1353,1243,1391], href: './files/behemothherders.jpg', name: 'Behemoth Herders' },
+    { coords: [1242,1267,1310,1316], href: './files/forgottenmansion.jpg', name: 'Forgotten Mansion' },
+    { coords: [1127,1249,1180,1291], href: './files/templeoffire.jpg', name: 'Temple of Fire' },
+    { coords: [954,1247,1011,1295], href: './files/killingfields.jpg', name: 'Killing Fields' },
+    { coords: [1029,1196,1065,1245], href: './files/newcavecity.jpg', name: 'New Cave City' },
+    { coords: [1096,1205,1157,1239], href: './files/cyricstunnels.jpg', name: 'Cyrics Tunnels' },
+    { coords: [1348,1196,1403,1241], href: './files/keepofevil.jpg', name: 'Keep of Evil' },
+    { coords: [1217,1179,1287,1222], href: './files/nynethsstronghold.jpg', name: 'Nyneths Stronghold' },
+    { coords: [1147,1158,1199,1197], href: './files/obsidiancitadel.jpg', name: 'Obsidian Citadel' },
+    { coords: [1095,1119,1156,1159], href: './files/tunnelsofpayang.jpg', name: 'Tunnels of Payang' },
+    { coords: [1021,1104,1074,1151], href: './files/cursedbridge.jpg', name: 'Cursed Bridge' },
+    { coords: [908,1091,978,1125], href: './files/scorched.jpg', name: 'Scorched' },
+    { coords: [1100,1008,1150,1061], href: './files/undeadfog.jpg', name: 'Undead Fog' },
+    { coords: [1193,1005,1245,1053], href: './files/undeadmaze.jpg', name: 'Undead Maze' },
+    { coords: [1313,1138,1383,1175], href: './files/varathornkeep.jpg', name: 'Varathorn Keep' },
+    { coords: [1306,1038,1365,1096], href: './files/magmapath.jpg', name: 'Magma Path' },
+    { coords: [1210,856,1281,897], href: './files/tikitzopl.jpg', name: 'Tikitzopl' },
+    { coords: [1391,1081,1443,1133], href: './files/tezcatlipoca.jpg', name: 'Tezcatlipoca' },
+    { coords: [1237,953,1290,989], href: './files/collapsedtower.jpg', name: 'Collapsed Tower' },
+    { coords: [1296,910,1346,959], href: './files/lavasprings.jpg', name: 'Lava Springs' },
+    { coords: [1129,1303,1177,1348], href: './files/lavatube.jpg', name: 'Lava Tube' },
+    { coords: [1146,1794,1228,1840], href: './files/trollmercenary.jpg', name: 'Troll Mercenary' },
+    { coords: [1608,1595,1668,1638], href: './files/goatpath.jpg', name: 'Goat Path' },
+    { coords: [1454,1544,1504,1608], href: './files/mountaintracts.jpg', name: 'Mountain Tracts' },
+    { coords: [1851,1437,1896,1484], href: './files/wargravine.jpg', name: 'Wargravine' },
+    { coords: [1882,1336,1944,1377], href: './files/orctradepath.jpg', name: 'Orc Trade Path' },
+    { coords: [1811,1276,1860,1335], href: './files/stagforest.jpg', name: 'Stag Forest' },
+    { coords: [1861,712,1941,757], href: './files/menden.jpg', name: 'Menden' },
+    { coords: [1898,564,1961,620], href: './files/barbarianfishingvillage.jpg', name: 'Barbarian Fishing Village' },
+    { coords: [1799,596,1874,637], href: './files/iceforest.jpg', name: 'Ice Forest' },
+    { coords: [1956,523,2042,559], href: './files/tundra.jpg', name: 'Tundra' },
+    { coords: [1620,561,1724,606], href: './files/teka.jpg', name: 'Teka' },
+    { coords: [1554,525,1592,585], href: './files/altarofice.jpg', name: 'Altar of Ice' },
+    { coords: [1721,498,1792,555], href: './files/cloisture.jpg', name: 'Cloisture' },
+    { coords: [1564,455,1649,492], href: './files/winterhaven.jpg', name: 'Winterhaven' },
+    { coords: [1943,434,1998,470], href: './files/breale.jpg', name: 'Breale' },
+    { coords: [1816,407,1884,454], href: './files/verspin.jpg', name: 'Verspin' },
+    { coords: [1936,370,2003,412], href: './files/werrun.jpg', name: 'Werrun' },
+    { coords: [2055,346,2110,391], href: './files/humanoutpost.jpg', name: 'Human Outpost' },
+    { coords: [1890,297,1977,348], href: './files/dayedenvale.jpg', name: 'Dayeden Vale' },
+    { coords: [1822,277,1877,328], href: './files/icetower.jpg', name: 'Ice Tower' },
+    { coords: [1717,297,1771,340], href: './files/generalstore.jpg', name: 'General Store' },
+    { coords: [1598,346,1679,400], href: './files/eternalduskchurch.jpg', name: 'Eternal Dusk Church' },
+    { coords: [1530,331,1586,380], href: './files/antforest.jpg', name: 'Ant Forest' },
+    { coords: [1460,275,1513,319], href: './files/villageofmiaeril.jpg', name: 'Village of Miaeril' },
+    { coords: [1397,271,1451,314], href: './files/alatorin.jpg', name: 'Alatorin' },
+    { coords: [1425,185,1497,220], href: './files/sevenoaks.jpg', name: 'Sevenoaks' },
+    { coords: [1556,250,1620,290], href: './files/valoisiancastle.jpg', name: 'Valoisian Castle' },
+    { coords: [1605,137,1655,185], href: './files/bonefortinn.jpg', name: 'Bonefort Inn' },
+    { coords: [1583,212,1650,244], href: './files/tzultaireruins.jpg', name: 'Tzultaire Ruins' },
+    { coords: [1515,203,1553,260], href: './files/cavernoftheroc.jpg', name: 'Cavern of the Roc' },
+    { coords: [1664,195,1704,255], href: './files/boulderlionpass.jpg', name: 'Boulder Lion Pass' },
+    { coords: [1809,199,1887,245], href: './files/cyrstalspyremountains.jpg', name: 'Cyrstal Spyre Mountains' },
+    { coords: [1949,235,2020,275], href: './files/losttempleofthenorth.jpg', name: 'Lost Temple of the North' },
+    { coords: [1809,110,1871,156], href: './files/icecrag.jpg', name: 'Icecrag' },
+    { coords: [1882,122,1940,167], href: './files/lairofthewhitedragon.jpg', name: 'Lair of the White Dragon' },
+    { coords: [1939,100,2004,140], href: './files/aggressionnexus.jpg', name: 'Aggression Nexus' },
+    { coords: [1976,143,2037,167], href: './files/tchan.jpg', name: 'Tchan' },
+    { coords: [1951,170,1996,206], href: './files/glacialtunnel.jpg', name: 'Glacial Tunnel' },
+    { coords: [2035,214,2113,276], href: './files/corsairsnexus.jpg', name: 'Corsairs Nexus' },
+    { coords: [1066,207,1149,245], href: './files/apocolypsecastle.jpg', name: 'Apocolypse Castle' },
+    { coords: [988,87,1057,123], href: './files/shaboath.jpg', name: 'Shaboath' },
+    { coords: [1022,134,1084,179], href: './files/shadowpass.jpg', name: 'Shadowpass' },
+    { coords: [1138,477,1205,525], href: './files/ultarium.jpg', name: 'Ultarium' },
+    { coords: [1173,538,1248,575], href: './files/githzeraistronghold.jpg', name: 'Githzerai Stronghold' },
+    { coords: [1252,567,1314,604], href: './files/rogueplains.jpg', name: 'Rogue Plains' },
+    { coords: [1236,633,1317,673], href: './files/venantrut.jpg', name: 'Venantrut' }
+];
+
+// Layer group to manage hotspots and overlays
+var hotspotLayers = L.layerGroup();
+var overlayLayers = L.layerGroup();
+var currentOverlay = null;
+
+// Layer control
+var layerControl = L.control.layers({}, {}).addTo(map);
+
+// Function to load image and get dimensions
+function loadImage(src) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => resolve({ width: img.naturalWidth, height: img.naturalHeight });
+        img.onerror = () => reject(new Error(`Failed to load image: ${src}`));
+    });
+}
+
+// Process hotspots asynchronously
+async function processHotspots() {
+    for (let index = 0; index < hotspots.length; index++) {
+        const hotspot = hotspots[index];
+        const coords = hotspot.coords; // [x1, y1, x2, y2]
+        // Convert to Leaflet bounds [[imageHeight - y1, x1], [imageHeight - y2, x2]]
+        const rectBounds = [[imageHeight - coords[1], coords[0]], [imageHeight - coords[3], coords[2]]];
+        
+        const layer = L.rectangle(rectBounds, {
+            color: 'transparent',
+            weight: 2,
+            fillOpacity: 0.2,
+            className: 'hotspot-rectangle',
+            zIndex: 100
+        });
+
+        // Load image to get dimensions
+        let imgDimensions;
+        try {
+            imgDimensions = await loadImage(hotspot.href);
+        } catch (error) {
+            console.error(error);
+            imgDimensions = { width: 400, height: 300 }; // Fallback dimensions
+        }
+
+        // Calculate overlay size respecting aspect ratio
+        const maxWidth = 400;
+        const maxHeight = 300;
+        let displayWidth = imgDimensions.width;
+        let displayHeight = imgDimensions.height;
+
+        // Scale down if necessary while preserving aspect ratio
+        const aspectRatio = displayWidth / displayHeight;
+        if (displayWidth > maxWidth) {
+            displayWidth = maxWidth;
+            displayHeight = displayWidth / aspectRatio;
+        }
+        if (displayHeight > maxHeight) {
+            displayHeight = maxHeight;
+            displayWidth = displayHeight * aspectRatio;
+        }
+
+        // Calculate overlay position (place image to the right of the rectangle)
+        const overlayBounds = [
+            [imageHeight - coords[1], coords[2] + 10], // Top-right corner
+            [imageHeight - coords[1] - displayHeight, coords[2] + 10 + displayWidth] // Bottom-left corner
+        ];
+
+        // Create image overlay
+        const imageOverlay = L.imageOverlay(hotspot.href, overlayBounds, {
+            className: 'hotspot-overlay',
+            zIndex: 200
+        });
+
+	// Open a new tab showing the image as a CRS.Simple map
+	layer.on('click', function() {
+	    const viewerUrl = `hotspot_viewer.html?img=${encodeURIComponent(hotspot.href)}&title=${encodeURIComponent(hotspot.name || hotspot.title || 'Hotspot')}`;
+	    window.open(viewerUrl, '_blank');
+	});
+
+        // Add layer to hotspot group
+        layer.addTo(hotspotLayers);
+
+        // Add to layer control
+        layerControl.addOverlay(layer, hotspot.name || 'Hotspot ' + (index + 1));
+    }
+
+    // Add layers to map
+    hotspotLayers.addTo(map);
+    overlayLayers.addTo(map);
+}
+
+// Run hotspot processing
+processHotspots().catch(error => console.error('Error processing hotspots:', error));
+</script>
+</body>
+</html>
