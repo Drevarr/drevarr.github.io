@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">    
+    <title>Drevarr.GitHub.io - DurisMUD Underdark Map - Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+    html, body, #map {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    #map {
+        background: transparent;
+    }
+    .hotspot-overlay {
+        border: 2px solid #333;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        image-rendering: -webkit-optimize-contrast; /* For Safari */
+        image-rendering: crisp-edges; /* For other browsers */
+        image-rendering: pixelated; /* Fallback for pixel art */
+    }
+    .hotspot-rectangle {
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <h1>Drevarr.GitHub.io</h1>
+        <h2>a place to hold the tidbits I keep forgetting</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Drevarr" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+
+
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// Initialize Leaflet map with CRS.Simple
+var map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -2,
+    maxZoom: 4,
+    zoomControl: true,
+    attributionControl: true
+});
+
+// Image dimensions
+var imageWidth = 2000;
+var imageHeight = 1000;
+
+// Define image bounds in CRS.Simple ([y, x] format)
+var bounds = [[0, 0], [imageHeight, imageWidth]];
+
+// Add image overlay
+var imageOverlay = L.imageOverlay('./files/ThionorUnderdark.jpg', bounds).addTo(map);
+
+// Add attribution control
+map.attributionControl.addAttribution('Duris Underdark Map by - Thionor');
+
+// Fit map to image bounds
+map.fitBounds(bounds);
+
+// Hotspot data from <area> tags
+var hotspots = [
+	{ coords: [190,51,269,90], href: './files/GnomeHometown.jpg', name: 'AshrumiteVillage' },
+	{ coords: [145,116,214,167], href: './files/Skelenak2015.jpg', name: 'MountSkelenak' },
+	{ coords: [19,122,82,188], href: './files/Underworld-b.webp', name: 'Underworld' },
+	{ coords: [58,287,127,341], href: './files/Underworld-b.webp', name: 'UnderworldB' },
+	{ coords: [316,212,451,254], href: './files/goldenhalls.jpg', name: 'GoldenHalls' },
+	{ coords: [640,116,712,155], href: './files/obsidiancitadel.jpg', name: 'TheObsidianCitadel' },
+	{ coords: [502,251,565,305], href: './files/newcavecity.jpg', name: 'NewCaveCity' },
+	{ coords: [568,296,619,353], href: './files/MagmaShaft', name: 'MagmaShaft' },
+	{ coords: [720,218,777,260], href: './files/Behemoth', name: 'BehemothHerders' },
+	{ coords: [759,293,828,329], href: './files/UD_Krakens', name: 'Krakens' },
+	{ coords: [849,239,909,275], href: './files/drustls.jpg', name: 'Drustl%27sYerdoniaEnslaved' },
+	{ coords: [756,383,828,440], href: './files/RoperDen', name: 'RoperDen' },
+	{ coords: [888,356,981,404], href: './files/kobold_settlement.jpg', name: 'koboldSettlement' },
+	{ coords: [655,422,733,488], href: './files/shaboath.jpg', name: 'Shaboath' },
+	{ coords: [687,773,762,824], href: './files/kelek.jpg', name: 'StoneTombofKelek' },
+	{ coords: [651,656,735,701], href: './files/File:Truktakyago.png', name: 'Truktakyago' },
+	{ coords: [753,650,813,698], href: './files/Morgs_place.jpg', name: 'Morg%27sPlace' },
+	{ coords: [789,704,843,749], href: './files/quietusquay.jpg', name: 'QuietusQuay' },
+	{ coords: [874,560,958,593], href: './files/Myconid_mushroom_forest.jpg', name: 'MyconidForest' },
+	{ coords: [1096,537,1183,567], href: './files/faang.jpg', name: 'Faang-OgreHometown' },
+	{ coords: [916,670,994,709], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [901,474,979,513], href: './files/Planitude.webp', name: 'Planitude' },
+	{ coords: [799,615,874,640], href: './files/The_gaggajobo_cave_system.webp', name: 'TheGagga%27JoboCaveSystem' },
+	{ coords: [835,756,901,804], href: './files/UD_mf', name: 'mf' },
+	{ coords: [1133,666,1214,711], href: './files/Labyrynth_of_no_return.webp', name: 'Labyrinth' },
+	{ coords: [1040,570,1130,600], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [1219,617,1300,653], href: './files/Ixxillikor.webp', name: 'Ixxillikor' },
+	{ coords: [1309,602,1393,644], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [1490,761,1568,797], href: './files/drst.jpg', name: 'Drst' },
+	{ coords: [1106,359,1175,395], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [1403,612,1505,641], href: './files/Khildarak.webp', name: 'Khildarak' },
+	{ coords: [1634,569,1745,614], href: './files/Gibberlings.webp', name: 'Gibberlings' },
+	{ coords: [1061,416,1130,449], href: './files/Mountain_tracks.jpg', name: 'Untamed' },
+	{ coords: [1445,515,1499,554], href: './files/Lair_of_the_purple_worm.webp', name: 'PurpleWorm' },
+	{ coords: [1265,302,1355,344], href: './files/Treasure_caves.webp', name: 'TreasureCaves' },
+	{ coords: [1583,678,1688,720], href: './files/Lair_of_the_purple_worm.webp', name: 'PurpleWorms' },
+	{ coords: [1235,564,1334,600], href: './files/Myconid_mushroom_forest.jpg', name: 'Myconid' },
+	{ coords: [1397,486,1472,513], href: './files/Bogentok.jpg', name: 'CityofBogenTok' },
+	{ coords: [1241,441,1310,492], href: './files/Orog_Encampment', name: 'Orogs' },
+	{ coords: [1139,501,1214,534], href: './files/Phantasmagoric_Caverns', name: 'PhantasmagoricCaverns' },
+	{ coords: [1142,399,1211,441], href: './files/Clawed_Caverns', name: 'ClawedCaverns' },
+	{ coords: [995,456,1052,495], href: './files/Ixxillikor.webp', name: 'IXGlowfish' },
+	{ coords: [1076,459,1130,504], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [1505,525,1571,542], href: './files/Mazzolin.jpg', name: 'Mazzolin' },
+	{ coords: [1556,447,1622,486], href: './files/Buggers.webp', name: 'Buggers' },
+	{ coords: [1850,716,1943,768], href: './files/clavikordswamp.jpg', name: 'Clavikord' },
+	{ coords: [1634,408,1736,444], href: './files/Arachdrathos_guildhouses.webp', name: 'Aracdrathos' },
+	{ coords: [1466,291,1553,339], href: './files/templeofearth.jpg', name: 'ToE' },
+	{ coords: [1663,350,1718,387], href: './files/Dirk_nspire.webp', name: 'DirknSpire' },
+	{ coords: [1748,372,1811,426], href: './files/UD_Rothe', name: 'RotheHerd' },
+	{ coords: [1400,570,1511,610], href: './files/Pragtogs_domain.jpg', name: 'Pratog%27sDomain' },
+	{ coords: [1721,669,1919,714], href: './files/UD_lizardmen', name: 'Lizardmen' },
+	{ coords: [1835,462,1946,537], href: './files/UD_222', name: '222' },
+	{ coords: [1808,297,1907,351], href: './files/Shaughin_Hunting_Grounds', name: 'ShaughinHuntingGrounds' },
+	{ coords: [1820,185,1898,239], href: './files/domainoflostsouls.jpg', name: 'TheDomainofLostSouls' },
+	{ coords: [823,645,902,671], href: './files/Ghore.jpg', name: 'Ghore-TrollHometown' },
+	{ coords: [916,670,994,709], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [931,608,997,642], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [903,741,951,794], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [990,756,1042,815], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [1081,776,1155,825], href: './files/Underworld.webp', name: 'Underworld' },
+	{ coords: [1504,545,1591,566], href: './files/Shaughin_settlement.webp', name: 'TheShaughinSettlement' },
+	{ coords: [1687,313,1753,349], href: './files/faang.jpg', name: 'Faang-OgreHometown' },
+	{ coords: [1156,303,1198,354], href: './files/Arcaneum.webp', name: 'TheArcaneumofL%27srillizzin' },
+	{ coords: [1098,306,1150,354], href: './files/Mountain_tracks.jpg', name: 'Untamed' },
+	{ coords: [1023,296,1090,330], href: './files/UD_cworms', name: 'cworms' }
+];
+
+// Layer group to manage hotspots and overlays
+var hotspotLayers = L.layerGroup();
+var overlayLayers = L.layerGroup();
+var currentOverlay = null;
+
+// Layer control
+var layerControl = L.control.layers({}, {}).addTo(map);
+
+// Function to load image and get dimensions
+function loadImage(src) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => resolve({ width: img.naturalWidth, height: img.naturalHeight });
+        img.onerror = () => reject(new Error(`Failed to load image: ${src}`));
+    });
+}
+
+// Process hotspots asynchronously
+async function processHotspots() {
+    for (let index = 0; index < hotspots.length; index++) {
+        const hotspot = hotspots[index];
+        const coords = hotspot.coords; // [x1, y1, x2, y2]
+        // Convert to Leaflet bounds [[imageHeight - y1, x1], [imageHeight - y2, x2]]
+        const rectBounds = [[imageHeight - coords[1], coords[0]], [imageHeight - coords[3], coords[2]]];
+        
+        const layer = L.rectangle(rectBounds, {
+            color: 'transparent',
+            weight: 2,
+            fillOpacity: 0.2,
+            className: 'hotspot-rectangle',
+            zIndex: 100
+        });
+
+        // Load image to get dimensions
+        let imgDimensions;
+        try {
+            imgDimensions = await loadImage(hotspot.href);
+        } catch (error) {
+            console.error(error);
+            imgDimensions = { width: 400, height: 300 }; // Fallback dimensions
+        }
+
+        // Calculate overlay size respecting aspect ratio
+        const maxWidth = 400;
+        const maxHeight = 300;
+        let displayWidth = imgDimensions.width;
+        let displayHeight = imgDimensions.height;
+
+        // Scale down if necessary while preserving aspect ratio
+        const aspectRatio = displayWidth / displayHeight;
+        if (displayWidth > maxWidth) {
+            displayWidth = maxWidth;
+            displayHeight = displayWidth / aspectRatio;
+        }
+        if (displayHeight > maxHeight) {
+            displayHeight = maxHeight;
+            displayWidth = displayHeight * aspectRatio;
+        }
+
+        // Calculate overlay position (place image to the right of the rectangle)
+        const overlayBounds = [
+            [imageHeight - coords[1], coords[2] + 10], // Top-right corner
+            [imageHeight - coords[1] - displayHeight, coords[2] + 10 + displayWidth] // Bottom-left corner
+        ];
+
+        // Create image overlay
+        const imageOverlay = L.imageOverlay(hotspot.href, overlayBounds, {
+            className: 'hotspot-overlay',
+            zIndex: 200
+        });
+
+	// Open a new tab showing the image as a CRS.Simple map
+	layer.on('click', function() {
+	    const viewerUrl = `hotspot_viewer.html?img=${encodeURIComponent(hotspot.href)}&title=${encodeURIComponent(hotspot.name || hotspot.title || 'Hotspot')}`;
+	    window.open(viewerUrl, '_blank');
+	});
+
+        // Add layer to hotspot group
+        layer.addTo(hotspotLayers);
+
+        // Add to layer control
+        layerControl.addOverlay(layer, hotspot.name || 'Hotspot ' + (index + 1));
+    }
+
+    // Add layers to map
+    hotspotLayers.addTo(map);
+    overlayLayers.addTo(map);
+}
+
+// Run hotspot processing
+processHotspots().catch(error => console.error('Error processing hotspots:', error));
+</script>
+</body>
+</html>
