@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">  
+  <title>Hotspot Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    #map {
+      height: calc(100% - 50px);
+      background: transparent;
+    }
+
+    #header {
+      height: 50px;
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1em;
+      box-sizing: border-box;
+      border-bottom: 1px solid #444;
+    }
+
+    #header h1 {
+      font-size: 1.1em;
+      margin: 0;
+      color: #fff;
+    }
+
+    #back-button {
+      padding: 0.4em 0.8em;
+      font-size: 0.9em;
+      border: none;
+      background: #444;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #back-button:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1 id="viewer-title">Hotspot</h1>
+    <button id="back-button" onclick="goBack()">Back to World Map</button>
+  </div>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Extract query string
+    const params = new URLSearchParams(window.location.search);
+    const imgUrl = params.get('img');
+    const title = params.get('title') || 'Hotspot';
+
+    document.title = title;
+    document.getElementById('viewer-title').textContent = title;
+
+    if (!imgUrl) {
+      alert("No image specified.");
+      throw new Error("No image URL provided.");
+    }
+
+    const map = L.map('map', {
+      crs: L.CRS.Simple,
+      minZoom: -2,
+      maxZoom: 4,
+      zoomControl: true,
+      attributionControl: false
+    });
+
+    const img = new Image();
+    img.onload = () => {
+      const w = img.naturalWidth;
+      const h = img.naturalHeight;
+      const bounds = [[0, 0], [h, w]];
+
+      L.imageOverlay(imgUrl, bounds).addTo(map);
+      map.fitBounds(bounds);
+    };
+    img.src = imgUrl;
+
+    function goBack() {
+      window.close(); // works if tab was opened via JS
+      // or navigate to main map if needed:
+      // window.location.href = "main_map.html";
+    }
+  </script>
+</body>
+</html>
