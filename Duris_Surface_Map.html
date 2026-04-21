@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Duris Map (Corrected)</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  // --- CONFIG ---
+  const imageWidth = 1600;
+  const imageHeight = 1600;
+
+  const squareSize = 4;
+  const mapWidth = 400;
+  const mapHeight = 400;
+  const startingVnum = 500000;
+
+  // --- INIT MAP ---
+  const map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -2,
+    maxZoom: 4
+  });
+
+  const bounds = [[0, 0], [imageHeight, imageWidth]];
+  L.imageOverlay('Duris_Surface_Map1600x1600.wld.png', bounds).addTo(map);
+  map.fitBounds(bounds);
+
+  // --- CLICK HANDLER (FIXED Y AXIS) ---
+  map.on('click', function(e) {
+    const pixelX = Math.floor(e.latlng.lng);
+    const pixelY = Math.floor(e.latlng.lat);
+
+    const tileX = Math.floor(pixelX / squareSize);
+    const tileY = Math.floor(pixelY / squareSize);
+
+    // Flip Y so bottom-left = starting vnum
+    const flippedY = (mapHeight - 1) - tileY;
+
+    const vnum = startingVnum + (flippedY * mapWidth) + tileX;
+
+    L.popup()
+      .setLatLng(e.latlng)
+      .setContent(
+        `Pixel: (${pixelX}, ${pixelY})<br>` +
+        `Tile: (${tileX}, ${tileY})<br>` +
+        `VNUM: ${vnum}`
+      )
+      .openOn(map);
+  });
+
+  // --- OPTIONAL: VNUM -> LOCATION HELPER ---
+  function vnumToLatLng(vnum) {
+    const offset = vnum - startingVnum;
+
+    const flippedY = Math.floor(offset / mapWidth);
+    const tileX = offset % mapWidth;
+
+    // unflip Y
+    const tileY = (mapHeight - 1) - flippedY;
+
+    return [
+      tileY * squareSize,
+      tileX * squareSize
+    ];
+  }
+
+  // Example: jump to a vnum (uncomment to test)
+  /*
+  const testVnum = 513141;
+  const latlng = vnumToLatLng(testVnum);
+  L.marker(latlng).addTo(map).bindPopup("VNUM " + testVnum).openPopup();
+  map.setView(latlng, 2);
+  */
+
+</script>
+
+</body>
+</html>
