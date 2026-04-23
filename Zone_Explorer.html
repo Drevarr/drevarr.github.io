@@ -111,7 +111,7 @@ let lines = [];
 // ---------- UI: Zone List ----------
 const zoneListDiv = document.getElementById('zone-list');
 
-fetch('data/zones.json')
+fetch('Wld_File_Data/zones.json')
   .then(res => res.json())
   .then(zones => {
     zones.sort((a, b) => a.name.localeCompare(b.name));
@@ -129,7 +129,7 @@ fetch('data/zones.json')
 
 // ---------- Load Zone ----------
 function loadZone(file) {
-  fetch(`data/${file}`)
+  fetch(`Wld_File_Data/${file}`)
     .then(res => res.json())
     .then(data => {
       allRooms = data;
