@@ -1,0 +1,1364 @@
+[
+  {
+    "vnum": 93600,
+    "name": "&+LA Stone Path",
+    "zone": 936,
+    "sector": 2,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93601
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 563634
+      }
+    }
+  },
+  {
+    "vnum": 93601,
+    "name": "&+LA Stone Path",
+    "zone": 936,
+    "sector": 2,
+    "x": 0,
+    "y": -1,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93602
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93600
+      }
+    }
+  },
+  {
+    "vnum": 93602,
+    "name": "&+mOutside Vella's Bordello",
+    "zone": 936,
+    "sector": 2,
+    "x": 0,
+    "y": -2,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93603
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93601
+      }
+    }
+  },
+  {
+    "vnum": 93603,
+    "name": "&+mEntry Hall of Vella's Bordello",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -3,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93606
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93605
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93602
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93604
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 93607
+      }
+    }
+  },
+  {
+    "vnum": 93604,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -3,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93642
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93603
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93625
+      }
+    }
+  },
+  {
+    "vnum": 93605,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 1,
+    "y": -3,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93654
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93617
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93603
+      }
+    }
+  },
+  {
+    "vnum": 93606,
+    "name": "&+mThe Main Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93609
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93603
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93666
+      }
+    }
+  },
+  {
+    "vnum": 93607,
+    "name": "&+mThe Velvet Stairs",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -3,
+    "z": 1,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93608
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 93603
+      }
+    }
+  },
+  {
+    "vnum": 93608,
+    "name": "&+mA Long Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -4,
+    "z": 1,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93615
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93607
+      }
+    }
+  },
+  {
+    "vnum": 93609,
+    "name": "&+mThe Main Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93610
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93667
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93606
+      }
+    }
+  },
+  {
+    "vnum": 93610,
+    "name": "&+bThe Great Fountain of Vella's Bordello",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93611
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93612
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93609
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93613
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 93616
+      }
+    }
+  },
+  {
+    "vnum": 93611,
+    "name": "&+mThe Main Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93631
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93610
+      }
+    }
+  },
+  {
+    "vnum": 93612,
+    "name": "&+mA Velvet Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 1,
+    "y": -6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93659
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93623
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93658
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93610
+      }
+    }
+  },
+  {
+    "vnum": 93613,
+    "name": "&+mA Velvet Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93649
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93610
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93647
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93624
+      }
+    }
+  },
+  {
+    "vnum": 93614,
+    "name": "&+mA Long Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -7,
+    "z": 1,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93641
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93616
+      }
+    }
+  },
+  {
+    "vnum": 93615,
+    "name": "&+mA Long Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -5,
+    "z": 1,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93616
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93608
+      }
+    }
+  },
+  {
+    "vnum": 93616,
+    "name": "&+bAbove The Great Fountain of Vella's Bordello",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -6,
+    "z": 1,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93614
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93615
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 93610
+      }
+    }
+  },
+  {
+    "vnum": 93617,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -3,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93655
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93618
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93605
+      }
+    }
+  },
+  {
+    "vnum": 93618,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 3,
+    "y": -3,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93619
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93617
+      }
+    }
+  },
+  {
+    "vnum": 93619,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 3,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93620
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93618
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93656
+      }
+    }
+  },
+  {
+    "vnum": 93620,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 3,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93621
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93619
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93657
+      }
+    }
+  },
+  {
+    "vnum": 93621,
+    "name": "&+mAn Intersection of Hallways",
+    "zone": 936,
+    "sector": 0,
+    "x": 3,
+    "y": -6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93622
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93620
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93623
+      }
+    }
+  },
+  {
+    "vnum": 93622,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 3,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93637
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93621
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93664
+      }
+    }
+  },
+  {
+    "vnum": 93623,
+    "name": "&+mA Velvet Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93661
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93621
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93660
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93612
+      }
+    }
+  },
+  {
+    "vnum": 93624,
+    "name": "&+mA Velvet Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93648
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93613
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93646
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93629
+      }
+    }
+  },
+  {
+    "vnum": 93625,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -3,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93643
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93604
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93626
+      }
+    }
+  },
+  {
+    "vnum": 93626,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -3,
+    "y": -3,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93627
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93625
+      }
+    }
+  },
+  {
+    "vnum": 93627,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -3,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93628
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93644
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93626
+      }
+    }
+  },
+  {
+    "vnum": 93628,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -3,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93629
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93645
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93627
+      }
+    }
+  },
+  {
+    "vnum": 93629,
+    "name": "&+mAn Intersection of Hallways",
+    "zone": 936,
+    "sector": 0,
+    "x": -3,
+    "y": -6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93630
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93624
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93628
+      }
+    }
+  },
+  {
+    "vnum": 93630,
+    "name": "&+mA Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -3,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93633
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93650
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93629
+      }
+    }
+  },
+  {
+    "vnum": 93631,
+    "name": "&+mThe Main Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93632
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93611
+      },
+      "3": {
+        "door_flag": 5,
+        "to_room": 93668
+      }
+    }
+  },
+  {
+    "vnum": 93632,
+    "name": "&+mAn Intersection of Hallways",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -9,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93640
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93631
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93636
+      }
+    }
+  },
+  {
+    "vnum": 93633,
+    "name": "&+mA Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -3,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93634
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 93651
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93630
+      }
+    }
+  },
+  {
+    "vnum": 93634,
+    "name": "&+mA Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -3,
+    "y": -9,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93635
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93633
+      }
+    }
+  },
+  {
+    "vnum": 93635,
+    "name": "&+mAn Exotic Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -9,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93636
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93652
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93634
+      }
+    }
+  },
+  {
+    "vnum": 93636,
+    "name": "&+mAn Exotic Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -9,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93632
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93653
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93635
+      }
+    }
+  },
+  {
+    "vnum": 93637,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 3,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93638
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93622
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93665
+      }
+    }
+  },
+  {
+    "vnum": 93638,
+    "name": "&+mA Side Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 3,
+    "y": -9,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93637
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93639
+      }
+    }
+  },
+  {
+    "vnum": 93639,
+    "name": "&+mAn Exotic Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -9,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93638
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93663
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93640
+      }
+    }
+  },
+  {
+    "vnum": 93640,
+    "name": "&+mAn Exotic Hallway",
+    "zone": 936,
+    "sector": 0,
+    "x": 1,
+    "y": -9,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93639
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 93662
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 93632
+      }
+    }
+  },
+  {
+    "vnum": 93641,
+    "name": "&+mVella's Room of Seduction",
+    "zone": 936,
+    "sector": 0,
+    "x": 0,
+    "y": -8,
+    "z": 1,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93614
+      }
+    }
+  },
+  {
+    "vnum": 93642,
+    "name": "&+mA Room of Pleasure",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93604
+      }
+    }
+  },
+  {
+    "vnum": 93643,
+    "name": "&+mA Pillow Filled Room",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93625
+      }
+    }
+  },
+  {
+    "vnum": 93644,
+    "name": "&+mA Pleasure Room",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 93627
+      }
+    }
+  },
+  {
+    "vnum": 93645,
+    "name": "&+mA Very Erotic Room",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 93628
+      }
+    }
+  },
+  {
+    "vnum": 93646,
+    "name": "&+mA Room of Pleasure",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93624
+      }
+    }
+  },
+  {
+    "vnum": 93647,
+    "name": "&+mA Very Lush Pillow Filled Room",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93613
+      }
+    }
+  },
+  {
+    "vnum": 93648,
+    "name": "&+mA Room of Teasing",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93624
+      }
+    }
+  },
+  {
+    "vnum": 93649,
+    "name": "&+mA Room of Mysteries",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93613
+      }
+    }
+  },
+  {
+    "vnum": 93650,
+    "name": "&+mA Pillow Filled Room",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 93630
+      }
+    }
+  },
+  {
+    "vnum": 93651,
+    "name": "&+mA Sex Room",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 93633
+      }
+    }
+  },
+  {
+    "vnum": 93652,
+    "name": "&+mA Room of Imagination",
+    "zone": 936,
+    "sector": 0,
+    "x": -2,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93635
+      }
+    }
+  },
+  {
+    "vnum": 93653,
+    "name": "&+mA Room of Love",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93636
+      }
+    }
+  },
+  {
+    "vnum": 93654,
+    "name": "&+mA Room of Pleasure",
+    "zone": 936,
+    "sector": 0,
+    "x": 1,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93605
+      }
+    }
+  },
+  {
+    "vnum": 93655,
+    "name": "&+mA Room of Imagination",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93617
+      }
+    }
+  },
+  {
+    "vnum": 93656,
+    "name": "&+mA Room of Sex",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93619
+      }
+    }
+  },
+  {
+    "vnum": 93657,
+    "name": "&+mA Customer's Favorite Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93620
+      }
+    }
+  },
+  {
+    "vnum": 93658,
+    "name": "&+mA Velvet Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 1,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93612
+      }
+    }
+  },
+  {
+    "vnum": 93659,
+    "name": "&+mA Velvet Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 1,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93612
+      }
+    }
+  },
+  {
+    "vnum": 93660,
+    "name": "&+mA Velvet Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93623
+      }
+    }
+  },
+  {
+    "vnum": 93661,
+    "name": "&+mA Velvet Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 93623
+      }
+    }
+  },
+  {
+    "vnum": 93662,
+    "name": "&+mAn Exotic Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 1,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93640
+      }
+    }
+  },
+  {
+    "vnum": 93663,
+    "name": "&+mAn Exotic Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93639
+      }
+    }
+  },
+  {
+    "vnum": 93664,
+    "name": "&+mA Side Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -7,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93622
+      }
+    }
+  },
+  {
+    "vnum": 93665,
+    "name": "&+mA Side Room",
+    "zone": 936,
+    "sector": 0,
+    "x": 2,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93637
+      }
+    }
+  },
+  {
+    "vnum": 93666,
+    "name": "&+mA Beauty Parlor",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -4,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 93606
+      }
+    }
+  },
+  {
+    "vnum": 93667,
+    "name": "&+RVegar's Sex Toys",
+    "zone": 936,
+    "sector": 0,
+    "x": 1,
+    "y": -5,
+    "z": 0,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 93609
+      }
+    }
+  },
+  {
+    "vnum": 93668,
+    "name": "&+YThe Treasure Room",
+    "zone": 936,
+    "sector": 0,
+    "x": -1,
+    "y": -8,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 5,
+        "to_room": 93631
+      }
+    }
+  },
+  {
+    "vnum": 563634,
+    "name": "Stub Room 563634",
+    "zone": null,
+    "sector": null,
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 93600
+      }
+    }
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "vnum": 20300,
+    "name": "Narrow Strip of Land",
+    "zone": 203,
+    "sector": 4,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 20301
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20302
+      }
+    }
+  },
+  {
+    "vnum": 20301,
+    "name": "Tip of the Strip of Land",
+    "zone": 203,
+    "sector": 3,
+    "x": 1,
+    "y": 0,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 148782
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20300
+      }
+    }
+  },
+  {
+    "vnum": 20302,
+    "name": "Strip of Land",
+    "zone": 203,
+    "sector": 3,
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20300
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20304
+      }
+    }
+  },
+  {
+    "vnum": 20303,
+    "name": "Steam Vents",
+    "zone": 203,
+    "sector": 4,
+    "x": -1,
+    "y": 2,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 20304
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20307
+      }
+    }
+  },
+  {
+    "vnum": 20304,
+    "name": "Base of Volcano",
+    "zone": 203,
+    "sector": 4,
+    "x": 0,
+    "y": 2,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20302
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 20305
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20303
+      }
+    }
+  },
+  {
+    "vnum": 20305,
+    "name": "Base of Volcano",
+    "zone": 203,
+    "sector": 5,
+    "x": 1,
+    "y": 2,
+    "z": 0,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 20304
+      }
+    }
+  },
+  {
+    "vnum": 20306,
+    "name": "Fields of the Endu",
+    "zone": 203,
+    "sector": 2,
+    "x": -2,
+    "y": 3,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 20307
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20310
+      }
+    }
+  },
+  {
+    "vnum": 20307,
+    "name": "Light Woods",
+    "zone": 203,
+    "sector": 3,
+    "x": -1,
+    "y": 3,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20303
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20311
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20306
+      }
+    }
+  },
+  {
+    "vnum": 20308,
+    "name": "Haunted Woods",
+    "zone": 203,
+    "sector": 3,
+    "x": 2,
+    "y": 3,
+    "z": 0,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 20314
+      }
+    }
+  },
+  {
+    "vnum": 20309,
+    "name": "Small Dock",
+    "zone": 203,
+    "sector": 2,
+    "x": -3,
+    "y": 4,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 20310
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20315
+      }
+    }
+  },
+  {
+    "vnum": 20310,
+    "name": "The Fishmonger Stand",
+    "zone": 203,
+    "sector": 0,
+    "x": -2,
+    "y": 4,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20306
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 20311
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20316
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20309
+      }
+    }
+  },
+  {
+    "vnum": 20311,
+    "name": "The Large Idol",
+    "zone": 203,
+    "sector": 2,
+    "x": -1,
+    "y": 4,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20307
+      },
+      "1": {
+        "door_flag": 2,
+        "to_room": 20312
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20317
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20310
+      }
+    }
+  },
+  {
+    "vnum": 20312,
+    "name": "Haunted Woods",
+    "zone": 203,
+    "sector": 3,
+    "x": 0,
+    "y": 4,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 20313
+      },
+      "3": {
+        "door_flag": 2,
+        "to_room": 20311
+      }
+    }
+  },
+  {
+    "vnum": 20313,
+    "name": "Haunted Woods",
+    "zone": 203,
+    "sector": 3,
+    "x": 1,
+    "y": 4,
+    "z": 0,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 20314
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20318
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20312
+      }
+    }
+  },
+  {
+    "vnum": 20314,
+    "name": "Haunted Woods",
+    "zone": 203,
+    "sector": 3,
+    "x": 2,
+    "y": 4,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20308
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20319
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20313
+      }
+    }
+  },
+  {
+    "vnum": 20315,
+    "name": "Shipwreck",
+    "zone": 203,
+    "sector": 1,
+    "x": -3,
+    "y": 5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20309
+      }
+    }
+  },
+  {
+    "vnum": 20316,
+    "name": "Endu Village",
+    "zone": 203,
+    "sector": 1,
+    "x": -2,
+    "y": 5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20310
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 20317
+      },
+      "2": {
+        "door_flag": 2,
+        "to_room": 20320
+      }
+    }
+  },
+  {
+    "vnum": 20317,
+    "name": "Base of Witch Doctor's Hut",
+    "zone": 203,
+    "sector": 1,
+    "x": -1,
+    "y": 5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20311
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 20321
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20316
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 20322
+      }
+    }
+  },
+  {
+    "vnum": 20318,
+    "name": "Haunted Woods",
+    "zone": 203,
+    "sector": 3,
+    "x": 1,
+    "y": 5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20313
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 20319
+      }
+    }
+  },
+  {
+    "vnum": 20319,
+    "name": "Haunted Woods",
+    "zone": 203,
+    "sector": 3,
+    "x": 2,
+    "y": 5,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20314
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 20318
+      }
+    }
+  },
+  {
+    "vnum": 20320,
+    "name": "Livestock Pen",
+    "zone": 203,
+    "sector": 2,
+    "x": -2,
+    "y": 6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 2,
+        "to_room": 20316
+      },
+      "1": {
+        "door_flag": 2,
+        "to_room": 20321
+      }
+    }
+  },
+  {
+    "vnum": 20321,
+    "name": "Village Cemetery",
+    "zone": 203,
+    "sector": 2,
+    "x": -1,
+    "y": 6,
+    "z": 0,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 20317
+      },
+      "3": {
+        "door_flag": 2,
+        "to_room": 20320
+      }
+    }
+  },
+  {
+    "vnum": 20322,
+    "name": "Witch Doctor's Hut",
+    "zone": 203,
+    "sector": 0,
+    "x": -1,
+    "y": 5,
+    "z": 1,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 20317
+      }
+    }
+  },
+  {
+    "vnum": 148782,
+    "name": "Stub Room 148782",
+    "zone": null,
+    "sector": null,
+    "x": 2,
+    "y": 0,
+    "z": 0,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 20301
+      }
+    }
+  }
+]
