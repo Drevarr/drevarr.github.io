@@ -69,7 +69,7 @@
 	}
 
 	.zone-item:hover {
-	  background: #eee;
+	  background: #05df72;
 	}
 	/* Legend */
 	.legend-box {
@@ -605,7 +605,7 @@ function zoomToZone(name) {
   const latlng = marker.getLatLng();
 
   // Smooth zoom + center
-  map.setView(latlng, 0);
+  map.setView(latlng, 2);
 
   // Optional: popup
   marker.bindPopup(name).openPopup();
@@ -643,7 +643,7 @@ centerOnVnum(552212);
 
 requestAnimationFrame(() => {
   map.invalidateSize();
-map.fitBounds(bounds);
+  map.fitBounds(bounds);
 
 const fitZoom = map.getBoundsZoom(bounds);
 
