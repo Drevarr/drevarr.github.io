@@ -7,38 +7,154 @@
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+	html, body {
+	  margin: 0;
+	  height: 100%;
+	  font-family: sans-serif;
+	}
 
-  <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-    }
-    #map {
-      width: 100%;
-      height: 100%;
-      background: #000;
-    }
-    .zone-label {
-      color: #fff;
-      font-size: 9px;
-      font-weight: bold;
-      width: 150px;
-      white-space: normal; 
-      text-align: center;
-      line-height: 0.9;
-      text-shadow: 
-        0 0 4px black,
-        0 0 6px black;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-    }    
-  </style>
+	/* Layout */
+	.app {
+	  display: flex;
+	  flex-direction: column;
+	  height: 100vh;
+	}
+
+	.header {
+	  background: #111;
+	  color: white;
+	  text-align: center;
+	  padding: 10px;
+	}
+
+	.main {
+	  display: flex;
+	  flex: 1;
+	  overflow: hidden;
+	}
+
+	/* Sidebar */
+	.sidebar {
+	  width: 260px;
+	  background: #f4f4f4;
+	  padding: 10px;
+	  overflow-y: auto;
+	  border-right: 1px solid #ccc;
+	}
+
+	.panel {
+	  margin-bottom: 20px;
+	}
+
+	/* Map */
+	#map {
+	  flex: 1;
+	  height: 100%;
+	  background: #000;
+	}
+
+	#zone-list {
+	  max-height: 400px;
+	  overflow-y: auto;
+	  font-size: 12px;
+	}
+
+	.zone-item {
+	  padding: 4px;
+	  cursor: pointer;
+	  border-bottom: 1px solid #ddd;
+	}
+
+	.zone-item:hover {
+	  background: #eee;
+	}
+	/* Legend */
+	.legend-box {
+	  display: inline-block;
+	  width: 12px;
+	  height: 12px;
+	  background: white;
+	  margin-right: 6px;
+	  border: 1px solid black;
+	}
+
+	/* Your existing label styling */
+	.zone-label {
+	  color: #fff;
+	  font-size: 9px;
+	  font-weight: bold;
+	  max-width: 180px;
+	  white-space: normal;
+	  text-align: center;
+	  line-height: 0.9;
+	  text-shadow: 
+	    0 0 4px black,
+	    0 0 6px black;
+	  transform: translate(-50%, -50%);
+	  pointer-events: none;
+
+	  display: inline-block;
+	  word-break: keep-all;
+	}
+
+	.zone-label.highlight {
+	  text-shadow:
+	    0 0 6px yellow,
+	    0 0 10px yellow,
+	    0 0 14px orange;
+	}
+
+	/* Mobile */
+	@media (max-width: 768px) {
+	  .main {
+	    flex-direction: column;
+	  }
+
+	  .sidebar {
+	    width: 100%;
+	    height: 180px;
+	    border-right: none;
+	    border-bottom: 1px solid #ccc;
+	  }
+	}    
+    </style>
 </head>
-<body>
+<body>	
+<div class="app">
+  <header class="header">
+    <h1>New Duris - Surface Map</h1>
 
-<div id="map"></div>
+  </header>
 
-<!-- Leaflet JS -->
+  <div class="main">
+    <aside class="sidebar">
+   <div class="panel">
+  <h3>Controls</h3>
+
+  <label>
+    <input type="checkbox" id="toggle-labels" checked>
+    Show Zone Labels
+  </label>
+
+  <br><br>
+
+  <h3>Search Zones</h3>
+  <input type="text" id="zone-search" placeholder="Search zone name">
+  <button id="search-btn">Find</button>
+</div>
+
+      <div class="panel">
+        <h3>Legend</h3>
+        <div><span class="legend-box"></span> Zone Label</div>
+      </div>
+<div class="panel">
+  <h3>Zone List</h3>
+  <div id="zone-list"></div>
+</div>
+    </aside>
+
+    <div id="map"></div>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
@@ -115,7 +231,7 @@ const zones = [
   { vnum: 598723, name: "Warg Ravine" },
   { vnum: 526528, name: "Shaledrieth (Sunwell)" },
   { vnum: 584825, name: "Lareth (Sunwell)" },
-  { vnum: 556018, name: "The Great Realm of Duris" },
+  { vnum: 556018, name: "The Transparent Tower" },
   { vnum: 573831, name: "Magma Path" },
   { vnum: 573429, name: "Magma Path" },
   { vnum: 538438, name: "Worm Pass" },
@@ -335,6 +451,10 @@ const zones = [
   L.imageOverlay('Duris_Surface_Map1600x1600.wld.png', bounds).addTo(map);
   map.fitBounds(bounds);
 
+  setTimeout(() => {
+  map.invalidateSize();
+}, 0);
+
   // --- CLICK HANDLER (FIXED Y AXIS) ---
   map.on('click', function(e) {
     const pixelX = Math.floor(e.latlng.lng);
@@ -379,18 +499,40 @@ function createZoneLabel(zone) {
     icon: L.divIcon({
       className: 'zone-label',
       html: zone.name,
-      iconSize: [0, 0]
+      iconSize: [50, null]
     })
   });
 }
 
 const zoneLayer = L.layerGroup();
+const zoneIndex = {};
 
 zones.forEach(zone => {
-  zoneLayer.addLayer(createZoneLabel(zone));
+  const marker = createZoneLabel(zone);
+
+  // store reference (handle duplicates)
+  const key = zone.name.toLowerCase();
+  if (!zoneIndex[key]) zoneIndex[key] = [];
+  zoneIndex[key].push(marker);
+
+  zoneLayer.addLayer(marker);
 });
 
 zoneLayer.addTo(map);
+
+const zoneList = document.getElementById('zone-list');
+
+zones.forEach(zone => {
+  const div = document.createElement('div');
+  div.className = 'zone-item';
+  div.textContent = zone.name;
+
+  div.addEventListener('click', () => {
+    zoomToZone(zone.name);
+  });
+
+  zoneList.appendChild(div);
+});
 
 function updateLabelScale() {
   const zoom = map.getZoom();
@@ -409,6 +551,83 @@ function updateLabelScale() {
   });
 }
 
+function searchZone(query) {
+  const q = query.toLowerCase().trim();
+
+  if (!q) return;
+
+  const matches = Object.keys(zoneIndex).filter(name =>
+    name.includes(q)
+  );
+
+  if (matches.length === 0) {
+    alert("No matches found");
+    return;
+  }
+
+  // If only one match → zoom directly
+  if (matches.length === 1) {
+    zoomToZone(matches[0]);
+    return;
+  }
+
+  // Multiple matches → zoom to all
+  zoomToMultipleZones(matches);
+}
+
+function zoomToMultipleZones(names) {
+  const allMarkers = [];
+
+  names.forEach(name => {
+    zoneIndex[name].forEach(marker => {
+      allMarkers.push(marker);
+    });
+  });
+
+  const group = L.featureGroup(allMarkers);
+
+  map.fitBounds(group.getBounds(), {
+    padding: [50, 50]
+  });
+}
+
+function zoomToZone(name) {
+  const key = name.toLowerCase();
+
+  if (!zoneIndex[key]) {
+    alert("Zone not found");
+    return;
+  }
+
+  const markers = zoneIndex[key];
+
+  // If multiple matches, use first (or extend later)
+  const marker = markers[0];
+  const latlng = marker.getLatLng();
+
+  // Smooth zoom + center
+  map.setView(latlng, Math.max(map.getZoom(), 2), {
+    animate: true
+  });
+
+  // Optional: popup
+  marker.bindPopup(name).openPopup();
+
+  // Optional: highlight
+  highlightMarker(marker);
+}
+
+function highlightMarker(marker) {
+  const el = marker.getElement();
+  if (!el) return;
+
+  el.classList.add("highlight");
+
+  setTimeout(() => {
+    el.classList.remove("highlight");
+  }, 2000);
+}
+
 function centerOnVnum(vnum) {
   const offset = vnum - startingVnum;
 
@@ -425,15 +644,31 @@ function centerOnVnum(vnum) {
 
 centerOnVnum(552212);
 
-  // Example: jump to a vnum (uncomment to test)
-  /*
-  const testVnum = 513141;
-  const latlng = vnumToLatLng(testVnum);
-  L.marker(latlng).addTo(map).bindPopup("VNUM " + testVnum).openPopup();
-  map.setView(latlng, 2);
-  */
+// Toggle labels
+document.getElementById('toggle-labels').addEventListener('change', (e) => {
+  if (e.target.checked) {
+    map.addLayer(zoneLayer);
+  } else {
+    map.removeLayer(zoneLayer);
+  }
+});
 
-</script>
+const input = document.getElementById('zone-search');
+const searchBtn = document.getElementById('search-btn');
 
+searchBtn.addEventListener('click', () => {
+  searchZone(input.value);
+});
+
+// Press Enter to search
+input.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    searchZone(input.value);
+  }
+});
+
+</script>    
+  </div>
+</div>
 </body>
 </html>
