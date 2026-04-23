@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>MUD Map</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <style>
+    body { margin: 0; }
+
+    #map { height: 100vh; }
+
+    .room-tile {
+      width: 20px;
+      height: 20px;
+      background: rgba(0,120,255,0.7);
+      border: 1px solid #000;
+      border-radius: 3px;
+      position: relative;
+      font-size: 10px;
+    }
+
+    .room-tile.stub {
+      background: rgba(255,80,80,0.7);
+      border-style: dashed;
+    }
+
+    .arrow {
+      position: absolute;
+      font-size: 9px;
+      line-height: 9px;
+    }
+
+    .n { top: -2px; left: 6px; }
+    .s { bottom: -2px; left: 6px; }
+    .e { right: -2px; top: 5px; }
+    .w { left: -2px; top: 5px; }
+
+    .u { top: 2px; left: 2px; font-size: 8px; }
+    .d { bottom: 2px; right: 2px; font-size: 8px; }
+
+    .z-control {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: white;
+      padding: 8px;
+      border: 1px solid #ccc;
+      font-family: sans-serif;
+      z-index: 1000;
+    }
+
+    .z-control button {
+      margin: 2px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div class="z-control">
+  <div>Z-Level: <span id="z-value">0</span></div>
+  <button onclick="changeZ(1)">Up</button>
+  <button onclick="changeZ(-1)">Down</button>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+const map = L.map('map', {
+  crs: L.CRS.Simple,
+  minZoom: -5,
+  maxZoom: 5
+});
+
+map.setView([0, 0], 0);
+
+const scale = 24;
+
+let CURRENT_Z = 0;
+let allRooms = [];
+let markers = {};
+let lines = [];
+
+function getArrowHTML(exits) {
+  let html = '';
+
+  if (exits[0]) html += '<div class="arrow n">↑</div>';
+  if (exits[1]) html += '<div class="arrow e">→</div>';
+  if (exits[2]) html += '<div class="arrow s">↓</div>';
+  if (exits[3]) html += '<div class="arrow w">←</div>';
+  if (exits[4]) html += '<div class="arrow u">U</div>';
+  if (exits[5]) html += '<div class="arrow d">D</div>';
+
+  return html;
+}
+
+function render() {
+  // Clear old layers
+  Object.values(markers).forEach(m => map.removeLayer(m));
+  lines.forEach(l => map.removeLayer(l));
+
+  markers = {};
+  lines = [];
+
+  const drawn = new Set();
+
+  const visibleRooms = allRooms.filter(r => r.z === CURRENT_Z);
+
+  visibleRooms.forEach(room => {
+    const lat = -room.y * scale;
+    const lng = room.x * scale;
+
+    const tileHTML = `
+      <div class="room-tile ${room.stub ? 'stub' : ''}">
+        ${getArrowHTML(room.exits || {})}
+      </div>
+    `;
+
+    const marker = L.marker([lat, lng], {
+      icon: L.divIcon({
+        html: tileHTML,
+        className: '',
+        iconSize: [20, 20]
+      })
+    }).addTo(map);
+
+    marker.bindPopup(
+      `<b>${room.name}</b><br>VNUM: ${room.vnum}<br>Z: ${room.z}`
+    );
+
+    markers[room.vnum] = marker;
+  });
+
+  // Draw connections (same Z only)
+  visibleRooms.forEach(room => {
+    const from = markers[room.vnum];
+    if (!from) return;
+
+    const fromLatLng = from.getLatLng();
+
+    Object.values(room.exits || {}).forEach(exit => {
+      const targetRoom = allRooms.find(r => r.vnum === exit.to_room);
+      if (!targetRoom || targetRoom.z !== CURRENT_Z) return;
+
+      const key = [room.vnum, exit.to_room].sort().join('-');
+      if (drawn.has(key)) return;
+      drawn.add(key);
+
+      const target = markers[exit.to_room];
+      if (!target) return;
+
+      const toLatLng = target.getLatLng();
+
+      const line = L.polyline([fromLatLng, toLatLng], {
+        weight: 2
+      }).addTo(map);
+
+      lines.push(line);
+    });
+  });
+
+  // Fit bounds
+  if (Object.values(markers).length > 0) {
+    map.fitBounds(
+      Object.values(markers).map(m => m.getLatLng()),
+      { padding: [20, 20] }
+    );
+  }
+
+  document.getElementById('z-value').textContent = CURRENT_Z;
+}
+
+function changeZ(delta) {
+  CURRENT_Z += delta;
+  render();
+}
+
+// Keyboard support
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'PageUp') changeZ(1);
+  if (e.key === 'PageDown') changeZ(-1);
+});
+
+// Load data
+fetch('map.json')
+  .then(res => res.json())
+  .then(data => {
+    allRooms = data;
+    render();
+  });
+
+</script>
+
+</body>
+</html>
