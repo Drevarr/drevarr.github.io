@@ -1,0 +1,9713 @@
+[
+  {
+    "vnum": 16500,
+    "name": "&+gBefore a Collapsed Long Stairway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16902
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16903
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 154581
+      }
+    }
+  },
+  {
+    "vnum": 16501,
+    "name": "&+LOn a Stone Stairway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 6,
+    "z": 6,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16502
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16915
+      }
+    }
+  },
+  {
+    "vnum": 16502,
+    "name": "&+LOn a Stone Stairway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 6,
+    "z": 7,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16503
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16501
+      }
+    }
+  },
+  {
+    "vnum": 16503,
+    "name": "&+LOn a Stone Stairway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 6,
+    "z": 8,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16504
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16502
+      }
+    }
+  },
+  {
+    "vnum": 16504,
+    "name": "&+LOn a Stone Stairway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 6,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16505
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16503
+      }
+    }
+  },
+  {
+    "vnum": 16505,
+    "name": "&+COutside the Woodseer Gates&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16506
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16504
+      }
+    }
+  },
+  {
+    "vnum": 16506,
+    "name": "&+CInside the Woodseer Gates&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 1,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16505
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16507
+      }
+    }
+  },
+  {
+    "vnum": 16507,
+    "name": "&+MPetalrich Lane&N and &+gVinestrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16508
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16506
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16520
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16552
+      }
+    }
+  },
+  {
+    "vnum": 16508,
+    "name": "&+gVinestrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 5,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16509
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16507
+      }
+    }
+  },
+  {
+    "vnum": 16509,
+    "name": "&+gVinestrong Way Ends&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16508
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16510
+      }
+    }
+  },
+  {
+    "vnum": 16510,
+    "name": "&+WThe Northern End of the Guards' Walkway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 4,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16511
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16514
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16509
+      }
+    }
+  },
+  {
+    "vnum": 16511,
+    "name": "&+LThe Processing Room in the Jail&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 0,
+    "y": 3,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16512
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16510
+      },
+      "3": {
+        "door_flag": 3,
+        "to_room": 16513
+      }
+    }
+  },
+  {
+    "vnum": 16512,
+    "name": "&+rThe Judge's Chambers&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 0,
+    "y": 2,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16511
+      }
+    }
+  },
+  {
+    "vnum": 16513,
+    "name": "&+LThe Woodseer Jail&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -1,
+    "y": 3,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 3,
+        "to_room": 16511
+      }
+    }
+  },
+  {
+    "vnum": 16514,
+    "name": "&+WAlong the Guard's Walkway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16510
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16515
+      }
+    }
+  },
+  {
+    "vnum": 16515,
+    "name": "&+WA Guard Station Above the Inner Gates&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16514
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16516
+      }
+    }
+  },
+  {
+    "vnum": 16516,
+    "name": "&+WAlong the Guards' Walkway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16515
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16517
+      }
+    }
+  },
+  {
+    "vnum": 16517,
+    "name": "&+WAlong the Guards' Walkway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16516
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16518
+      }
+    }
+  },
+  {
+    "vnum": 16518,
+    "name": "&+WAlong the Guards' Walkway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 9,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16517
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16519
+      }
+    }
+  },
+  {
+    "vnum": 16519,
+    "name": "&+WThe Southern End of the Guards' Walkway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 10,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16518
+      }
+    }
+  },
+  {
+    "vnum": 16520,
+    "name": "&+gVinestrong Way Near the Wall&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16507
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16521
+      }
+    }
+  },
+  {
+    "vnum": 16521,
+    "name": "&+gVinestrong Way Near the Wall&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16520
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16523
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16522
+      }
+    }
+  },
+  {
+    "vnum": 16522,
+    "name": "&+ySome Halfling Guards' Quarters&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -1,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16521
+      }
+    }
+  },
+  {
+    "vnum": 16523,
+    "name": "&+gA Bend in Vinestrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16521
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16524
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16872
+      }
+    }
+  },
+  {
+    "vnum": 16524,
+    "name": "&+gVinestrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16523
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16525
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16871
+      }
+    }
+  },
+  {
+    "vnum": 16525,
+    "name": "&+gVinstrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16526
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16524
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16527
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16870
+      }
+    }
+  },
+  {
+    "vnum": 16526,
+    "name": "&+yHalfling Barracks&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16525
+      }
+    }
+  },
+  {
+    "vnum": 16527,
+    "name": "&+gVinestrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16528
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16525
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16529
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16869
+      }
+    }
+  },
+  {
+    "vnum": 16528,
+    "name": "&+CJarus' Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16527
+      }
+    }
+  },
+  {
+    "vnum": 16529,
+    "name": "&+gVinestrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16530
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16527
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16533
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16868
+      }
+    }
+  },
+  {
+    "vnum": 16530,
+    "name": "&+WSyune's Fine Jewelry&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16531
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16529
+      }
+    }
+  },
+  {
+    "vnum": 16531,
+    "name": "&+cSyune's Workshop&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16530
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16532
+      }
+    }
+  },
+  {
+    "vnum": 16532,
+    "name": "&+ySyune's Living Quarters&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 8,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16531
+      }
+    }
+  },
+  {
+    "vnum": 16533,
+    "name": "&+gVinestrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16534
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16529
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16535
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16867
+      }
+    }
+  },
+  {
+    "vnum": 16534,
+    "name": "&+rA Rosewood Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16533
+      }
+    }
+  },
+  {
+    "vnum": 16535,
+    "name": "&+gVinestrong Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -6,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16536
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16533
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16537
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16866
+      }
+    }
+  },
+  {
+    "vnum": 16536,
+    "name": "&+LJrev's Armory&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16535
+      }
+    }
+  },
+  {
+    "vnum": 16537,
+    "name": "&+GA Meeting Of Paths&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16549
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16535
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16538
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16865
+      }
+    }
+  },
+  {
+    "vnum": 16538,
+    "name": "&+CRiver Circle&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -8,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16537
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16864
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16539
+      }
+    }
+  },
+  {
+    "vnum": 16539,
+    "name": "&+CRiver Circle&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16540
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16538
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16863
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16860
+      }
+    }
+  },
+  {
+    "vnum": 16540,
+    "name": "&+CRiver Circle&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16544
+      },
+      "1": {
+        "door_flag": 1,
+        "to_room": 16541
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16539
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16543
+      }
+    }
+  },
+  {
+    "vnum": 16541,
+    "name": "&+MA Dyer's Workroom&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16542
+      },
+      "3": {
+        "door_flag": 1,
+        "to_room": 16540
+      }
+    }
+  },
+  {
+    "vnum": 16542,
+    "name": "&+MA Small Living Area&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16541
+      }
+    }
+  },
+  {
+    "vnum": 16543,
+    "name": "&+yA Woodcutter's Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -10,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16540
+      }
+    }
+  },
+  {
+    "vnum": 16544,
+    "name": "&+CRiver Circle&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16546
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16545
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16540
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16856
+      }
+    }
+  },
+  {
+    "vnum": 16545,
+    "name": "&+rA Councilor's Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16544
+      }
+    }
+  },
+  {
+    "vnum": 16546,
+    "name": "&+CRiver Circle&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16548
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16544
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16547
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16852
+      }
+    }
+  },
+  {
+    "vnum": 16547,
+    "name": "&+yA Fisherman's Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -10,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16546
+      }
+    }
+  },
+  {
+    "vnum": 16548,
+    "name": "&+CRiver Circle&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -8,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16551
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16546
+      }
+    }
+  },
+  {
+    "vnum": 16549,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16550
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16537
+      }
+    }
+  },
+  {
+    "vnum": 16550,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16551
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16549
+      }
+    }
+  },
+  {
+    "vnum": 16551,
+    "name": "&+MA Four-Way Intersection&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16608
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16602
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16550
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16548
+      }
+    }
+  },
+  {
+    "vnum": 16552,
+    "name": "&+MPetalrich Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16507
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16553
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16554
+      }
+    }
+  },
+  {
+    "vnum": 16553,
+    "name": "&+RBuzzle's Supplies and Fine Goods&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -1,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16552
+      }
+    }
+  },
+  {
+    "vnum": 16554,
+    "name": "&+MPetalrich Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16555
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16552
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16556
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16559
+      }
+    }
+  },
+  {
+    "vnum": 16555,
+    "name": "&+gA Wide Entrance to a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 5,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16564
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16554
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16560
+      }
+    }
+  },
+  {
+    "vnum": 16556,
+    "name": "&+GQuivering Leaf Restaurant&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16554
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16558
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16557
+      }
+    }
+  },
+  {
+    "vnum": 16557,
+    "name": "&+GQuivering Leaf Bar and Party Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": 7,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16556
+      }
+    }
+  },
+  {
+    "vnum": 16558,
+    "name": "&+GThe Quivering Leaf Inn&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": 7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16884
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16888
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16556
+      }
+    }
+  },
+  {
+    "vnum": 16559,
+    "name": "&+MPetalrich Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16560
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16554
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16561
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16589
+      }
+    }
+  },
+  {
+    "vnum": 16560,
+    "name": "&+gA Wide Entrance to a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 5,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16563
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16555
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16559
+      }
+    }
+  },
+  {
+    "vnum": 16561,
+    "name": "&+mClora's&N &+WClothing and Armor&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16559
+      }
+    }
+  },
+  {
+    "vnum": 16562,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16567
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16563
+      }
+    }
+  },
+  {
+    "vnum": 16563,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16568
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16564
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16560
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16562
+      }
+    }
+  },
+  {
+    "vnum": 16564,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16569
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16565
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16555
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16563
+      }
+    }
+  },
+  {
+    "vnum": 16565,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16570
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16564
+      }
+    }
+  },
+  {
+    "vnum": 16566,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": 3,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16571
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16567
+      }
+    }
+  },
+  {
+    "vnum": 16567,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": 3,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16573
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16568
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16562
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16566
+      }
+    }
+  },
+  {
+    "vnum": 16568,
+    "name": "&+gBeside a&N &+BSmall Pond&N &+gin a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 3,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16569
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16563
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16567
+      }
+    }
+  },
+  {
+    "vnum": 16569,
+    "name": "&+gBeside a&N &+BSmall Pond&N &+gin a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 3,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16570
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16564
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16568
+      }
+    }
+  },
+  {
+    "vnum": 16570,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": 3,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16581
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16565
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16569
+      },
+      "5": {
+        "door_flag": 5,
+        "to_room": 16587
+      }
+    }
+  },
+  {
+    "vnum": 16571,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": 2,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16573
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16566
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16572
+      }
+    }
+  },
+  {
+    "vnum": 16572,
+    "name": "&+YA Wasps' Nest&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": 2,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16571
+      }
+    }
+  },
+  {
+    "vnum": 16573,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": 2,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16567
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16571
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16574
+      }
+    }
+  },
+  {
+    "vnum": 16574,
+    "name": "&+LNear a Collapsed Tower&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": 2,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 5,
+        "to_room": 16575
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16573
+      }
+    }
+  },
+  {
+    "vnum": 16575,
+    "name": "&+LThe Ruins of an Ancient Tower&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 2,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 5,
+        "to_room": 16574
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16576
+      }
+    }
+  },
+  {
+    "vnum": 16576,
+    "name": "&+LA Stairway in the Ruins of an Ancient Tower&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 2,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16577
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16578
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16575
+      }
+    }
+  },
+  {
+    "vnum": 16577,
+    "name": "&+LA Room in the Ruins of an Ancient Tower&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 2,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16576
+      }
+    }
+  },
+  {
+    "vnum": 16578,
+    "name": "&+LThe Stairway Ends&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 2,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16579
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16576
+      }
+    }
+  },
+  {
+    "vnum": 16579,
+    "name": "&+LA Room in the Ruins of an Ancient Tower&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": 2,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16578
+      }
+    }
+  },
+  {
+    "vnum": 16580,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 2,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16581
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16588
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16582
+      }
+    }
+  },
+  {
+    "vnum": 16581,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": 2,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16570
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16580
+      }
+    }
+  },
+  {
+    "vnum": 16582,
+    "name": "&+YIn a Giant Bee Hive&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 2,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16583
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16580
+      }
+    }
+  },
+  {
+    "vnum": 16583,
+    "name": "&+YIn a Giant Bee Hive&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 2,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16584
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16582
+      }
+    }
+  },
+  {
+    "vnum": 16584,
+    "name": "&+YIn a Giant Bee Hive&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": 1,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16585
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16583
+      }
+    }
+  },
+  {
+    "vnum": 16585,
+    "name": "&+YThe Queen's Lair&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": 1,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16584
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16586
+      }
+    }
+  },
+  {
+    "vnum": 16586,
+    "name": "&+YThe Egg Room&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": 1,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16585
+      }
+    }
+  },
+  {
+    "vnum": 16587,
+    "name": "&+LA Badger's Burrow&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -1,
+    "y": 3,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 1,
+        "to_room": 16570
+      }
+    }
+  },
+  {
+    "vnum": 16588,
+    "name": "&+gIn a Large Park&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 2,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16580
+      }
+    }
+  },
+  {
+    "vnum": 16589,
+    "name": "&+MPetalrich Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16590
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16559
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 16591
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16598
+      }
+    }
+  },
+  {
+    "vnum": 16590,
+    "name": "&+LThe Woodseer Bank&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 5,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16589
+      }
+    }
+  },
+  {
+    "vnum": 16591,
+    "name": "&+rAn Entryway in a Large Jodani Tree&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16589
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16592
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16593
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16594
+      }
+    }
+  },
+  {
+    "vnum": 16592,
+    "name": "&+YTavern of the Golden Hammer&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16591
+      }
+    }
+  },
+  {
+    "vnum": 16593,
+    "name": "&+cLeelon's Armory&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16591
+      }
+    }
+  },
+  {
+    "vnum": 16594,
+    "name": "&+rOn a Curving Stairway&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 7,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16591
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16595
+      }
+    }
+  },
+  {
+    "vnum": 16595,
+    "name": "&+rA Large Training Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 7,
+    "z": 8,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16597
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16596
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16594
+      }
+    }
+  },
+  {
+    "vnum": 16596,
+    "name": "&+rThe Woodseer Challenge Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 7,
+    "z": 8,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16595
+      }
+    }
+  },
+  {
+    "vnum": 16597,
+    "name": "&+rGraeme's Training Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 7,
+    "z": 8,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16595
+      }
+    }
+  },
+  {
+    "vnum": 16598,
+    "name": "&+MPetalrich Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16600
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16589
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16599
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16602
+      }
+    }
+  },
+  {
+    "vnum": 16599,
+    "name": "&+yA Small Halfling Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16598
+      }
+    }
+  },
+  {
+    "vnum": 16600,
+    "name": "&+CIn an Expensive Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 5,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16601
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 16598
+      }
+    }
+  },
+  {
+    "vnum": 16601,
+    "name": "&+CA Small Bedroom&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 16600
+      }
+    }
+  },
+  {
+    "vnum": 16602,
+    "name": "&+MPetalrich Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -6,
+    "y": 6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16603
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16598
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 16605
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16551
+      }
+    }
+  },
+  {
+    "vnum": 16603,
+    "name": "&+rOutside the Council Meeting Hall&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 5,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16604
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16602
+      }
+    }
+  },
+  {
+    "vnum": 16604,
+    "name": "&+rThe Woodseer Council Meeting Hall&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16603
+      }
+    }
+  },
+  {
+    "vnum": 16605,
+    "name": "&+rThe Foyer of Chief Councilor Eruffu's Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16602
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16606
+      }
+    }
+  },
+  {
+    "vnum": 16606,
+    "name": "&+rA Large Living Area&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16605
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16607
+      }
+    }
+  },
+  {
+    "vnum": 16607,
+    "name": "&+rCouncilor Eruffu's Bedroom&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 8,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16606
+      }
+    }
+  },
+  {
+    "vnum": 16608,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 5,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16609
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16551
+      }
+    }
+  },
+  {
+    "vnum": 16609,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16611
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16608
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16610
+      }
+    }
+  },
+  {
+    "vnum": 16610,
+    "name": "&+WA Lacewood Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16609
+      }
+    }
+  },
+  {
+    "vnum": 16611,
+    "name": "&+CBefore a Long Stairway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 3,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16609
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16612
+      }
+    }
+  },
+  {
+    "vnum": 16612,
+    "name": "&+COn a Long Stairway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 3,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16613
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16611
+      }
+    }
+  },
+  {
+    "vnum": 16613,
+    "name": "&+CIn Front of Ctenmir's&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 3,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16614
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16620
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16612
+      }
+    }
+  },
+  {
+    "vnum": 16614,
+    "name": "&+RCtenmir's Fine Goods&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 3,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 5,
+        "to_room": 16615
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16613
+      }
+    }
+  },
+  {
+    "vnum": 16615,
+    "name": "&+LA Secret Chamber&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 2,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16616
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 16614
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16617
+      }
+    }
+  },
+  {
+    "vnum": 16616,
+    "name": "&+LLuc's Goods&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 2,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16615
+      }
+    }
+  },
+  {
+    "vnum": 16617,
+    "name": "&+LA Dark Hall&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 2,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16618
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16619
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16615
+      }
+    }
+  },
+  {
+    "vnum": 16618,
+    "name": "&+LA Meeting Hall&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 1,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16617
+      }
+    }
+  },
+  {
+    "vnum": 16619,
+    "name": "&+LCtenmir's Private Chambers&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -7,
+    "y": 2,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16617
+      }
+    }
+  },
+  {
+    "vnum": 16620,
+    "name": "&+COn a Long Stairway&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 3,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16621
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16613
+      }
+    }
+  },
+  {
+    "vnum": 16621,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16622
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16620
+      }
+    }
+  },
+  {
+    "vnum": 16622,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16624
+      },
+      "1": {
+        "door_flag": 1,
+        "to_room": 16623
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16621
+      }
+    }
+  },
+  {
+    "vnum": 16623,
+    "name": "&+yA Small Halfling Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 1,
+        "to_room": 16622
+      }
+    }
+  },
+  {
+    "vnum": 16624,
+    "name": "&+WThe Intersection of&N &+YOrchid Way&N &+Wand&N &+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16647
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16629
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16622
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16625
+      }
+    }
+  },
+  {
+    "vnum": 16625,
+    "name": "&+YOrchid Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -8,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16624
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 16626
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16627
+      }
+    }
+  },
+  {
+    "vnum": 16626,
+    "name": "&+yIn a Dilapidated Shack&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": 2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16625
+      }
+    }
+  },
+  {
+    "vnum": 16627,
+    "name": "&+CNear a Shallow Pool&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16625
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16628
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16835
+      }
+    }
+  },
+  {
+    "vnum": 16628,
+    "name": "&+CNear a Shallow Pool&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": 2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16629
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16837
+      }
+    }
+  },
+  {
+    "vnum": 16629,
+    "name": "&+YOrchid Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -6,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16630
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16631
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16624
+      }
+    }
+  },
+  {
+    "vnum": 16630,
+    "name": "&+bA Food Vendor's Shop&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16629
+      }
+    }
+  },
+  {
+    "vnum": 16631,
+    "name": "&+YOrchid Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16632
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16640
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16629
+      }
+    }
+  },
+  {
+    "vnum": 16632,
+    "name": "&+rMathorn's Outer Office&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16634
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16631
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16633
+      }
+    }
+  },
+  {
+    "vnum": 16633,
+    "name": "&+rMathorn's Bar&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": 0,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16632
+      }
+    }
+  },
+  {
+    "vnum": 16634,
+    "name": "&+RMathorn's Inner Office&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": -1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16632
+      },
+      "5": {
+        "door_flag": 5,
+        "to_room": 16635
+      }
+    }
+  },
+  {
+    "vnum": 16635,
+    "name": "&+GA Hallway Below Mathorn's&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": -1,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16636
+      },
+      "4": {
+        "door_flag": 1,
+        "to_room": 16634
+      }
+    }
+  },
+  {
+    "vnum": 16636,
+    "name": "&+GAn Bend in the Marble Hallway&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": -2,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16637
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16638
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16635
+      }
+    }
+  },
+  {
+    "vnum": 16637,
+    "name": "&+RThe Bounty Hunter's Supply Shop&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": -3,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16636
+      }
+    }
+  },
+  {
+    "vnum": 16638,
+    "name": "&+GThe Bounty Hunter's Practice Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": -2,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16639
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16636
+      }
+    }
+  },
+  {
+    "vnum": 16639,
+    "name": "&+RMathorn's Private Training Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": -2,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16638
+      }
+    }
+  },
+  {
+    "vnum": 16640,
+    "name": "&+YOrchid Way&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16641
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16643
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16642
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16631
+      }
+    }
+  },
+  {
+    "vnum": 16641,
+    "name": "&+rA Rosewood Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16640
+      }
+    }
+  },
+  {
+    "vnum": 16642,
+    "name": "&+WA Lacewood Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16640
+      }
+    }
+  },
+  {
+    "vnum": 16643,
+    "name": "&+YOrchid Way Ends&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16644
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16645
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16646
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16640
+      }
+    }
+  },
+  {
+    "vnum": 16644,
+    "name": "&+yA Small Bocote Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16643
+      }
+    }
+  },
+  {
+    "vnum": 16645,
+    "name": "&+LA Large Cocobola Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16643
+      }
+    }
+  },
+  {
+    "vnum": 16646,
+    "name": "&+yA Bocote Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16643
+      }
+    }
+  },
+  {
+    "vnum": 16647,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16649
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16885
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16624
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16648
+      }
+    }
+  },
+  {
+    "vnum": 16648,
+    "name": "&+yA Huge Lumber Storage Shed&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16647
+      }
+    }
+  },
+  {
+    "vnum": 16649,
+    "name": "&+MThe Halfling Market&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16653
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16651
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16647
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16650
+      }
+    }
+  },
+  {
+    "vnum": 16650,
+    "name": "&+MThe Halfling Market&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -8,
+    "y": -1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16652
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16649
+      }
+    }
+  },
+  {
+    "vnum": 16651,
+    "name": "&+MThe Fruit Vendor's Corner&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -6,
+    "y": -1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16654
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16649
+      }
+    }
+  },
+  {
+    "vnum": 16652,
+    "name": "&+MIn Front of Lomar's&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -8,
+    "y": -2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16655
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16653
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16650
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16658
+      }
+    }
+  },
+  {
+    "vnum": 16653,
+    "name": "&+MThe Center of Market Square&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16656
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16654
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16649
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16652
+      }
+    }
+  },
+  {
+    "vnum": 16654,
+    "name": "&+MThe Halfling Market&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -6,
+    "y": -2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16657
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16662
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16651
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16653
+      }
+    }
+  },
+  {
+    "vnum": 16655,
+    "name": "&+MA Stage in the Halfling Market&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -8,
+    "y": -3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16656
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16652
+      }
+    }
+  },
+  {
+    "vnum": 16656,
+    "name": "&+MThe Halfling Market&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16685
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16657
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16653
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16655
+      }
+    }
+  },
+  {
+    "vnum": 16657,
+    "name": "&+MThe Halfling Market&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -6,
+    "y": -3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16654
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16656
+      }
+    }
+  },
+  {
+    "vnum": 16658,
+    "name": "&+mLomar's Dragon Tooth Tavern&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -9,
+    "y": -2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16659
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16652
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16661
+      }
+    }
+  },
+  {
+    "vnum": 16659,
+    "name": "&+mLomar's Practice Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -9,
+    "y": -3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 16658
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16660
+      }
+    }
+  },
+  {
+    "vnum": 16660,
+    "name": "&+MLomar's Private Quarters&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -9,
+    "y": -3,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16659
+      }
+    }
+  },
+  {
+    "vnum": 16661,
+    "name": "&+mAn Instrument Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -9,
+    "y": -1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16658
+      }
+    }
+  },
+  {
+    "vnum": 16662,
+    "name": "&+GEmerald Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": -2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16663
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16667
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16654
+      }
+    }
+  },
+  {
+    "vnum": 16663,
+    "name": "&+yOn a Narrow Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": -3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16664
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16662
+      }
+    }
+  },
+  {
+    "vnum": 16664,
+    "name": "&+YIn a Beautiful Rock Garden&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": -4,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16666
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16663
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16665
+      }
+    }
+  },
+  {
+    "vnum": 16665,
+    "name": "&+yA Wizard's Burrow&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": -4,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16664
+      }
+    }
+  },
+  {
+    "vnum": 16666,
+    "name": "&+YA Tidy Burrow&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": -4,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16664
+      }
+    }
+  },
+  {
+    "vnum": 16667,
+    "name": "&+GEmerald Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": -2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16668
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16662
+      }
+    }
+  },
+  {
+    "vnum": 16668,
+    "name": "&+GEmerald Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": -3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16669
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16667
+      }
+    }
+  },
+  {
+    "vnum": 16669,
+    "name": "&+GBefore the Gates to an Emerald Tower&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 16670
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16668
+      }
+    }
+  },
+  {
+    "vnum": 16670,
+    "name": "&+GIn Front of the Door to an Emerald Tower&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16669
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 16671
+      }
+    }
+  },
+  {
+    "vnum": 16671,
+    "name": "&+GThe Foyer of an Emerald Tower&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": -1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16670
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16672
+      }
+    }
+  },
+  {
+    "vnum": 16672,
+    "name": "&+GWithin the Emerald Tower&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16671
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16673
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16675
+      }
+    }
+  },
+  {
+    "vnum": 16673,
+    "name": "&+gA Quiet Rest Area&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16674
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16672
+      }
+    }
+  },
+  {
+    "vnum": 16674,
+    "name": "&+GThe Scroll Emporium&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": -1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16673
+      }
+    }
+  },
+  {
+    "vnum": 16675,
+    "name": "&+RBefore a Red Stone Door&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 0,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16676
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16678
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16672
+      }
+    }
+  },
+  {
+    "vnum": 16676,
+    "name": "&+gIn a Small Library&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": -1,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 16675
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16677
+      }
+    }
+  },
+  {
+    "vnum": 16677,
+    "name": "&+gA Small Study&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": -1,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16676
+      }
+    }
+  },
+  {
+    "vnum": 16678,
+    "name": "&+GA Wide Open Area in the Tower&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 0,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16679
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16681
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16682
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16675
+      }
+    }
+  },
+  {
+    "vnum": 16679,
+    "name": "&+GThe Study Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": -1,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16678
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16680
+      }
+    }
+  },
+  {
+    "vnum": 16680,
+    "name": "&+GA Large Teaching Laboratory&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": -1,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16679
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16681
+      }
+    }
+  },
+  {
+    "vnum": 16681,
+    "name": "&+GThe&N &+RFireball&N &+GRoom&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 0,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16680
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16678
+      }
+    }
+  },
+  {
+    "vnum": 16682,
+    "name": "&+GAt the Top of the Emerald Tower&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 0,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 1,
+        "to_room": 16683
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16678
+      }
+    }
+  },
+  {
+    "vnum": 16683,
+    "name": "&+GA Large Summoning Chamber&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": 0,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16684
+      },
+      "1": {
+        "door_flag": 1,
+        "to_room": 16682
+      }
+    }
+  },
+  {
+    "vnum": 16684,
+    "name": "&+GMaluna's Private Chambers&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": -1,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16683
+      }
+    }
+  },
+  {
+    "vnum": 16685,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -4,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16687
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16656
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16686
+      }
+    }
+  },
+  {
+    "vnum": 16686,
+    "name": "&+LA Gray-Brown Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": -4,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16685
+      }
+    }
+  },
+  {
+    "vnum": 16687,
+    "name": "&+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -5,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16689
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16685
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16688
+      }
+    }
+  },
+  {
+    "vnum": 16688,
+    "name": "&+yA Small Plain Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": -5,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16687
+      }
+    }
+  },
+  {
+    "vnum": 16689,
+    "name": "&+WIntersection of&N &+CLakeside Path&N &+Wand&N &+gFernwalk Lane&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -6,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16727
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16687
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16690
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16802
+      }
+    }
+  },
+  {
+    "vnum": 16690,
+    "name": "&+CLakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -8,
+    "y": -6,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16689
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16827
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16691
+      }
+    }
+  },
+  {
+    "vnum": 16691,
+    "name": "&+rOn a Wide Bridge&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -8,
+    "y": -6,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16692
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16690
+      }
+    }
+  },
+  {
+    "vnum": 16692,
+    "name": "&+yBelow the Cathedral&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": -6,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16691
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16703
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16693
+      }
+    }
+  },
+  {
+    "vnum": 16693,
+    "name": "&+yA Path to the Cathedral&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": -6,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16694
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16692
+      }
+    }
+  },
+  {
+    "vnum": 16694,
+    "name": "&+CEntryway to the Cathedral&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -9,
+    "y": -6,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16695
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16693
+      }
+    }
+  },
+  {
+    "vnum": 16695,
+    "name": "&+CIn an Open Air Cathedral&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -9,
+    "y": -7,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16698
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16697
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16694
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16696
+      }
+    }
+  },
+  {
+    "vnum": 16696,
+    "name": "&+CIn an Open Air Cathedral&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -10,
+    "y": -7,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16695
+      }
+    }
+  },
+  {
+    "vnum": 16697,
+    "name": "&+CIn an Open Air Cathedral&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": -7,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16700
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16695
+      }
+    }
+  },
+  {
+    "vnum": 16698,
+    "name": "&+CIn an Open Air Cathedral&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -9,
+    "y": -8,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16701
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16700
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16695
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16699
+      }
+    }
+  },
+  {
+    "vnum": 16699,
+    "name": "&+CThe Cathedral Sleeping Chambers&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -10,
+    "y": -8,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16698
+      }
+    }
+  },
+  {
+    "vnum": 16700,
+    "name": "&+CIn an Open Air Cathedral&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": -8,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16697
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16698
+      }
+    }
+  },
+  {
+    "vnum": 16701,
+    "name": "&+CIn an Open Air Cathedral&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -9,
+    "y": -9,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16702
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16698
+      }
+    }
+  },
+  {
+    "vnum": 16702,
+    "name": "&+CBelarr's Quarters&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -8,
+    "y": -9,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16701
+      }
+    }
+  },
+  {
+    "vnum": 16703,
+    "name": "&+gAbove the Jodani Groves&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -10,
+    "y": -6,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16692
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16704
+      }
+    }
+  },
+  {
+    "vnum": 16704,
+    "name": "&+gA Narrow Path Above the Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -10,
+    "y": -6,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16703
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16705
+      }
+    }
+  },
+  {
+    "vnum": 16705,
+    "name": "&+gA Narrow Path Above the Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -10,
+    "y": -6,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16704
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16706
+      }
+    }
+  },
+  {
+    "vnum": 16706,
+    "name": "&+gA Narrow Path Above the Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -10,
+    "y": -6,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16705
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16707
+      }
+    }
+  },
+  {
+    "vnum": 16707,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -10,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16708
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16710
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16706
+      }
+    }
+  },
+  {
+    "vnum": 16708,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -10,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16707
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16711
+      }
+    }
+  },
+  {
+    "vnum": 16709,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -11,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16710
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16712
+      }
+    }
+  },
+  {
+    "vnum": 16710,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -11,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16709
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16707
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16711
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16713
+      }
+    }
+  },
+  {
+    "vnum": 16711,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -11,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16710
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16708
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16714
+      }
+    }
+  },
+  {
+    "vnum": 16712,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -12,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16709
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16713
+      }
+    }
+  },
+  {
+    "vnum": 16713,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -12,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16712
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16710
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16714
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16716
+      }
+    }
+  },
+  {
+    "vnum": 16714,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -12,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16713
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16711
+      },
+      "2": {
+        "door_flag": 5,
+        "to_room": 16715
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16717
+      }
+    }
+  },
+  {
+    "vnum": 16715,
+    "name": "&+rA Tiny Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -12,
+    "y": -4,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16714
+      }
+    }
+  },
+  {
+    "vnum": 16716,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -13,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16713
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16717
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16719
+      }
+    }
+  },
+  {
+    "vnum": 16717,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -13,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16716
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16714
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16718
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16720
+      }
+    }
+  },
+  {
+    "vnum": 16718,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -13,
+    "y": -4,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16717
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16722
+      }
+    }
+  },
+  {
+    "vnum": 16719,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -14,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16716
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16723
+      }
+    }
+  },
+  {
+    "vnum": 16720,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -14,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16717
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16722
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16724
+      },
+      "5": {
+        "door_flag": 5,
+        "to_room": 16721
+      }
+    }
+  },
+  {
+    "vnum": 16721,
+    "name": "&+rBeneath a Huge Jodani Tree&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -14,
+    "y": -5,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 1,
+        "to_room": 16720
+      }
+    }
+  },
+  {
+    "vnum": 16722,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -14,
+    "y": -4,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16720
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16718
+      }
+    }
+  },
+  {
+    "vnum": 16723,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -15,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16719
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16724
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16725
+      },
+      "5": {
+        "door_flag": 5,
+        "to_room": 16726
+      }
+    }
+  },
+  {
+    "vnum": 16724,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -15,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16723
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16720
+      }
+    }
+  },
+  {
+    "vnum": 16725,
+    "name": "&+rWithin the Jodani Grove&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -16,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16723
+      }
+    }
+  },
+  {
+    "vnum": 16726,
+    "name": "&+LAn Abandoned Burrow&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -15,
+    "y": -6,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 1,
+        "to_room": 16723
+      }
+    }
+  },
+  {
+    "vnum": 16727,
+    "name": "&+CLakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -6,
+    "y": -6,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16729
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16728
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16689
+      }
+    }
+  },
+  {
+    "vnum": 16728,
+    "name": "&+yA Small Cottage of Bocote&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": -5,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16727
+      }
+    }
+  },
+  {
+    "vnum": 16729,
+    "name": "&+CLakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -5,
+    "y": -6,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16730
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16733
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16731
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16727
+      }
+    }
+  },
+  {
+    "vnum": 16730,
+    "name": "&+rA Fisherman's Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": -7,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16729
+      }
+    }
+  },
+  {
+    "vnum": 16731,
+    "name": "&+rA Leather Worker's Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -5,
+    "y": -5,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16729
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16732
+      }
+    }
+  },
+  {
+    "vnum": 16732,
+    "name": "&+rA Small Bedroom&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": -5,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16731
+      }
+    }
+  },
+  {
+    "vnum": 16733,
+    "name": "&+CLakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -4,
+    "y": -6,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16735
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16734
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16729
+      }
+    }
+  },
+  {
+    "vnum": 16734,
+    "name": "&+rAn Artist's Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -4,
+    "y": -5,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16733
+      }
+    }
+  },
+  {
+    "vnum": 16735,
+    "name": "&+CLakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -6,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16736
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16733
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16773
+      }
+    }
+  },
+  {
+    "vnum": 16736,
+    "name": "&+CLakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -7,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16738
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16737
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16735
+      }
+    }
+  },
+  {
+    "vnum": 16737,
+    "name": "&+WA Lacewood Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": -7,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16736
+      }
+    }
+  },
+  {
+    "vnum": 16738,
+    "name": "&+CLakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -8,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16741
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16739
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16736
+      }
+    }
+  },
+  {
+    "vnum": 16739,
+    "name": "&+yA Woodcarver's Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": -8,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16738
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16740
+      }
+    }
+  },
+  {
+    "vnum": 16740,
+    "name": "&+rAn Outdoor Deck&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": -8,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16739
+      }
+    }
+  },
+  {
+    "vnum": 16741,
+    "name": "&+CLakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -9,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16743
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16742
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16738
+      }
+    }
+  },
+  {
+    "vnum": 16742,
+    "name": "&+rA Tidy Halfling Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -2,
+    "y": -9,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16741
+      }
+    }
+  },
+  {
+    "vnum": 16743,
+    "name": "&+CThe End of Lakeside Path&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -10,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16741
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16744
+      }
+    }
+  },
+  {
+    "vnum": 16744,
+    "name": "&+LA Narrow Mountain Path&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -3,
+    "y": -10,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16745
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16743
+      }
+    }
+  },
+  {
+    "vnum": 16745,
+    "name": "&+LA Narrow Mountain Path&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -3,
+    "y": -10,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16746
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16744
+      }
+    }
+  },
+  {
+    "vnum": 16746,
+    "name": "&+LA Narrow Mountain Path&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -3,
+    "y": -10,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16889
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16747
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16745
+      }
+    }
+  },
+  {
+    "vnum": 16747,
+    "name": "&+LOn the Side of a Mountain&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -2,
+    "y": -10,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16750
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16746
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16748
+      }
+    }
+  },
+  {
+    "vnum": 16748,
+    "name": "&+cA Large Flat Rock&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": -10,
+    "z": 18,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16749
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16747
+      }
+    }
+  },
+  {
+    "vnum": 16749,
+    "name": "&+cA Small Home&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": -11,
+    "z": 18,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16748
+      }
+    }
+  },
+  {
+    "vnum": 16750,
+    "name": "&+LA Dead End&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -1,
+    "y": -10,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16747
+      },
+      "5": {
+        "door_flag": 5,
+        "to_room": 16751
+      }
+    }
+  },
+  {
+    "vnum": 16751,
+    "name": "&+LBefore a Mine Entrance&N",
+    "zone": 165,
+    "sector": 3,
+    "x": -1,
+    "y": -10,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 16752
+      },
+      "4": {
+        "door_flag": 1,
+        "to_room": 16750
+      }
+    }
+  },
+  {
+    "vnum": 16752,
+    "name": "&+LWithin an Abandoned Mine&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": -11,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16753
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 16751
+      }
+    }
+  },
+  {
+    "vnum": 16753,
+    "name": "&+LIn an Abandoned Mine&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": -12,
+    "z": 16,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16752
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16754
+      }
+    }
+  },
+  {
+    "vnum": 16754,
+    "name": "&+LA Wide Mine Shaft&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": -12,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16755
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16753
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16757
+      }
+    }
+  },
+  {
+    "vnum": 16755,
+    "name": "&+LA Wide Mine Shaft&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": -12,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16756
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16754
+      }
+    }
+  },
+  {
+    "vnum": 16756,
+    "name": "&+LThe Mine Shaft Ends&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 1,
+    "y": -12,
+    "z": 15,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16755
+      }
+    }
+  },
+  {
+    "vnum": 16757,
+    "name": "&+LA Tight Tunnel&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": -12,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16754
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16758
+      }
+    }
+  },
+  {
+    "vnum": 16758,
+    "name": "&+LA Tight Tunnel&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": -12,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16757
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16759
+      }
+    }
+  },
+  {
+    "vnum": 16759,
+    "name": "&+LA Cramped Tunnel&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": -12,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16758
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16760
+      }
+    }
+  },
+  {
+    "vnum": 16760,
+    "name": "&+LA Huge Cavern&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": -12,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16761
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16759
+      }
+    }
+  },
+  {
+    "vnum": 16761,
+    "name": "&+LA Smooth Cavern&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": -12,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16762
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16760
+      }
+    }
+  },
+  {
+    "vnum": 16762,
+    "name": "&+LA Huge Smooth Cavern&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 1,
+    "y": -12,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16764
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16763
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16761
+      }
+    }
+  },
+  {
+    "vnum": 16763,
+    "name": "&+RInside a&N &+LBlack&N &+Rand Red Stone Cabin&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 1,
+    "y": -11,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16762
+      }
+    }
+  },
+  {
+    "vnum": 16764,
+    "name": "&+LA Huge Smooth Cavern&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": -12,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16765
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16767
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16766
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16762
+      }
+    }
+  },
+  {
+    "vnum": 16765,
+    "name": "&+rInside a Pink Stone Cabin&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 2,
+    "y": -13,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16764
+      }
+    }
+  },
+  {
+    "vnum": 16766,
+    "name": "&+BInside a Blue Stone Cabin&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 2,
+    "y": -11,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16764
+      }
+    }
+  },
+  {
+    "vnum": 16767,
+    "name": "&+LA Huge Smooth Cavern&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 3,
+    "y": -12,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16768
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16764
+      }
+    }
+  },
+  {
+    "vnum": 16768,
+    "name": "&+LA Huge Smooth Cavern&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 3,
+    "y": -13,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16770
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16769
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16767
+      }
+    }
+  },
+  {
+    "vnum": 16769,
+    "name": "&+GInside a Green Stone Cabin&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 4,
+    "y": -13,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16768
+      }
+    }
+  },
+  {
+    "vnum": 16770,
+    "name": "&+LA Smooth Stone Cavern&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 3,
+    "y": -14,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16771
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16768
+      }
+    }
+  },
+  {
+    "vnum": 16771,
+    "name": "&+YA Hall of Statues&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 4,
+    "y": -14,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16772
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16770
+      }
+    }
+  },
+  {
+    "vnum": 16772,
+    "name": "&+YA Hall of Statues&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 5,
+    "y": -14,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16771
+      }
+    }
+  },
+  {
+    "vnum": 16773,
+    "name": "&+yA Narrow Path Above the Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -6,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16735
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16774
+      }
+    }
+  },
+  {
+    "vnum": 16774,
+    "name": "&+yA Narrow Path Above the Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -6,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16773
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16775
+      }
+    }
+  },
+  {
+    "vnum": 16775,
+    "name": "&+YIn the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16776
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16777
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16774
+      }
+    }
+  },
+  {
+    "vnum": 16776,
+    "name": "&+YIn the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -3,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16778
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16775
+      }
+    }
+  },
+  {
+    "vnum": 16777,
+    "name": "&+YA Road Through the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16778
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16779
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16775
+      }
+    }
+  },
+  {
+    "vnum": 16778,
+    "name": "&+YIn the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -2,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16777
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16776
+      }
+    }
+  },
+  {
+    "vnum": 16779,
+    "name": "&+yIn Front of a Large Farmhouse&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -1,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16780
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16781
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16777
+      }
+    }
+  },
+  {
+    "vnum": 16780,
+    "name": "&+rA Large Farmer's Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -1,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16779
+      }
+    }
+  },
+  {
+    "vnum": 16781,
+    "name": "&+GA Road Through the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16782
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16785
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16784
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16779
+      }
+    }
+  },
+  {
+    "vnum": 16782,
+    "name": "&+GIn the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16783
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16786
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16781
+      }
+    }
+  },
+  {
+    "vnum": 16783,
+    "name": "&+RAmong the Apple Trees&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16782
+      }
+    }
+  },
+  {
+    "vnum": 16784,
+    "name": "&+gAmong the Pear Trees&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16781
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16788
+      }
+    }
+  },
+  {
+    "vnum": 16785,
+    "name": "&+GA Path Through the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 1,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16786
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16789
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16788
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16781
+      }
+    }
+  },
+  {
+    "vnum": 16786,
+    "name": "&+GIn the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 1,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16787
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16790
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16785
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16782
+      }
+    }
+  },
+  {
+    "vnum": 16787,
+    "name": "&+yAn Elderly Farmer's Home&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 1,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16786
+      }
+    }
+  },
+  {
+    "vnum": 16788,
+    "name": "&+gAmong the Pear Trees&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 1,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16785
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16792
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16784
+      }
+    }
+  },
+  {
+    "vnum": 16789,
+    "name": "&+GA Road Through the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16790
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16793
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16792
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16785
+      }
+    }
+  },
+  {
+    "vnum": 16790,
+    "name": "&+GIn the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16791
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16794
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16789
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16786
+      }
+    }
+  },
+  {
+    "vnum": 16791,
+    "name": "&+RAmong the Apple Trees&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16795
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16790
+      }
+    }
+  },
+  {
+    "vnum": 16792,
+    "name": "&+gAmong the Pear Trees&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16789
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16796
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16788
+      }
+    }
+  },
+  {
+    "vnum": 16793,
+    "name": "&+yA Road Through the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 3,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16794
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16797
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16796
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16789
+      }
+    }
+  },
+  {
+    "vnum": 16794,
+    "name": "&+yIn the Halfling Fields&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 3,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16795
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16798
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16793
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16790
+      }
+    }
+  },
+  {
+    "vnum": 16795,
+    "name": "&+RAmong the Apple Trees&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 3,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16794
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16791
+      }
+    }
+  },
+  {
+    "vnum": 16796,
+    "name": "&+gAmong the Pear Trees&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 3,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16793
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16800
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16792
+      }
+    }
+  },
+  {
+    "vnum": 16797,
+    "name": "&+yEnd of the Farmer's Road&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 4,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16798
+      },
+      "1": {
+        "door_flag": 1,
+        "to_room": 16801
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16793
+      }
+    }
+  },
+  {
+    "vnum": 16798,
+    "name": "&+rAmong the Peach Trees&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 4,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16799
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16797
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16794
+      }
+    }
+  },
+  {
+    "vnum": 16799,
+    "name": "&+yA Small Farmer's Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 4,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16798
+      }
+    }
+  },
+  {
+    "vnum": 16800,
+    "name": "&=yMA Garish Cottage&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 4,
+    "y": -5,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16796
+      }
+    }
+  },
+  {
+    "vnum": 16801,
+    "name": "&+yA Large Storage Shed&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 5,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 1,
+        "to_room": 16797
+      }
+    }
+  },
+  {
+    "vnum": 16802,
+    "name": "&+CA Narrow Path Leading Down to a Mountain Lake&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -6,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16689
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16803
+      }
+    }
+  },
+  {
+    "vnum": 16803,
+    "name": "&+CBeside a Small Shop&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -6,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16804
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16802
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16805
+      }
+    }
+  },
+  {
+    "vnum": 16804,
+    "name": "&+YA Small Bait Shop&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": -6,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16803
+      }
+    }
+  },
+  {
+    "vnum": 16805,
+    "name": "&+yOn a Floating Pier&N",
+    "zone": 165,
+    "sector": 1,
+    "x": -7,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16808
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16806
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16803
+      }
+    }
+  },
+  {
+    "vnum": 16806,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -6,
+    "y": -6,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16809
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16805
+      }
+    }
+  },
+  {
+    "vnum": 16807,
+    "name": "&+BBeneath a Waterfall&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -8,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16812
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16808
+      }
+    }
+  },
+  {
+    "vnum": 16808,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -7,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16813
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16809
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16805
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16807
+      }
+    }
+  },
+  {
+    "vnum": 16809,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -6,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16814
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16810
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16806
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16808
+      }
+    }
+  },
+  {
+    "vnum": 16810,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -5,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16815
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16811
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16809
+      }
+    }
+  },
+  {
+    "vnum": 16811,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -4,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16816
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16810
+      }
+    }
+  },
+  {
+    "vnum": 16812,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -8,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16813
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16807
+      }
+    }
+  },
+  {
+    "vnum": 16813,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -7,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16814
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16808
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16812
+      }
+    }
+  },
+  {
+    "vnum": 16814,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -6,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16815
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16810
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16813
+      }
+    }
+  },
+  {
+    "vnum": 16815,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -5,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16817
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16816
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16810
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16814
+      }
+    }
+  },
+  {
+    "vnum": 16816,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -4,
+    "y": -8,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16818
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16811
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16815
+      }
+    }
+  },
+  {
+    "vnum": 16817,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -5,
+    "y": -9,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16818
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16815
+      }
+    }
+  },
+  {
+    "vnum": 16818,
+    "name": "&+BOn a Small Mountain Lake&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -4,
+    "y": -9,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16816
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16817
+      }
+    }
+  },
+  {
+    "vnum": 16819,
+    "name": "&+bWithin the Falling Water&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -8,
+    "y": -7,
+    "z": 8,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16807
+      }
+    }
+  },
+  {
+    "vnum": 16820,
+    "name": "&+bWithin the Falling Water&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -8,
+    "y": -7,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16819
+      }
+    }
+  },
+  {
+    "vnum": 16821,
+    "name": "&+bWithin the Falling Water&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -8,
+    "y": -7,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16820
+      }
+    }
+  },
+  {
+    "vnum": 16822,
+    "name": "&+bWithin the Falling Water&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -8,
+    "y": -7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16821
+      }
+    }
+  },
+  {
+    "vnum": 16823,
+    "name": "&+bWithin the Falling Water&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -8,
+    "y": -7,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16822
+      }
+    }
+  },
+  {
+    "vnum": 16824,
+    "name": "&+bWithin the Falling Water&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -8,
+    "y": -7,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16823
+      }
+    }
+  },
+  {
+    "vnum": 16825,
+    "name": "&+bOn the Lip of a Waterfall&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -8,
+    "y": -7,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16826
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16824
+      }
+    }
+  },
+  {
+    "vnum": 16826,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -9,
+    "y": -7,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16825
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16827
+      }
+    }
+  },
+  {
+    "vnum": 16827,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -9,
+    "y": -6,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16826
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16690
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16828
+      }
+    }
+  },
+  {
+    "vnum": 16828,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -9,
+    "y": -5,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16827
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16829
+      }
+    }
+  },
+  {
+    "vnum": 16829,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -9,
+    "y": -4,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16828
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16830
+      }
+    }
+  },
+  {
+    "vnum": 16830,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -10,
+    "y": -4,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16829
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16831
+      }
+    }
+  },
+  {
+    "vnum": 16831,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -10,
+    "y": -3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16830
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16832
+      }
+    }
+  },
+  {
+    "vnum": 16832,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -10,
+    "y": -2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16831
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16833
+      }
+    }
+  },
+  {
+    "vnum": 16833,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -10,
+    "y": -1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16832
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16834
+      }
+    }
+  },
+  {
+    "vnum": 16834,
+    "name": "&+BOn a Narrow River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -10,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16833
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16835
+      }
+    }
+  },
+  {
+    "vnum": 16835,
+    "name": "&+BIn a Shallow Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -10,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16834
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16627
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16837
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16836
+      }
+    }
+  },
+  {
+    "vnum": 16836,
+    "name": "&+BBeneath a Thin Waterfall&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -11,
+    "y": 1,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16835
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16838
+      }
+    }
+  },
+  {
+    "vnum": 16837,
+    "name": "&+BIn a Shallow Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -10,
+    "y": 2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16835
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16628
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16838
+      }
+    }
+  },
+  {
+    "vnum": 16838,
+    "name": "&+BIn a Shallow Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -11,
+    "y": 2,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16836
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16837
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16839
+      }
+    }
+  },
+  {
+    "vnum": 16839,
+    "name": "&+BOn a Small River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -11,
+    "y": 3,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16838
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16840
+      }
+    }
+  },
+  {
+    "vnum": 16840,
+    "name": "&+BAt the Waterfall's Edge&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -11,
+    "y": 4,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16839
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16841
+      }
+    }
+  },
+  {
+    "vnum": 16841,
+    "name": "&+BFalling in the Water Stream&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -11,
+    "y": 4,
+    "z": 13,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16842
+      }
+    }
+  },
+  {
+    "vnum": 16842,
+    "name": "&+BFalling in the Water Stream&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -11,
+    "y": 4,
+    "z": 12,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16843
+      }
+    }
+  },
+  {
+    "vnum": 16843,
+    "name": "&+BFalling in the Water Stream&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -11,
+    "y": 4,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16844
+      }
+    }
+  },
+  {
+    "vnum": 16844,
+    "name": "&+BFalling in the Water Stream&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -11,
+    "y": 4,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16845
+      }
+    }
+  },
+  {
+    "vnum": 16845,
+    "name": "&+BFalling in the Water Stream&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -11,
+    "y": 4,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16846
+      }
+    }
+  },
+  {
+    "vnum": 16846,
+    "name": "&+BFalling in the Water Stream&N",
+    "zone": 165,
+    "sector": 8,
+    "x": -11,
+    "y": 4,
+    "z": 8,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16847
+      }
+    }
+  },
+  {
+    "vnum": 16847,
+    "name": "&+BBeneath a Large Waterfall&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -11,
+    "y": 5,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16848
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16850
+      }
+    }
+  },
+  {
+    "vnum": 16848,
+    "name": "&+BIn a Wide Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -10,
+    "y": 5,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16849
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16851
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16847
+      }
+    }
+  },
+  {
+    "vnum": 16849,
+    "name": "&+BIn a Wide Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -9,
+    "y": 5,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16852
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16848
+      }
+    }
+  },
+  {
+    "vnum": 16850,
+    "name": "&+BIn a Wide Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -11,
+    "y": 6,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16847
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16851
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16853
+      }
+    }
+  },
+  {
+    "vnum": 16851,
+    "name": "&+BIn a Wide Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -10,
+    "y": 6,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16848
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16852
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16854
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16850
+      }
+    }
+  },
+  {
+    "vnum": 16852,
+    "name": "&+BIn a Wide Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -9,
+    "y": 6,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16849
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16851
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16546
+      }
+    }
+  },
+  {
+    "vnum": 16853,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -10,
+    "y": 6,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16850
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16854
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16855
+      }
+    }
+  },
+  {
+    "vnum": 16854,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -9,
+    "y": 6,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16851
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16856
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16853
+      }
+    }
+  },
+  {
+    "vnum": 16855,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -10,
+    "y": 7,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16853
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16856
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16857
+      }
+    }
+  },
+  {
+    "vnum": 16856,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -9,
+    "y": 7,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16854
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16858
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16855
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16544
+      }
+    }
+  },
+  {
+    "vnum": 16857,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -10,
+    "y": 8,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16855
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16858
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16859
+      }
+    }
+  },
+  {
+    "vnum": 16858,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -9,
+    "y": 8,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16856
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16860
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16857
+      }
+    }
+  },
+  {
+    "vnum": 16859,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -11,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16857
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16860
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16861
+      }
+    }
+  },
+  {
+    "vnum": 16860,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -10,
+    "y": 9,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16858
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16862
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16859
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16539
+      }
+    }
+  },
+  {
+    "vnum": 16861,
+    "name": "&+BIn a Wide River&N",
+    "zone": 165,
+    "sector": 6,
+    "x": -11,
+    "y": 10,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16859
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16862
+      }
+    }
+  },
+  {
+    "vnum": 16862,
+    "name": "&+BThe River Narrows&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -10,
+    "y": 10,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16860
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16863
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16861
+      }
+    }
+  },
+  {
+    "vnum": 16863,
+    "name": "&+BThe River Narrows&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -9,
+    "y": 10,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16539
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16864
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16862
+      }
+    }
+  },
+  {
+    "vnum": 16864,
+    "name": "&+BThe River Narrows&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -8,
+    "y": 10,
+    "z": 10,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16538
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16865
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16863
+      }
+    }
+  },
+  {
+    "vnum": 16865,
+    "name": "&+BOn a Swift River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -7,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16866
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16864
+      }
+    }
+  },
+  {
+    "vnum": 16866,
+    "name": "&+BOn a Swift River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -6,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16867
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16865
+      }
+    }
+  },
+  {
+    "vnum": 16867,
+    "name": "&+BOn a Swift River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -5,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16868
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16866
+      }
+    }
+  },
+  {
+    "vnum": 16868,
+    "name": "&+BOn a Swift River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -4,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16869
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16867
+      }
+    }
+  },
+  {
+    "vnum": 16869,
+    "name": "&+BOn a Swift River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -3,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16870
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16868
+      }
+    }
+  },
+  {
+    "vnum": 16870,
+    "name": "&+BOn a Swift River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -2,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16871
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16869
+      }
+    }
+  },
+  {
+    "vnum": 16871,
+    "name": "&+BOn a Swift River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": -1,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16872
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16870
+      }
+    }
+  },
+  {
+    "vnum": 16872,
+    "name": "&+BOn a Swift River&N",
+    "zone": 165,
+    "sector": 7,
+    "x": 0,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16873
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16871
+      }
+    }
+  },
+  {
+    "vnum": 16873,
+    "name": "&+BThe Edge of a Waterfall&N",
+    "zone": 165,
+    "sector": 7,
+    "x": 1,
+    "y": 9,
+    "z": 9,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16872
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16874
+      }
+    }
+  },
+  {
+    "vnum": 16874,
+    "name": "&+BInside the Waterfall&N",
+    "zone": 165,
+    "sector": 8,
+    "x": 1,
+    "y": 9,
+    "z": 8,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16875
+      }
+    }
+  },
+  {
+    "vnum": 16875,
+    "name": "&+BInside the Waterfall&N",
+    "zone": 165,
+    "sector": 8,
+    "x": 1,
+    "y": 9,
+    "z": 7,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16876
+      }
+    }
+  },
+  {
+    "vnum": 16876,
+    "name": "&+BInside the Waterfall&N",
+    "zone": 165,
+    "sector": 8,
+    "x": 1,
+    "y": 9,
+    "z": 6,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16877
+      }
+    }
+  },
+  {
+    "vnum": 16877,
+    "name": "&+BInside the Waterfall&N",
+    "zone": 165,
+    "sector": 8,
+    "x": 1,
+    "y": 9,
+    "z": 5,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16878
+      }
+    }
+  },
+  {
+    "vnum": 16878,
+    "name": "&+BInside the Waterfall&N",
+    "zone": 165,
+    "sector": 8,
+    "x": 1,
+    "y": 9,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16879
+      }
+    }
+  },
+  {
+    "vnum": 16879,
+    "name": "&+BInside the Waterfall&N",
+    "zone": 165,
+    "sector": 8,
+    "x": 1,
+    "y": 9,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16880
+      }
+    }
+  },
+  {
+    "vnum": 16880,
+    "name": "&+BInside the Waterfall&N",
+    "zone": 165,
+    "sector": 8,
+    "x": 1,
+    "y": 9,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16881
+      }
+    }
+  },
+  {
+    "vnum": 16881,
+    "name": "&+BIn A Deep Rocky Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": 0,
+    "y": 4,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16882
+      }
+    }
+  },
+  {
+    "vnum": 16882,
+    "name": "&+BIn A Deep Rocky Pool&N",
+    "zone": 165,
+    "sector": 6,
+    "x": 1,
+    "y": 4,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16883
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16881
+      }
+    }
+  },
+  {
+    "vnum": 16883,
+    "name": "&+LOn a Flat Rock&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 1,
+    "y": 3,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16882
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16906
+      }
+    }
+  },
+  {
+    "vnum": 16884,
+    "name": "&+GThe Quivering Leaf Reading Room&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -1,
+    "y": 7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16558
+      }
+    }
+  },
+  {
+    "vnum": 16885,
+    "name": "&+YVendurini's Auction House&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -6,
+    "y": 0,
+    "z": 14,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16647
+      }
+    }
+  },
+  {
+    "vnum": 16886,
+    "name": "&+GLubirana's Stables and Kennels&N",
+    "zone": 165,
+    "sector": 0,
+    "x": -1,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16904
+      }
+    }
+  },
+  {
+    "vnum": 16887,
+    "name": "Lubirana's Mob Storage Room",
+    "zone": 165,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {}
+  },
+  {
+    "vnum": 16888,
+    "name": "&+gThe Quivering Leaf Postal Office&n",
+    "zone": 165,
+    "sector": 0,
+    "x": -3,
+    "y": 7,
+    "z": 11,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16558
+      }
+    }
+  },
+  {
+    "vnum": 16889,
+    "name": "&+CInside the North Gates to Woodseer&n",
+    "zone": 165,
+    "sector": 4,
+    "x": -3,
+    "y": -11,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16890
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16746
+      }
+    }
+  },
+  {
+    "vnum": 16890,
+    "name": "&+ROutside the North Gates of Woodseer&n",
+    "zone": 165,
+    "sector": 4,
+    "x": -3,
+    "y": -12,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16891
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16889
+      }
+    }
+  },
+  {
+    "vnum": 16891,
+    "name": "&+LA Mountain Trail&n",
+    "zone": 165,
+    "sector": 5,
+    "x": -3,
+    "y": -13,
+    "z": 17,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 568910
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16890
+      }
+    }
+  },
+  {
+    "vnum": 16900,
+    "name": "&+gA Cleared Path Through the Jungle&N",
+    "zone": 165,
+    "sector": 2,
+    "x": 0,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16916
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16901
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16953
+      }
+    }
+  },
+  {
+    "vnum": 16901,
+    "name": "&+gA Clearing at the Base of a Cliff&N",
+    "zone": 165,
+    "sector": 2,
+    "x": 0,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16900
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16917
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16902
+      }
+    }
+  },
+  {
+    "vnum": 16902,
+    "name": "&+gA Clearing Below the Woodseer Plateau&N",
+    "zone": 165,
+    "sector": 2,
+    "x": 0,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16901
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16918
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16500
+      }
+    }
+  },
+  {
+    "vnum": 16903,
+    "name": "&+gA Trade Path at the Base of a Cliff&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16500
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16919
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16904
+      }
+    }
+  },
+  {
+    "vnum": 16904,
+    "name": "&+gA Trade Path at the Base of a Cliff&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16903
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16905
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16886
+      }
+    }
+  },
+  {
+    "vnum": 16905,
+    "name": "&+gA Trade Path at the Base of a Cliff&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 0,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16904
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16906
+      }
+    }
+  },
+  {
+    "vnum": 16906,
+    "name": "&+gA Trade Path Along a Deep Pool&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 1,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16907
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16905
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16883
+      }
+    }
+  },
+  {
+    "vnum": 16907,
+    "name": "&+gA Trade Path Along a Deep Pool&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16925
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16937
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16908
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16906
+      }
+    }
+  },
+  {
+    "vnum": 16908,
+    "name": "&+gA Trade Path Along a Deep Pool&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16907
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16938
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16909
+      }
+    }
+  },
+  {
+    "vnum": 16909,
+    "name": "&+gA Trade Path Cut From the Jungle&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16908
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16939
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16910
+      }
+    }
+  },
+  {
+    "vnum": 16910,
+    "name": "&+LOn a Trade Path in a Narrow Ravine&N",
+    "zone": 165,
+    "sector": 1,
+    "x": 2,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16909
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16911
+      }
+    }
+  },
+  {
+    "vnum": 16911,
+    "name": "&+LOn a Trade Path in a Narrow Ravine&N",
+    "zone": 165,
+    "sector": 4,
+    "x": 2,
+    "y": 6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16912
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16910
+      }
+    }
+  },
+  {
+    "vnum": 16912,
+    "name": "&+LOn a Trade Path in a Narrow Ravine&N",
+    "zone": 165,
+    "sector": 4,
+    "x": 2,
+    "y": 6,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16913
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16911
+      }
+    }
+  },
+  {
+    "vnum": 16913,
+    "name": "&+LOn a Trade Path in a Narrow Ravine&N",
+    "zone": 165,
+    "sector": 4,
+    "x": 2,
+    "y": 6,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16914
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16912
+      }
+    }
+  },
+  {
+    "vnum": 16914,
+    "name": "&+LOn a Trade Path in a Narrow Ravine&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 2,
+    "y": 6,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16915
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16913
+      }
+    }
+  },
+  {
+    "vnum": 16915,
+    "name": "&+gA Trade Path Heading into a Ravine&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 2,
+    "y": 6,
+    "z": 5,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 569309
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16501
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16914
+      }
+    }
+  },
+  {
+    "vnum": 16916,
+    "name": "&+LOn a Wall of Lose Rocks&N",
+    "zone": 165,
+    "sector": 2,
+    "x": 1,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16920
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16917
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16900
+      }
+    }
+  },
+  {
+    "vnum": 16917,
+    "name": "&+LOn a Wall of Lose Rocks&N",
+    "zone": 165,
+    "sector": 2,
+    "x": 1,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16916
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16921
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16918
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16901
+      }
+    }
+  },
+  {
+    "vnum": 16918,
+    "name": "&+LOn a Wall of Lose Rocks&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 1,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16917
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16922
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16902
+      }
+    }
+  },
+  {
+    "vnum": 16919,
+    "name": "&+LOn a Wall of Lose Rocks&N",
+    "zone": 165,
+    "sector": 2,
+    "x": 1,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16924
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16903
+      }
+    }
+  },
+  {
+    "vnum": 16920,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 2,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16926
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16921
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16916
+      }
+    }
+  },
+  {
+    "vnum": 16921,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 2,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16920
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16927
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16922
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16917
+      }
+    }
+  },
+  {
+    "vnum": 16922,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 2,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16921
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16929
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16923
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16918
+      }
+    }
+  },
+  {
+    "vnum": 16923,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 2,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16922
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16930
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16924
+      }
+    }
+  },
+  {
+    "vnum": 16924,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 2,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16923
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16931
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16925
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16919
+      }
+    }
+  },
+  {
+    "vnum": 16925,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 2,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16924
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16936
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16907
+      }
+    }
+  },
+  {
+    "vnum": 16926,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16940
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16927
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16920
+      }
+    }
+  },
+  {
+    "vnum": 16927,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16926
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16941
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16929
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16921
+      },
+      "5": {
+        "door_flag": 4,
+        "to_room": 16928
+      }
+    }
+  },
+  {
+    "vnum": 16928,
+    "name": "&+LA Dark Burrow&N",
+    "zone": 165,
+    "sector": 0,
+    "x": 3,
+    "y": -2,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16927
+      }
+    }
+  },
+  {
+    "vnum": 16929,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16927
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16942
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16930
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16922
+      }
+    }
+  },
+  {
+    "vnum": 16930,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16929
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16943
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16931
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16923
+      }
+    }
+  },
+  {
+    "vnum": 16931,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16930
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16945
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16936
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16924
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16932
+      }
+    }
+  },
+  {
+    "vnum": 16932,
+    "name": "&+yClimbing a Young Tree&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 1,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16933
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16931
+      }
+    }
+  },
+  {
+    "vnum": 16933,
+    "name": "&+gIn the High Branches of Some Trees&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 1,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16934
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16935
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16932
+      }
+    }
+  },
+  {
+    "vnum": 16934,
+    "name": "&+gSome Twisted Branches High Above the Ground&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 0,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16933
+      }
+    }
+  },
+  {
+    "vnum": 16935,
+    "name": "&+LA Dirty Area in the Branches&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 2,
+    "y": 1,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16933
+      }
+    }
+  },
+  {
+    "vnum": 16936,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16931
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16946
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16937
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16925
+      }
+    }
+  },
+  {
+    "vnum": 16937,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16936
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16938
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16907
+      }
+    }
+  },
+  {
+    "vnum": 16938,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16937
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16947
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16939
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16908
+      }
+    }
+  },
+  {
+    "vnum": 16939,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 3,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16938
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16909
+      }
+    }
+  },
+  {
+    "vnum": 16940,
+    "name": "&+GA Wet Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16941
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16926
+      }
+    }
+  },
+  {
+    "vnum": 16941,
+    "name": "&+GA Wet Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16940
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16942
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16927
+      }
+    }
+  },
+  {
+    "vnum": 16942,
+    "name": "&+GA Wet Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16941
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16943
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16929
+      }
+    }
+  },
+  {
+    "vnum": 16943,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16942
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16950
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16945
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16930
+      },
+      "5": {
+        "door_flag": 4,
+        "to_room": 16944
+      }
+    }
+  },
+  {
+    "vnum": 16944,
+    "name": "&+rA Bloody Burrow&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": 0,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16943
+      }
+    }
+  },
+  {
+    "vnum": 16945,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16943
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16951
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16946
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16931
+      }
+    }
+  },
+  {
+    "vnum": 16946,
+    "name": "&+GA Young Jungle&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16945
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 16952
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16936
+      },
+      "5": {
+        "door_flag": 4,
+        "to_room": 16949
+      }
+    }
+  },
+  {
+    "vnum": 16947,
+    "name": "&+gAn Herb Garden&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16948
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16938
+      }
+    }
+  },
+  {
+    "vnum": 16948,
+    "name": "&+yIn an Alchemists Home&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16947
+      }
+    }
+  },
+  {
+    "vnum": 16949,
+    "name": "&+LA Dark Storage Chamber&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 4,
+    "y": 2,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16946
+      }
+    }
+  },
+  {
+    "vnum": 16950,
+    "name": "&+GThe Jungle Darkens&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 5,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80000
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16951
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16943
+      }
+    }
+  },
+  {
+    "vnum": 16951,
+    "name": "&+GThe Jungle Darkens&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 5,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16950
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80001
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 16952
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16945
+      }
+    }
+  },
+  {
+    "vnum": 16952,
+    "name": "&+GThe Jungle Darkens&N",
+    "zone": 165,
+    "sector": 3,
+    "x": 5,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16951
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80002
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16946
+      }
+    }
+  },
+  {
+    "vnum": 16953,
+    "name": "&+LA Rocky Mountain Path&N",
+    "zone": 165,
+    "sector": 5,
+    "x": 0,
+    "y": -3,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16954
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16900
+      }
+    }
+  },
+  {
+    "vnum": 16954,
+    "name": "&+LA Rocky Mountain Path&N",
+    "zone": 165,
+    "sector": 5,
+    "x": 0,
+    "y": -4,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16953
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16955
+      }
+    }
+  },
+  {
+    "vnum": 16955,
+    "name": "&+LA Rocky Mountain Path&N",
+    "zone": 165,
+    "sector": 5,
+    "x": 0,
+    "y": -4,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 16956
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16954
+      }
+    }
+  },
+  {
+    "vnum": 16956,
+    "name": "&+LA Rocky Mountain Path&N",
+    "zone": 165,
+    "sector": 5,
+    "x": 0,
+    "y": -4,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16957
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16955
+      }
+    }
+  },
+  {
+    "vnum": 16957,
+    "name": "&+LA Rocky Mountain Path&N",
+    "zone": 165,
+    "sector": 4,
+    "x": 0,
+    "y": -5,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16956
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16958
+      }
+    }
+  },
+  {
+    "vnum": 16958,
+    "name": "&+LA Rocky Mountain Path&N",
+    "zone": 165,
+    "sector": 4,
+    "x": 0,
+    "y": -5,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16959
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16957
+      }
+    }
+  },
+  {
+    "vnum": 16959,
+    "name": "&+LA Rocky Mountain Path&N",
+    "zone": 165,
+    "sector": 5,
+    "x": 1,
+    "y": -5,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16958
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 16960
+      }
+    }
+  },
+  {
+    "vnum": 16960,
+    "name": "&+LA Rocky Mountain Path&N",
+    "zone": 165,
+    "sector": 5,
+    "x": 1,
+    "y": -5,
+    "z": 5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 16065
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16959
+      }
+    }
+  },
+  {
+    "vnum": 154581,
+    "name": "Stub Room 154581",
+    "zone": null,
+    "sector": null,
+    "x": 0,
+    "y": 0,
+    "z": 1,
+    "stub": true,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 16500
+      }
+    }
+  },
+  {
+    "vnum": 568910,
+    "name": "Stub Room 568910",
+    "zone": null,
+    "sector": null,
+    "x": -3,
+    "y": -14,
+    "z": 17,
+    "stub": true,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16891
+      }
+    }
+  },
+  {
+    "vnum": 569309,
+    "name": "Stub Room 569309",
+    "zone": null,
+    "sector": null,
+    "x": 1,
+    "y": 6,
+    "z": 5,
+    "stub": true,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 16915
+      }
+    }
+  },
+  {
+    "vnum": 80000,
+    "name": "Stub Room 80000",
+    "zone": null,
+    "sector": null,
+    "x": 6,
+    "y": 0,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16950
+      }
+    }
+  },
+  {
+    "vnum": 80001,
+    "name": "Stub Room 80001",
+    "zone": null,
+    "sector": null,
+    "x": 6,
+    "y": 1,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16951
+      }
+    }
+  },
+  {
+    "vnum": 80002,
+    "name": "Stub Room 80002",
+    "zone": null,
+    "sector": null,
+    "x": 6,
+    "y": 2,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 16952
+      }
+    }
+  },
+  {
+    "vnum": 16065,
+    "name": "Stub Room 16065",
+    "zone": null,
+    "sector": null,
+    "x": 1,
+    "y": -6,
+    "z": 5,
+    "stub": true,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 16960
+      }
+    }
+  }
+]

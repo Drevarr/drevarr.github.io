@@ -1,4 +1,6 @@
 [
+  { "name": "Haunted Woods", "file": "hwood.wld.json" },
+  { "name": "Woodseer", "file": "woodseer.wld.json" },
   { "name": "Nhavan Island", "file": "nhavan_island_one.json" },
   { "name": "Vellas Bordello", "file": "bordello.json" }
 ]

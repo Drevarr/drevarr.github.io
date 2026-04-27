@@ -1,0 +1,10713 @@
+[
+  {
+    "vnum": 80000,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80007
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80001
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16950
+      }
+    }
+  },
+  {
+    "vnum": 80001,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80000
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80008
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80002
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16951
+      }
+    }
+  },
+  {
+    "vnum": 80002,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 0,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80001
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80009
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80003
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 16952
+      }
+    }
+  },
+  {
+    "vnum": 80003,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 0,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80002
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80010
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80006
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80004
+      }
+    }
+  },
+  {
+    "vnum": 80004,
+    "name": "&+gBeside a Cabin in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": -1,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80003
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80005
+      }
+    }
+  },
+  {
+    "vnum": 80005,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": -1,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80004
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80006
+      }
+    }
+  },
+  {
+    "vnum": 80006,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 0,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80003
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80011
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80005
+      }
+    }
+  },
+  {
+    "vnum": 80007,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 1,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80012
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80008
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80000
+      }
+    }
+  },
+  {
+    "vnum": 80008,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 1,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80007
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80021
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80009
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80001
+      }
+    }
+  },
+  {
+    "vnum": 80009,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 1,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80008
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80022
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80010
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80002
+      }
+    }
+  },
+  {
+    "vnum": 80010,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 1,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80009
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80023
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80011
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80003
+      }
+    }
+  },
+  {
+    "vnum": 80011,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 1,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80010
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80024
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80006
+      }
+    }
+  },
+  {
+    "vnum": 80012,
+    "name": "&+gBefore the Gates to a Bullywug Village&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 2,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80269
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80013
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80021
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80007
+      }
+    }
+  },
+  {
+    "vnum": 80013,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80014
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80030
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80029
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80012
+      }
+    }
+  },
+  {
+    "vnum": 80014,
+    "name": "&+gAlong a Fence in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80015
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80013
+      }
+    }
+  },
+  {
+    "vnum": 80015,
+    "name": "&+gAlong a Fence in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80016
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80030
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80014
+      }
+    }
+  },
+  {
+    "vnum": 80016,
+    "name": "&+gAlong a Fence in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80017
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80044
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80015
+      }
+    }
+  },
+  {
+    "vnum": 80017,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80018
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80053
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80045
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80016
+      }
+    }
+  },
+  {
+    "vnum": 80018,
+    "name": "&+gAlong a Fence in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80019
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80017
+      }
+    }
+  },
+  {
+    "vnum": 80019,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80020
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80063
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80053
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80018
+      }
+    }
+  },
+  {
+    "vnum": 80020,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80062
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80019
+      }
+    }
+  },
+  {
+    "vnum": 80021,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 2,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80012
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80029
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80022
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80008
+      }
+    }
+  },
+  {
+    "vnum": 80022,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 2,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80021
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80028
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80023
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80009
+      }
+    }
+  },
+  {
+    "vnum": 80023,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 2,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80022
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80027
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80024
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80010
+      },
+      "5": {
+        "door_flag": 4,
+        "to_room": 80169
+      }
+    }
+  },
+  {
+    "vnum": 80024,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 2,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80023
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80025
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80011
+      }
+    }
+  },
+  {
+    "vnum": 80025,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80027
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80034
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80026
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80024
+      }
+    }
+  },
+  {
+    "vnum": 80026,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80025
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80035
+      }
+    }
+  },
+  {
+    "vnum": 80027,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80028
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80033
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80025
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80023
+      }
+    }
+  },
+  {
+    "vnum": 80028,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80029
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80032
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80027
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80022
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80165
+      }
+    }
+  },
+  {
+    "vnum": 80029,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80013
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80031
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80028
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80021
+      }
+    }
+  },
+  {
+    "vnum": 80030,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80015
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80044
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80031
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80013
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80170
+      }
+    }
+  },
+  {
+    "vnum": 80031,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80030
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80043
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80032
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80029
+      }
+    }
+  },
+  {
+    "vnum": 80032,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80031
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80042
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80033
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80028
+      }
+    }
+  },
+  {
+    "vnum": 80033,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80032
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80041
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80034
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80027
+      }
+    }
+  },
+  {
+    "vnum": 80034,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80033
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80040
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80035
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80025
+      }
+    }
+  },
+  {
+    "vnum": 80035,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80034
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80039
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80036
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80026
+      }
+    }
+  },
+  {
+    "vnum": 80036,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80035
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80037
+      }
+    }
+  },
+  {
+    "vnum": 80037,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80039
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80051
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80038
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80036
+      }
+    }
+  },
+  {
+    "vnum": 80038,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80037
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80052
+      }
+    }
+  },
+  {
+    "vnum": 80039,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80040
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80050
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80037
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80035
+      }
+    }
+  },
+  {
+    "vnum": 80040,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80041
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80049
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80039
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80034
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80226
+      }
+    }
+  },
+  {
+    "vnum": 80041,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80042
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80048
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80040
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80033
+      }
+    }
+  },
+  {
+    "vnum": 80042,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80043
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80047
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80041
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80032
+      }
+    }
+  },
+  {
+    "vnum": 80043,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80044
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80046
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80042
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80031
+      }
+    }
+  },
+  {
+    "vnum": 80044,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80016
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80045
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80043
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80030
+      }
+    }
+  },
+  {
+    "vnum": 80045,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80017
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80054
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80046
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80044
+      }
+    }
+  },
+  {
+    "vnum": 80046,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80045
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80055
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80047
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80043
+      }
+    }
+  },
+  {
+    "vnum": 80047,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80046
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80056
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80048
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80042
+      }
+    }
+  },
+  {
+    "vnum": 80048,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80047
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80057
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80049
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80041
+      }
+    }
+  },
+  {
+    "vnum": 80049,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80048
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80058
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80050
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80040
+      }
+    }
+  },
+  {
+    "vnum": 80050,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80049
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80059
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80051
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80039
+      }
+    }
+  },
+  {
+    "vnum": 80051,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80050
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80060
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80052
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80037
+      }
+    }
+  },
+  {
+    "vnum": 80052,
+    "name": "&+gBy a Cliff Enclosing the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80051
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80061
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80038
+      }
+    }
+  },
+  {
+    "vnum": 80053,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80019
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80064
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80054
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80017
+      }
+    }
+  },
+  {
+    "vnum": 80054,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80053
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80065
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80055
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80045
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80191
+      }
+    }
+  },
+  {
+    "vnum": 80055,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80054
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80066
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80056
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80046
+      }
+    }
+  },
+  {
+    "vnum": 80056,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80055
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80067
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80057
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80047
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80190
+      }
+    }
+  },
+  {
+    "vnum": 80057,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80056
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80068
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80058
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80048
+      }
+    }
+  },
+  {
+    "vnum": 80058,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80057
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80069
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80059
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80049
+      }
+    }
+  },
+  {
+    "vnum": 80059,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80058
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80070
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80060
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80050
+      }
+    }
+  },
+  {
+    "vnum": 80060,
+    "name": "&+LA Rocky Clearing&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80059
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80071
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80061
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80051
+      }
+    }
+  },
+  {
+    "vnum": 80061,
+    "name": "&+RBeside a Flaming Brazier&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80060
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80072
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80052
+      }
+    }
+  },
+  {
+    "vnum": 80062,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 8,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80087
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80063
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80020
+      }
+    }
+  },
+  {
+    "vnum": 80063,
+    "name": "&+gNear a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80062
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80088
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80064
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80019
+      }
+    }
+  },
+  {
+    "vnum": 80064,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80063
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80073
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80065
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80053
+      }
+    }
+  },
+  {
+    "vnum": 80065,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80064
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80074
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80066
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80054
+      }
+    }
+  },
+  {
+    "vnum": 80066,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80065
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80075
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80067
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80055
+      }
+    }
+  },
+  {
+    "vnum": 80067,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80066
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80076
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80068
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80056
+      }
+    }
+  },
+  {
+    "vnum": 80068,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80067
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80077
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80069
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80057
+      }
+    }
+  },
+  {
+    "vnum": 80069,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80068
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80078
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80070
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80057
+      }
+    }
+  },
+  {
+    "vnum": 80070,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80069
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80079
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80071
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80059
+      }
+    }
+  },
+  {
+    "vnum": 80071,
+    "name": "&+yBy a Strange Bowl of Mud&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80070
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80072
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80060
+      }
+    }
+  },
+  {
+    "vnum": 80072,
+    "name": "&+BNear a Giant Bowl of Water&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80071
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80061
+      }
+    }
+  },
+  {
+    "vnum": 80073,
+    "name": "&+gNear a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 9,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80088
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80090
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80074
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80064
+      }
+    }
+  },
+  {
+    "vnum": 80074,
+    "name": "&+gNear a &+bRiver&+g the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 9,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80073
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80091
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80075
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80065
+      }
+    }
+  },
+  {
+    "vnum": 80075,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 9,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80074
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80081
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80076
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80066
+      }
+    }
+  },
+  {
+    "vnum": 80076,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 9,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80075
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80082
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80077
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80067
+      }
+    }
+  },
+  {
+    "vnum": 80077,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 9,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80076
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80083
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80078
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80068
+      },
+      "5": {
+        "door_flag": 5,
+        "to_room": 80195
+      }
+    }
+  },
+  {
+    "vnum": 80078,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 9,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80077
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80084
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80079
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80069
+      }
+    }
+  },
+  {
+    "vnum": 80079,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 9,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80078
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80085
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80080
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80070
+      }
+    }
+  },
+  {
+    "vnum": 80080,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 9,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80079
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80086
+      }
+    }
+  },
+  {
+    "vnum": 80081,
+    "name": "&+gAlong a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 10,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80091
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80113
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80082
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80075
+      }
+    }
+  },
+  {
+    "vnum": 80082,
+    "name": "&+gAlong a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 10,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80081
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80114
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80083
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80076
+      }
+    }
+  },
+  {
+    "vnum": 80083,
+    "name": "&+gNear a Fallen Tree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 10,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80082
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80115
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80084
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80077
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80124
+      }
+    }
+  },
+  {
+    "vnum": 80084,
+    "name": "&+gAlong a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 10,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80083
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80116
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80085
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80078
+      }
+    }
+  },
+  {
+    "vnum": 80085,
+    "name": "&+gAbove a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 10,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80084
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80117
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80086
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80079
+      }
+    }
+  },
+  {
+    "vnum": 80086,
+    "name": "&+gAbove a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 10,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80085
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80080
+      }
+    }
+  },
+  {
+    "vnum": 80087,
+    "name": "&+BBeneath a Stream of Falling Water&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 9,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80088
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80062
+      }
+    }
+  },
+  {
+    "vnum": 80088,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 9,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80087
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80089
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80073
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80063
+      }
+    }
+  },
+  {
+    "vnum": 80089,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 10,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80092
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80090
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80088
+      }
+    }
+  },
+  {
+    "vnum": 80090,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 10,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80089
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80098
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80091
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80073
+      }
+    }
+  },
+  {
+    "vnum": 80091,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 10,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80090
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80099
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80081
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80074
+      }
+    }
+  },
+  {
+    "vnum": 80092,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80093
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80098
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80089
+      }
+    }
+  },
+  {
+    "vnum": 80093,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 12,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80097
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80094
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80106
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80092
+      }
+    }
+  },
+  {
+    "vnum": 80094,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 13,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80095
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80129
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80127
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80093
+      }
+    }
+  },
+  {
+    "vnum": 80095,
+    "name": "&+BBeneath a Wide Waterfall&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 13,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80096
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80094
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80097
+      }
+    }
+  },
+  {
+    "vnum": 80096,
+    "name": "&+bA Swirling Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 14,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80131
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80129
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80095
+      }
+    }
+  },
+  {
+    "vnum": 80097,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 12,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80095
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80093
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80105
+      }
+    }
+  },
+  {
+    "vnum": 80098,
+    "name": "&+bOn a Slow-Moving River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80092
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80106
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80099
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80090
+      }
+    }
+  },
+  {
+    "vnum": 80099,
+    "name": "&+bAbove a Deep Gorge&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80098
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80107
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80091
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80100
+      }
+    }
+  },
+  {
+    "vnum": 80100,
+    "name": "&+BIn a &+CFro&+Wthi&+Cng&+B River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": 0,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80101
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80099
+      }
+    }
+  },
+  {
+    "vnum": 80101,
+    "name": "&+BIn a &+CFro&+Wthi&+Cng&+B River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": 1,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80100
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80102
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80114
+      }
+    }
+  },
+  {
+    "vnum": 80102,
+    "name": "&+BIn a &+CFro&+Wthi&+Cng&+B River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": 2,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80101
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80103
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80118
+      }
+    }
+  },
+  {
+    "vnum": 80103,
+    "name": "&+BIn a &+CFro&+Wthi&+Cng&+B River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": 3,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80102
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80104
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80121
+      }
+    }
+  },
+  {
+    "vnum": 80104,
+    "name": "&+BIn a &+CFro&+Wthi&+Cng&+B River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": 4,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80103
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80123
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80227
+      }
+    }
+  },
+  {
+    "vnum": 80105,
+    "name": "&+LOn Some Broad, Flat Rocks&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 11,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80097
+      }
+    }
+  },
+  {
+    "vnum": 80106,
+    "name": "&+gAlong a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80093
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80127
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80107
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80098
+      }
+    }
+  },
+  {
+    "vnum": 80107,
+    "name": "&+gAlong a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80106
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80149
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80108
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80099
+      }
+    }
+  },
+  {
+    "vnum": 80108,
+    "name": "&+gAbove a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80107
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80148
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80109
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80113
+      }
+    }
+  },
+  {
+    "vnum": 80109,
+    "name": "&+gAbove a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80108
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80147
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80110
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80114
+      }
+    }
+  },
+  {
+    "vnum": 80110,
+    "name": "&+gNear a Fallen Tree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80109
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80146
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80111
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80115
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80126
+      }
+    }
+  },
+  {
+    "vnum": 80111,
+    "name": "&+gAbove a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80110
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80145
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80112
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80116
+      }
+    }
+  },
+  {
+    "vnum": 80112,
+    "name": "&+gAbove a &+bRiver&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80111
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80117
+      }
+    }
+  },
+  {
+    "vnum": 80113,
+    "name": "&+CAbove a Fro&+Wthi&+Cng River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80108
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80114
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80081
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80100
+      }
+    }
+  },
+  {
+    "vnum": 80114,
+    "name": "&+CAbove a Fro&+Wthi&+Cng River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80113
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80109
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80115
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80082
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80101
+      }
+    }
+  },
+  {
+    "vnum": 80115,
+    "name": "&+CAbove a Fro&+Wthi&+Cng River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80114
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80110
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80116
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80083
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80125
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80118
+      }
+    }
+  },
+  {
+    "vnum": 80116,
+    "name": "&+CAbove a Fro&+Wthi&+Cng River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80115
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80111
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80117
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80084
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80119
+      }
+    }
+  },
+  {
+    "vnum": 80117,
+    "name": "&+CAbove a Fro&+Wthi&+Cng River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80118
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80112
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80085
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80120
+      }
+    }
+  },
+  {
+    "vnum": 80118,
+    "name": "&+CAbove a &+BChu&+Wrn&+Bing&+C River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80119
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80115
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80102
+      }
+    }
+  },
+  {
+    "vnum": 80119,
+    "name": "&+CAbove a &+BChu&+Wrn&+Bing&+C River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80118
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80120
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80116
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80121
+      }
+    }
+  },
+  {
+    "vnum": 80120,
+    "name": "&+CAbove a &+BChu&+Wrn&+Bing&+C River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80119
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80117
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80122
+      }
+    }
+  },
+  {
+    "vnum": 80121,
+    "name": "&+CAbove a &+BChu&+Wrn&+Bing&+C River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80122
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80119
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80103
+      }
+    }
+  },
+  {
+    "vnum": 80122,
+    "name": "&+CAbove a &+BChu&+Wrn&+Bing&+C River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80121
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80120
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80123
+      }
+    }
+  },
+  {
+    "vnum": 80123,
+    "name": "&+CAbove a &+BChu&+Wrn&+Bing&+C River&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 11,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80122
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80104
+      }
+    }
+  },
+  {
+    "vnum": 80124,
+    "name": "&+GOn a Fallen Tree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 10,
+    "y": 3,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80125
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80083
+      }
+    }
+  },
+  {
+    "vnum": 80125,
+    "name": "&+GOn a Fallen Tree Above a Churning River&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 11,
+    "y": 3,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80126
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80124
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80115
+      }
+    }
+  },
+  {
+    "vnum": 80126,
+    "name": "&+GOn a Fallen Tree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": 3,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80125
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80110
+      }
+    }
+  },
+  {
+    "vnum": 80127,
+    "name": "&+gAlong a &+BRiver&N &+gin the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80094
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80128
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80149
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80106
+      }
+    }
+  },
+  {
+    "vnum": 80128,
+    "name": "&+gA Stand of &+MOrchids&+g in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80129
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80157
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80150
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80127
+      }
+    }
+  },
+  {
+    "vnum": 80129,
+    "name": "&+gAlong a &+BRiver&N &+gin the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80096
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80130
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80128
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80094
+      }
+    }
+  },
+  {
+    "vnum": 80130,
+    "name": "&+gBeside a &+yRotting Tree&N &+gin the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80131
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80133
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80157
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80129
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80201
+      }
+    }
+  },
+  {
+    "vnum": 80131,
+    "name": "&+gAlong a &+BRiver&N &+gin the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80132
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80130
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80096
+      }
+    }
+  },
+  {
+    "vnum": 80132,
+    "name": "&+gNear a &+rJodani&N &+yWood Wall&+g Deep in the Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 16,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80133
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80131
+      }
+    }
+  },
+  {
+    "vnum": 80133,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 16,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80132
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80134
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80158
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80130
+      }
+    }
+  },
+  {
+    "vnum": 80134,
+    "name": "&+yBefore a Huge &+rJodani&+y Tree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 17,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80319
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80135
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80133
+      }
+    }
+  },
+  {
+    "vnum": 80135,
+    "name": "&+gNear a &+rJodani&N &+yWood Wall&+g Deep in the Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 17,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80134
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80136
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80158
+      }
+    }
+  },
+  {
+    "vnum": 80136,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 17,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80135
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80137
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80159
+      }
+    }
+  },
+  {
+    "vnum": 80137,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 17,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80136
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80138
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80160
+      }
+    }
+  },
+  {
+    "vnum": 80138,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 17,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80137
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80139
+      },
+      "4": {
+        "door_flag": 4,
+        "to_room": 80445
+      }
+    }
+  },
+  {
+    "vnum": 80139,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 16,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80160
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80138
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80140
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80154
+      }
+    }
+  },
+  {
+    "vnum": 80140,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 16,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80139
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80141
+      }
+    }
+  },
+  {
+    "vnum": 80141,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80154
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80140
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80142
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80153
+      },
+      "5": {
+        "door_flag": 4,
+        "to_room": 80217
+      }
+    }
+  },
+  {
+    "vnum": 80142,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80141
+      },
+      "2": {
+        "door_flag": 5,
+        "to_room": 80267
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80143
+      }
+    }
+  },
+  {
+    "vnum": 80143,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80153
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80142
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80144
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80145
+      }
+    }
+  },
+  {
+    "vnum": 80144,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80143
+      }
+    }
+  },
+  {
+    "vnum": 80145,
+    "name": "&+gAlong a Cliff in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80146
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80143
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80111
+      }
+    }
+  },
+  {
+    "vnum": 80146,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80147
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80153
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80145
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80110
+      }
+    }
+  },
+  {
+    "vnum": 80147,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80148
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80152
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80146
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80109
+      }
+    }
+  },
+  {
+    "vnum": 80148,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80149
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80151
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80147
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80108
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80202
+      }
+    }
+  },
+  {
+    "vnum": 80149,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80127
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80150
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80148
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80107
+      }
+    }
+  },
+  {
+    "vnum": 80150,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80128
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80156
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80151
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80149
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80216
+      }
+    }
+  },
+  {
+    "vnum": 80151,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80150
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80155
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80152
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80148
+      }
+    }
+  },
+  {
+    "vnum": 80152,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80151
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80154
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80153
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80147
+      }
+    }
+  },
+  {
+    "vnum": 80153,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80152
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80141
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80143
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80146
+      }
+    }
+  },
+  {
+    "vnum": 80154,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80155
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80139
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80141
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80152
+      }
+    }
+  },
+  {
+    "vnum": 80155,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80156
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80160
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80154
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80151
+      }
+    }
+  },
+  {
+    "vnum": 80156,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80157
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80159
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80155
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80150
+      }
+    }
+  },
+  {
+    "vnum": 80157,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80130
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80158
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80156
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80128
+      }
+    }
+  },
+  {
+    "vnum": 80158,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 16,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80133
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80135
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80159
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80157
+      }
+    }
+  },
+  {
+    "vnum": 80159,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 16,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80158
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80136
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80160
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80156
+      }
+    }
+  },
+  {
+    "vnum": 80160,
+    "name": "&+gDeep in the Rift Valley Jungle&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 16,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80159
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80137
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80139
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80155
+      }
+    }
+  },
+  {
+    "vnum": 80161,
+    "name": "&+WA Prison of Air&N",
+    "zone": 800,
+    "sector": 19,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {}
+  },
+  {
+    "vnum": 80162,
+    "name": "&+RA Fl&+Yami&+Rng Prison&N",
+    "zone": 800,
+    "sector": 11,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {}
+  },
+  {
+    "vnum": 80163,
+    "name": "&+yDeep Withing a Bowl of Swirling Earth&N",
+    "zone": 800,
+    "sector": 21,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {}
+  },
+  {
+    "vnum": 80164,
+    "name": "&+BInside a Giant Bowl of Water&N",
+    "zone": 800,
+    "sector": 20,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {}
+  },
+  {
+    "vnum": 80165,
+    "name": "&+LClimbing a Tall Ebonwood&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": 2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80166
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80028
+      }
+    }
+  },
+  {
+    "vnum": 80166,
+    "name": "&+LBefore a Door in the Side of an Ebonwood&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 3,
+    "y": 2,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80167
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80165
+      }
+    }
+  },
+  {
+    "vnum": 80167,
+    "name": "&+LA Small Room Inside an Ebonwood&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 2,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80166
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80168
+      }
+    }
+  },
+  {
+    "vnum": 80168,
+    "name": "&+LA Dark Storage Room&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80167
+      }
+    }
+  },
+  {
+    "vnum": 80169,
+    "name": "&+yInside a Small Burrow&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 2,
+    "y": 3,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80023
+      }
+    }
+  },
+  {
+    "vnum": 80170,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 0,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80171
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80030
+      }
+    }
+  },
+  {
+    "vnum": 80171,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 0,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80172
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80170
+      }
+    }
+  },
+  {
+    "vnum": 80172,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 0,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80173
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80171
+      }
+    }
+  },
+  {
+    "vnum": 80173,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 0,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80174
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80172
+      }
+    }
+  },
+  {
+    "vnum": 80174,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 0,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80175
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80176
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80173
+      }
+    }
+  },
+  {
+    "vnum": 80175,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": -1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80174
+      }
+    }
+  },
+  {
+    "vnum": 80176,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 0,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80177
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80178
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80174
+      }
+    }
+  },
+  {
+    "vnum": 80177,
+    "name": "&+GBy Several Large Nests&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": -1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80176
+      }
+    }
+  },
+  {
+    "vnum": 80178,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 0,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80179
+      },
+      "1": {
+        "door_flag": 4,
+        "to_room": 80180
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80181
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80176
+      }
+    }
+  },
+  {
+    "vnum": 80179,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": -1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80178
+      }
+    }
+  },
+  {
+    "vnum": 80180,
+    "name": "&+GAn Odd Jungle Home&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 0,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80178
+      }
+    }
+  },
+  {
+    "vnum": 80181,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80178
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80182
+      }
+    }
+  },
+  {
+    "vnum": 80182,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80181
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80183
+      }
+    }
+  },
+  {
+    "vnum": 80183,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 2,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80182
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80184
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80187
+      }
+    }
+  },
+  {
+    "vnum": 80184,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 2,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80185
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80183
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80188
+      }
+    }
+  },
+  {
+    "vnum": 80185,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 3,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80184
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80186
+      }
+    }
+  },
+  {
+    "vnum": 80186,
+    "name": "&+GA &+LMonkey&+G Hideaway&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 3,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80185
+      }
+    }
+  },
+  {
+    "vnum": 80187,
+    "name": "&+yBy a Broken Tree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 3,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80183
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80218
+      }
+    }
+  },
+  {
+    "vnum": 80188,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 2,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80184
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80189
+      }
+    }
+  },
+  {
+    "vnum": 80189,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 2,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80188
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80190
+      }
+    }
+  },
+  {
+    "vnum": 80190,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80189
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80056
+      }
+    }
+  },
+  {
+    "vnum": 80191,
+    "name": "&+LA Dank Burrow Beneath the Jungle Floor&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 0,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80192
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80054
+      }
+    }
+  },
+  {
+    "vnum": 80192,
+    "name": "&+LA Dank Burrow Beneath the Jungle Floor&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 7,
+    "y": 1,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80191
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80193
+      }
+    }
+  },
+  {
+    "vnum": 80193,
+    "name": "&+LA Dank Burrow Beneath the Jungle Floor&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 1,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80194
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80192
+      }
+    }
+  },
+  {
+    "vnum": 80194,
+    "name": "&+LA Dank Burrow Beneath the Jungle Floor&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 8,
+    "y": 2,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80193
+      }
+    }
+  },
+  {
+    "vnum": 80195,
+    "name": "&+yBeneath the Roots of a Large Tree&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 9,
+    "y": 3,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 1,
+        "to_room": 80077
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80196
+      }
+    }
+  },
+  {
+    "vnum": 80196,
+    "name": "&+yA Paneled Hall Beneath the Jungle&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 9,
+    "y": 3,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80197
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80195
+      }
+    }
+  },
+  {
+    "vnum": 80197,
+    "name": "&+yA Paneled Hallway&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 9,
+    "y": 4,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80196
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80198
+      }
+    }
+  },
+  {
+    "vnum": 80198,
+    "name": "&+yA Paneled Hallway&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 9,
+    "y": 4,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80199
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80197
+      }
+    }
+  },
+  {
+    "vnum": 80199,
+    "name": "&+yA Bright Conference Room&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 9,
+    "y": 3,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80198
+      },
+      "3": {
+        "door_flag": 5,
+        "to_room": 80200
+      }
+    }
+  },
+  {
+    "vnum": 80200,
+    "name": "&+LA Hidden Treasure Room&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 8,
+    "y": 3,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 80199
+      }
+    }
+  },
+  {
+    "vnum": 80201,
+    "name": "&+yA Cozy Burrow&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": -2,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80130
+      }
+    }
+  },
+  {
+    "vnum": 80202,
+    "name": "&+LClimbing a Tall Ebonwood&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 1,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80203
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80148
+      }
+    }
+  },
+  {
+    "vnum": 80203,
+    "name": "&+LClimbing a Tall Ebonwood&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 1,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80204
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80202
+      }
+    }
+  },
+  {
+    "vnum": 80204,
+    "name": "&+LClimbing a Tall Ebonwood&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 1,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80205
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80203
+      }
+    }
+  },
+  {
+    "vnum": 80205,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80206
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80207
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80204
+      }
+    }
+  },
+  {
+    "vnum": 80206,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": -1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80209
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80205
+      }
+    }
+  },
+  {
+    "vnum": 80207,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 13,
+    "y": 2,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80205
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80208
+      }
+    }
+  },
+  {
+    "vnum": 80208,
+    "name": "&+GHanging Over a Deep Gorge&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 12,
+    "y": 2,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80207
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80268
+      }
+    }
+  },
+  {
+    "vnum": 80209,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 0,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80206
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80210
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80212
+      }
+    }
+  },
+  {
+    "vnum": 80210,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 0,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80211
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80209
+      }
+    }
+  },
+  {
+    "vnum": 80211,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80210
+      }
+    }
+  },
+  {
+    "vnum": 80212,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 0,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 80213
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80209
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80215
+      }
+    }
+  },
+  {
+    "vnum": 80213,
+    "name": "&+yA Tiny Room Inside a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 0,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80214
+      },
+      "3": {
+        "door_flag": 1,
+        "to_room": 80212
+      }
+    }
+  },
+  {
+    "vnum": 80214,
+    "name": "&+yA Tiny Bedroom Inside a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 16,
+    "y": 0,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80213
+      }
+    }
+  },
+  {
+    "vnum": 80215,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 0,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80212
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80216
+      }
+    }
+  },
+  {
+    "vnum": 80216,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 14,
+    "y": 0,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80215
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80150
+      }
+    }
+  },
+  {
+    "vnum": 80217,
+    "name": "&+LA Dark, Wet Burrow&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 15,
+    "y": 3,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80141
+      }
+    }
+  },
+  {
+    "vnum": 80218,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 4,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80187
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80219
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80221
+      }
+    }
+  },
+  {
+    "vnum": 80219,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 6,
+    "y": 5,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80218
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80220
+      }
+    }
+  },
+  {
+    "vnum": 80220,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 5,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80221
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80219
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80223
+      }
+    }
+  },
+  {
+    "vnum": 80221,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 4,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80218
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80220
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80222
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80224
+      }
+    }
+  },
+  {
+    "vnum": 80222,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 4,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80221
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80223
+      }
+    }
+  },
+  {
+    "vnum": 80223,
+    "name": "&+GTraveling Through the Jungle Canopy&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 4,
+    "y": 5,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80222
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80220
+      }
+    }
+  },
+  {
+    "vnum": 80224,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 4,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80221
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80225
+      }
+    }
+  },
+  {
+    "vnum": 80225,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 4,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80224
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80226
+      }
+    }
+  },
+  {
+    "vnum": 80226,
+    "name": "&+yClimbing a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 5,
+    "y": 4,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80225
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80040
+      }
+    }
+  },
+  {
+    "vnum": 80227,
+    "name": "&+bA Dark, Watery Cave&N",
+    "zone": 800,
+    "sector": 9,
+    "x": 11,
+    "y": 4,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80228
+      }
+    }
+  },
+  {
+    "vnum": 80228,
+    "name": "&+bA Dark, Watery Cave&N",
+    "zone": 800,
+    "sector": 9,
+    "x": 11,
+    "y": 4,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80229
+      }
+    }
+  },
+  {
+    "vnum": 80229,
+    "name": "&+bAn Underground Waterfall&N",
+    "zone": 800,
+    "sector": 9,
+    "x": 11,
+    "y": 4,
+    "z": -4,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80230
+      }
+    }
+  },
+  {
+    "vnum": 80230,
+    "name": "&+bBelow an Underground Waterfall&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 11,
+    "y": 4,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80231
+      }
+    }
+  },
+  {
+    "vnum": 80231,
+    "name": "&+bOn an Underground River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 12,
+    "y": 4,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80232
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80230
+      }
+    }
+  },
+  {
+    "vnum": 80232,
+    "name": "&+bOn an Underground River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 12,
+    "y": 5,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80231
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80233
+      }
+    }
+  },
+  {
+    "vnum": 80233,
+    "name": "&+bOn an Underground River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 13,
+    "y": 5,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80234
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80232
+      }
+    }
+  },
+  {
+    "vnum": 80234,
+    "name": "&+bOn an Underground Lake",
+    "zone": 800,
+    "sector": 6,
+    "x": 13,
+    "y": 6,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80233
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80235
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80239
+      }
+    }
+  },
+  {
+    "vnum": 80235,
+    "name": "&+bOn an Underground Lake",
+    "zone": 800,
+    "sector": 6,
+    "x": 14,
+    "y": 6,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80236
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80238
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80234
+      }
+    }
+  },
+  {
+    "vnum": 80236,
+    "name": "&+bOn an Underground Lake&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 15,
+    "y": 6,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80243
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80241
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80237
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80235
+      }
+    }
+  },
+  {
+    "vnum": 80237,
+    "name": "&+bOn an Underground Lake&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 15,
+    "y": 7,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80236
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80240
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80238
+      }
+    }
+  },
+  {
+    "vnum": 80238,
+    "name": "&+bOn an Underground Lake&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 14,
+    "y": 7,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80235
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80237
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80239
+      }
+    }
+  },
+  {
+    "vnum": 80239,
+    "name": "&+bOn an Underground Lake&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 13,
+    "y": 7,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80234
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80238
+      }
+    }
+  },
+  {
+    "vnum": 80240,
+    "name": "&+LBeside an Underground &+bLake&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": 7,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80241
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80237
+      }
+    }
+  },
+  {
+    "vnum": 80241,
+    "name": "&+LBeside an Underground &+bLake&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": 6,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80242
+      },
+      "1": {
+        "door_flag": 4,
+        "to_room": 80244
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80240
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80236
+      }
+    }
+  },
+  {
+    "vnum": 80242,
+    "name": "&+LNear an Underground &+bLake&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": 5,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80241
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80243
+      }
+    }
+  },
+  {
+    "vnum": 80243,
+    "name": "&+LBeside an Underground &+bLake&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 5,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80242
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80236
+      }
+    }
+  },
+  {
+    "vnum": 80244,
+    "name": "&+LA Narrow Cavern&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": 6,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80245
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80241
+      }
+    }
+  },
+  {
+    "vnum": 80245,
+    "name": "&+LA Narrow Cavern&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": 5,
+    "z": -5,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80244
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80246
+      }
+    }
+  },
+  {
+    "vnum": 80246,
+    "name": "&+LClimbing a Narrow Cavern&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": 5,
+    "z": -4,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80247
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80245
+      }
+    }
+  },
+  {
+    "vnum": 80247,
+    "name": "&+LClimbing a Narrow Cavern&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": 5,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80248
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80246
+      }
+    }
+  },
+  {
+    "vnum": 80248,
+    "name": "&+LClimbing a Narrow Cavern&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 6,
+    "z": -4,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80249
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80247
+      }
+    }
+  },
+  {
+    "vnum": 80249,
+    "name": "&+LThe Roof of a Narrow Cavern&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 6,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80250
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80248
+      }
+    }
+  },
+  {
+    "vnum": 80250,
+    "name": "&+LA Twisting Cave&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 5,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80252
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80251
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80249
+      }
+    }
+  },
+  {
+    "vnum": 80251,
+    "name": "&+LA &+gLizardman&N &+LHome&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": 5,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80250
+      }
+    }
+  },
+  {
+    "vnum": 80252,
+    "name": "&+LAn Intersection of Caves&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 4,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80253
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80250
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80256
+      }
+    }
+  },
+  {
+    "vnum": 80253,
+    "name": "&+LA &+MPa&+Yin&+Rted&N &+LCavern&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": 4,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80255
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80254
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80252
+      }
+    }
+  },
+  {
+    "vnum": 80254,
+    "name": "&+LA Huge Family Cavern&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": 4,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80253
+      }
+    }
+  },
+  {
+    "vnum": 80255,
+    "name": "&+LA Large &+gLizardman&N &+LHome&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": 3,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80253
+      }
+    }
+  },
+  {
+    "vnum": 80256,
+    "name": "&+LA Sloping Cave&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 4,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80257
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80252
+      }
+    }
+  },
+  {
+    "vnum": 80257,
+    "name": "&+LA Sharp Turn&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 14,
+    "y": 4,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80256
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80258
+      }
+    }
+  },
+  {
+    "vnum": 80258,
+    "name": "&+LA Three-Way Intersection&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 14,
+    "y": 5,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80257
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80260
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80259
+      }
+    }
+  },
+  {
+    "vnum": 80259,
+    "name": "&+LThe Shaman's Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 13,
+    "y": 5,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80258
+      }
+    }
+  },
+  {
+    "vnum": 80260,
+    "name": "&+LA Twisted Juncture in the Caves&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 14,
+    "y": 6,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80258
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80261
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80262
+      }
+    }
+  },
+  {
+    "vnum": 80261,
+    "name": "&+LA Family Dwelling&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 6,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80260
+      }
+    }
+  },
+  {
+    "vnum": 80262,
+    "name": "&+LA Steep Cave&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 14,
+    "y": 6,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 1,
+        "to_room": 80263
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80260
+      }
+    }
+  },
+  {
+    "vnum": 80263,
+    "name": "&+LA Rocky Cave&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 14,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80264
+      },
+      "5": {
+        "door_flag": 5,
+        "to_room": 80262
+      }
+    }
+  },
+  {
+    "vnum": 80264,
+    "name": "&+LEntryway to the Lizardman Caves&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 80267
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80265
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80263
+      }
+    }
+  },
+  {
+    "vnum": 80265,
+    "name": "&+LA Guardsman's Cave&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80266
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80264
+      }
+    }
+  },
+  {
+    "vnum": 80266,
+    "name": "&+LHome of the &+gLizardman Chieftain&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80265
+      }
+    }
+  },
+  {
+    "vnum": 80267,
+    "name": "&+LA Dark, Well-Traveled Cave&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 15,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 80142
+      },
+      "2": {
+        "door_flag": 5,
+        "to_room": 80264
+      }
+    }
+  },
+  {
+    "vnum": 80268,
+    "name": "&+CHigh Above a Deep Gorge&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 12,
+    "y": 2,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80208
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80113
+      }
+    }
+  },
+  {
+    "vnum": 80269,
+    "name": "&+gBefore Some Village Gates&N",
+    "zone": 800,
+    "sector": 3,
+    "x": 2,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80270
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80012
+      }
+    }
+  },
+  {
+    "vnum": 80270,
+    "name": "&+yAn Intersection of Muddy Path&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 2,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80305
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80269
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80271
+      }
+    }
+  },
+  {
+    "vnum": 80271,
+    "name": "&+yA Muddy Trail&N",
+    "zone": 800,
+    "sector": 2,
+    "x": 1,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80270
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80272
+      }
+    }
+  },
+  {
+    "vnum": 80272,
+    "name": "&+yBefore a Squat Hut&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 0,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80273
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80271
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80275
+      }
+    }
+  },
+  {
+    "vnum": 80273,
+    "name": "&+GThe Shaman's Hut&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80274
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80272
+      }
+    }
+  },
+  {
+    "vnum": 80274,
+    "name": "&+GThe Village Shaman's Sleeping Room&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80273
+      }
+    }
+  },
+  {
+    "vnum": 80275,
+    "name": "&+yA Muddy Trail&N",
+    "zone": 800,
+    "sector": 1,
+    "x": -1,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80272
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80276
+      }
+    }
+  },
+  {
+    "vnum": 80276,
+    "name": "&+yThe Southwest Corner&N",
+    "zone": 800,
+    "sector": 1,
+    "x": -2,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80277
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80275
+      }
+    }
+  },
+  {
+    "vnum": 80277,
+    "name": "&+yBefore a Leaning Hut&N",
+    "zone": 800,
+    "sector": 1,
+    "x": -2,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80279
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80278
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80276
+      }
+    }
+  },
+  {
+    "vnum": 80278,
+    "name": "&+YA Hunter's Hut&N",
+    "zone": 800,
+    "sector": 0,
+    "x": -1,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80277
+      }
+    }
+  },
+  {
+    "vnum": 80279,
+    "name": "&+yA Muddy Trail&N",
+    "zone": 800,
+    "sector": 1,
+    "x": -2,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80281
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80280
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80277
+      }
+    }
+  },
+  {
+    "vnum": 80280,
+    "name": "&+GA Bullywug Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": -1,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80279
+      }
+    }
+  },
+  {
+    "vnum": 80281,
+    "name": "&+yBeside a Cliff on a Muddy Trail&N",
+    "zone": 800,
+    "sector": 1,
+    "x": -2,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80282
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80279
+      }
+    }
+  },
+  {
+    "vnum": 80282,
+    "name": "&+yA Juncture of Muddy Paths&N",
+    "zone": 800,
+    "sector": 1,
+    "x": -1,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80289
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80283
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80281
+      }
+    }
+  },
+  {
+    "vnum": 80283,
+    "name": "&+yBeneath a Large Hut&N",
+    "zone": 800,
+    "sector": 26,
+    "x": 0,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80287
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80284
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80282
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80286
+      }
+    }
+  },
+  {
+    "vnum": 80284,
+    "name": "&+yBeneath a Small Home&N",
+    "zone": 800,
+    "sector": 26,
+    "x": 0,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80283
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80285
+      }
+    }
+  },
+  {
+    "vnum": 80285,
+    "name": "&+GIn a Small Bullywug Hut&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": -4,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80284
+      }
+    }
+  },
+  {
+    "vnum": 80286,
+    "name": "&+LA Warrior's Hut&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": -5,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80283
+      }
+    }
+  },
+  {
+    "vnum": 80287,
+    "name": "&+yBeneath a Sturdy Hut&N",
+    "zone": 800,
+    "sector": 26,
+    "x": 0,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80291
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80283
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80289
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80288
+      }
+    }
+  },
+  {
+    "vnum": 80288,
+    "name": "&+gReiwiggy's Leather Shop&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": -6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80287
+      }
+    }
+  },
+  {
+    "vnum": 80289,
+    "name": "&+yBeside a Cliff&N",
+    "zone": 800,
+    "sector": 1,
+    "x": -1,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80290
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80287
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80282
+      }
+    }
+  },
+  {
+    "vnum": 80290,
+    "name": "&+yBeside a Cliff",
+    "zone": 800,
+    "sector": 1,
+    "x": -1,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80291
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80289
+      }
+    }
+  },
+  {
+    "vnum": 80291,
+    "name": "&+yA Muddy Trail&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 0,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80292
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80287
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80290
+      }
+    }
+  },
+  {
+    "vnum": 80292,
+    "name": "&+yA Muddy Trail&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 1,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80293
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80291
+      }
+    }
+  },
+  {
+    "vnum": 80293,
+    "name": "&+yBeneath the Chieftain's Hut&N",
+    "zone": 800,
+    "sector": 26,
+    "x": 2,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80299
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80292
+      },
+      "4": {
+        "door_flag": 1,
+        "to_room": 80294
+      }
+    }
+  },
+  {
+    "vnum": 80294,
+    "name": "&+yThe Central Foyer&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 2,
+    "y": -7,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 3,
+        "to_room": 80295
+      },
+      "1": {
+        "door_flag": 2,
+        "to_room": 80297
+      },
+      "2": {
+        "door_flag": 3,
+        "to_room": 80296
+      },
+      "3": {
+        "door_flag": 2,
+        "to_room": 80298
+      },
+      "5": {
+        "door_flag": 1,
+        "to_room": 80293
+      }
+    }
+  },
+  {
+    "vnum": 80295,
+    "name": "&+WThe Chieftain's Bedroom&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 2,
+    "y": -8,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 3,
+        "to_room": 80294
+      }
+    }
+  },
+  {
+    "vnum": 80296,
+    "name": "&+WThe Throne Room&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 2,
+    "y": -6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 3,
+        "to_room": 80294
+      }
+    }
+  },
+  {
+    "vnum": 80297,
+    "name": "&+YThe Head Guardsman's Quarters&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 3,
+    "y": -7,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 2,
+        "to_room": 80294
+      }
+    }
+  },
+  {
+    "vnum": 80298,
+    "name": "&+WSome Guard's Quarters&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": -7,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 2,
+        "to_room": 80294
+      }
+    }
+  },
+  {
+    "vnum": 80299,
+    "name": "&+yA Wide, Muddy Path&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 2,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80293
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80300
+      }
+    }
+  },
+  {
+    "vnum": 80300,
+    "name": "&+yIn Front of a Nameless Bar&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 2,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80299
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80303
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80301
+      }
+    }
+  },
+  {
+    "vnum": 80301,
+    "name": "&+LA Nameless Bar&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80302
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80300
+      }
+    }
+  },
+  {
+    "vnum": 80302,
+    "name": "&+LDeep Within a Smoke-Filled Bar&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80301
+      }
+    }
+  },
+  {
+    "vnum": 80303,
+    "name": "&+yA Wide, Muddy Path&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 2,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80300
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80305
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80304
+      }
+    }
+  },
+  {
+    "vnum": 80304,
+    "name": "&+CUiiggie's Fish and Fine Foods&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80303
+      }
+    }
+  },
+  {
+    "vnum": 80305,
+    "name": "&+yA Wide, Muddy Path&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 2,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80303
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80306
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80270
+      }
+    }
+  },
+  {
+    "vnum": 80306,
+    "name": "&+yA Muddy Trail&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 3,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80307
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80305
+      }
+    }
+  },
+  {
+    "vnum": 80307,
+    "name": "&+yA Muddy Trail&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 4,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80308
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80309
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80306
+      }
+    }
+  },
+  {
+    "vnum": 80308,
+    "name": "&+GA Bullywug Hut&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 4,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80307
+      }
+    }
+  },
+  {
+    "vnum": 80309,
+    "name": "&+yA Curve Along the Village Fence&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 5,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80310
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80307
+      }
+    }
+  },
+  {
+    "vnum": 80310,
+    "name": "&+yA Muddy Trail&N",
+    "zone": 800,
+    "sector": 26,
+    "x": 5,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80312
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80311
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80309
+      }
+    }
+  },
+  {
+    "vnum": 80311,
+    "name": "&+yThe Trail Ends&N",
+    "zone": 800,
+    "sector": 26,
+    "x": 6,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80310
+      }
+    }
+  },
+  {
+    "vnum": 80312,
+    "name": "&+LA Deep, Murky Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 5,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80313
+      }
+    }
+  },
+  {
+    "vnum": 80313,
+    "name": "&+LA Deep, Murky Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 4,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80318
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80312
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80310
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80314
+      }
+    }
+  },
+  {
+    "vnum": 80314,
+    "name": "&+LA Deep, Murky Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 3,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80315
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80313
+      }
+    }
+  },
+  {
+    "vnum": 80315,
+    "name": "&+LA Deep, Murky Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 3,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80316
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80318
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80314
+      }
+    }
+  },
+  {
+    "vnum": 80316,
+    "name": "&+LA Deep, Murky Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 3,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80317
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80315
+      }
+    }
+  },
+  {
+    "vnum": 80317,
+    "name": "&+LA Deep, Murky Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 4,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80318
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80316
+      }
+    }
+  },
+  {
+    "vnum": 80318,
+    "name": "&+LA Deep, Murky Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 4,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80317
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80313
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80315
+      }
+    }
+  },
+  {
+    "vnum": 80319,
+    "name": "&+yWithin a &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80320
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80134
+      }
+    }
+  },
+  {
+    "vnum": 80320,
+    "name": "&+GInside the Gates to Moonhollow&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80321
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80319
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80339
+      }
+    }
+  },
+  {
+    "vnum": 80321,
+    "name": "&+yA Meeting of Paths&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 5,
+        "to_room": 80333
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80334
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80322
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80320
+      }
+    }
+  },
+  {
+    "vnum": 80322,
+    "name": "&+yA Path Along the &+rJodani&+y Wood Wall&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80321
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80323
+      }
+    }
+  },
+  {
+    "vnum": 80323,
+    "name": "&+yA Path Along the &+rJodani&+y Wood Wall&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80322
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80324
+      }
+    }
+  },
+  {
+    "vnum": 80324,
+    "name": "&+yAt the Base of the &+Lcliffs&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80323
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80325
+      }
+    }
+  },
+  {
+    "vnum": 80325,
+    "name": "&+yOn a &+rJodani&N &+yWood Wall&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -1,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80328
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80326
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80324
+      }
+    }
+  },
+  {
+    "vnum": 80326,
+    "name": "&+LA Small Cave&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 18,
+    "y": 0,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80325
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80327
+      }
+    }
+  },
+  {
+    "vnum": 80327,
+    "name": "&+WMoonstone's Office&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 19,
+    "y": 0,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80326
+      }
+    }
+  },
+  {
+    "vnum": 80328,
+    "name": "&+yOn a &+rJodani&N &+yWood Wall&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80325
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80329
+      }
+    }
+  },
+  {
+    "vnum": 80329,
+    "name": "&+yA Passage Through a &+rJodani&+y Tree&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80328
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80331
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80330
+      }
+    }
+  },
+  {
+    "vnum": 80330,
+    "name": "&+yThe Guardroom Over the Entrance to Moonhollow&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80329
+      }
+    }
+  },
+  {
+    "vnum": 80331,
+    "name": "&+yOn a &+rJodani&N &+yWood Wall&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 16,
+    "y": -2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80329
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80332
+      }
+    }
+  },
+  {
+    "vnum": 80332,
+    "name": "&+yThe &+rJodani&N &+yWood Wall Ends&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 15,
+    "y": -2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80331
+      }
+    }
+  },
+  {
+    "vnum": 80333,
+    "name": "&+LSome Guard's Quarters&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 18,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 80321
+      }
+    }
+  },
+  {
+    "vnum": 80334,
+    "name": "&+GA Cluster of Young &+LEbonwood Trees&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80335
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80321
+      }
+    }
+  },
+  {
+    "vnum": 80335,
+    "name": "&+LIn Front of &+GTeglaron's&+L Armory&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80336
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80334
+      }
+    }
+  },
+  {
+    "vnum": 80336,
+    "name": "Teglaron's Armory",
+    "zone": 800,
+    "sector": 0,
+    "x": 20,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80337
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80335
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80338
+      }
+    }
+  },
+  {
+    "vnum": 80337,
+    "name": "&+BTeglaron's Forge&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 20,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80336
+      }
+    }
+  },
+  {
+    "vnum": 80338,
+    "name": "&+BTeglaron's Living Quarters&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 20,
+    "y": -5,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80336
+      }
+    }
+  },
+  {
+    "vnum": 80339,
+    "name": "&+gA Crossing of Paths&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 16,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80345
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80320
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80340
+      }
+    }
+  },
+  {
+    "vnum": 80340,
+    "name": "&+gA Bend Along the &+rJodani&+y Wood Wall&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 15,
+    "y": -4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80341
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80339
+      }
+    }
+  },
+  {
+    "vnum": 80341,
+    "name": "&+gBefore an Elven Home&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 15,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80343
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80340
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80342
+      }
+    }
+  },
+  {
+    "vnum": 80342,
+    "name": "&+yA Small Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 14,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80341
+      }
+    }
+  },
+  {
+    "vnum": 80343,
+    "name": "&+gThe Path Ends Beside a &+LLarge Boulder&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 15,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80341
+      },
+      "3": {
+        "door_flag": 1,
+        "to_room": 80344
+      }
+    }
+  },
+  {
+    "vnum": 80344,
+    "name": "&+LThe Lieutenants' Quarters&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 14,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 80343
+      }
+    }
+  },
+  {
+    "vnum": 80345,
+    "name": "&+gThe Path Bends&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 16,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80348
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80339
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80346
+      }
+    }
+  },
+  {
+    "vnum": 80346,
+    "name": "&+yOn a Narrow Branch&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 16,
+    "y": -5,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 80347
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80345
+      }
+    }
+  },
+  {
+    "vnum": 80347,
+    "name": "&+WIn a Tidy Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": -6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 80346
+      }
+    }
+  },
+  {
+    "vnum": 80348,
+    "name": "&+gA Mist Shrouded Path&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80349
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80345
+      }
+    }
+  },
+  {
+    "vnum": 80349,
+    "name": "&+gA Four-Way Intersection&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80362
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80355
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80348
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80350
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80353
+      }
+    }
+  },
+  {
+    "vnum": 80350,
+    "name": "&+yBy the Roots of an Old &+rJodani&+y Tree&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 16,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80349
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80351
+      }
+    }
+  },
+  {
+    "vnum": 80351,
+    "name": "&+YSummerstorm's&N &+yBar and Meeting Hall&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": -6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80352
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80350
+      }
+    }
+  },
+  {
+    "vnum": 80352,
+    "name": "&+YSummerstorm's Private Quarters&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": -6,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80351
+      }
+    }
+  },
+  {
+    "vnum": 80353,
+    "name": "&+LOn a Thin Branch&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80354
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80349
+      }
+    }
+  },
+  {
+    "vnum": 80354,
+    "name": "&+gA Spartan Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 18,
+    "y": -6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80353
+      }
+    }
+  },
+  {
+    "vnum": 80355,
+    "name": "&+gThe Path Ends&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80389
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80349
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80356
+      }
+    }
+  },
+  {
+    "vnum": 80356,
+    "name": "&+LClinging to an Ebonwood Tree.",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80357
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80355
+      }
+    }
+  },
+  {
+    "vnum": 80357,
+    "name": "&+yOn Some Branches High Above the Ground&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -6,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80358
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80356
+      }
+    }
+  },
+  {
+    "vnum": 80358,
+    "name": "&+GAn Elven Playground&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -6,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80359
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80357
+      }
+    }
+  },
+  {
+    "vnum": 80359,
+    "name": "&+GAn Elven School&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -7,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80360
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80358
+      }
+    }
+  },
+  {
+    "vnum": 80360,
+    "name": "&+yWalking Along Some Branches High Above the Ground&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -7,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80361
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80359
+      }
+    }
+  },
+  {
+    "vnum": 80361,
+    "name": "&+GThe Elven Orphanage&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 18,
+    "y": -8,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80360
+      }
+    }
+  },
+  {
+    "vnum": 80362,
+    "name": "&+gA Bend in the Mistmore Lane&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80365
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80349
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80363
+      }
+    }
+  },
+  {
+    "vnum": 80363,
+    "name": "&+yBefore &+WBrokenmoon's Supply Store&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -7,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80364
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80362
+      }
+    }
+  },
+  {
+    "vnum": 80364,
+    "name": "&+WBrokenmoon's Supply Store&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 16,
+    "y": -7,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80363
+      }
+    }
+  },
+  {
+    "vnum": 80365,
+    "name": "&+LBelow &+CWindstrider's&+L Restaurant&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80373
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80366
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80362
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80368
+      }
+    }
+  },
+  {
+    "vnum": 80366,
+    "name": "&+GA Peaceful Glade&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80367
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80365
+      }
+    }
+  },
+  {
+    "vnum": 80367,
+    "name": "&+GBeside an Ancient Elven Shrine&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80366
+      }
+    }
+  },
+  {
+    "vnum": 80368,
+    "name": "&+LThe Entryway to &+CWindstrider's&N &+LRestaurant&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -7,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80369
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80365
+      }
+    }
+  },
+  {
+    "vnum": 80369,
+    "name": "&+CWindstrider's Restaurant&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 18,
+    "y": -8,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 80370
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80368
+      }
+    }
+  },
+  {
+    "vnum": 80370,
+    "name": "&+CWindstrider's Kitchen&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 19,
+    "y": -8,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 1,
+        "to_room": 80369
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80371
+      }
+    }
+  },
+  {
+    "vnum": 80371,
+    "name": "&+LOn a Ladder Above &+CWinstrider's&N &+LKitchen&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 19,
+    "y": -8,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80372
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80370
+      }
+    }
+  },
+  {
+    "vnum": 80372,
+    "name": "&+CWindstrider's&+y Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 19,
+    "y": -8,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80371
+      }
+    }
+  },
+  {
+    "vnum": 80373,
+    "name": "&+gBeneath Some Large &+LEbonwood&+g Trees&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -8,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80365
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80381
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80374
+      }
+    }
+  },
+  {
+    "vnum": 80374,
+    "name": "&+LOn the Stump of a Low Branch&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -8,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 80375
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80376
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80373
+      }
+    }
+  },
+  {
+    "vnum": 80375,
+    "name": "&+GA Small Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 19,
+    "y": -8,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 1,
+        "to_room": 80374
+      }
+    }
+  },
+  {
+    "vnum": 80376,
+    "name": "&+GOn a Wide Branch Near Some Elven Homes&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -8,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80379
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80377
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80374
+      }
+    }
+  },
+  {
+    "vnum": 80377,
+    "name": "&+GBefore an Open Doorway&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -7,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80376
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80378
+      }
+    }
+  },
+  {
+    "vnum": 80378,
+    "name": "&+MA Musician's Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 19,
+    "y": -7,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80377
+      }
+    }
+  },
+  {
+    "vnum": 80379,
+    "name": "&+GIn Front of a Small Elven Home&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -9,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 80380
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80376
+      }
+    }
+  },
+  {
+    "vnum": 80380,
+    "name": "&+yA Dusty Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 19,
+    "y": -9,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 1,
+        "to_room": 80379
+      }
+    }
+  },
+  {
+    "vnum": 80381,
+    "name": "&+gAmidst Some Large &+LEbonwood&+g Trees&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -8,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 5,
+        "to_room": 80388
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80373
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80382
+      }
+    }
+  },
+  {
+    "vnum": 80382,
+    "name": "&+gOn a Ladder Leading to Some Elven Homes&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -8,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80383
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80381
+      }
+    }
+  },
+  {
+    "vnum": 80383,
+    "name": "&+gOutside Some Elven Homes&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -8,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80384
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80387
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80382
+      }
+    }
+  },
+  {
+    "vnum": 80384,
+    "name": "&+gAlong Some Branches by an Elven Home&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 17,
+    "y": -9,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80385
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80383
+      }
+    }
+  },
+  {
+    "vnum": 80385,
+    "name": "&+gA Large Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -10,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 80386
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80384
+      }
+    }
+  },
+  {
+    "vnum": 80386,
+    "name": "&+WA Pleasant Elven Bedroom&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -11,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 80385
+      }
+    }
+  },
+  {
+    "vnum": 80387,
+    "name": "&+CA Spacious Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -7,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80383
+      }
+    }
+  },
+  {
+    "vnum": 80388,
+    "name": "A Small, Well-Furnished Elven Home",
+    "zone": 800,
+    "sector": 0,
+    "x": 17,
+    "y": -9,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 80381
+      }
+    }
+  },
+  {
+    "vnum": 80389,
+    "name": "&+gBeneath a Tall &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80355
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80390
+      }
+    }
+  },
+  {
+    "vnum": 80390,
+    "name": "&+gClimbing a Tall &+rJodani&N &+yTree&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -6,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80391
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80389
+      }
+    }
+  },
+  {
+    "vnum": 80391,
+    "name": "&+yA Thick Lattice of &+rJodani&+y and &+LEbonwood&+y Branches&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -6,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80392
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80390
+      }
+    }
+  },
+  {
+    "vnum": 80392,
+    "name": "&+yA Thick Lattice of &+rJodani&+y and &+LEbonwood&+y Branches&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -5,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80391
+      },
+      "1": {
+        "door_flag": 1,
+        "to_room": 80393
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80394
+      }
+    }
+  },
+  {
+    "vnum": 80393,
+    "name": "&+yA Quiet Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 20,
+    "y": -5,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 1,
+        "to_room": 80392
+      }
+    }
+  },
+  {
+    "vnum": 80394,
+    "name": "&+yA Thick Lattice of &+rJodani&+y and &+LEbonwood&+y Branches&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 19,
+    "y": -4,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80392
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80395
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80396
+      }
+    }
+  },
+  {
+    "vnum": 80395,
+    "name": "&+MA Cheerful Elven Home&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 20,
+    "y": -4,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80394
+      }
+    }
+  },
+  {
+    "vnum": 80396,
+    "name": "&+yA Thick Lattice of &+rJodani&+y and &+LEbonwood&+y Branches&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -4,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80394
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80397
+      }
+    }
+  },
+  {
+    "vnum": 80397,
+    "name": "&+yA Ledge at the End of a Network of Branches&N",
+    "zone": 800,
+    "sector": 1,
+    "x": 18,
+    "y": -3,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80396
+      }
+    }
+  },
+  {
+    "vnum": 80398,
+    "name": "&+LA Rocky Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80399
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 16008
+      }
+    }
+  },
+  {
+    "vnum": 80399,
+    "name": "&+LA Jagged Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 0,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80400
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80398
+      }
+    }
+  },
+  {
+    "vnum": 80400,
+    "name": "&+LOn Some Lose Gravel&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 0,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80401
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80399
+      }
+    }
+  },
+  {
+    "vnum": 80401,
+    "name": "&+LBy an Abandoned Camp &+Rfire&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 1,
+    "y": 0,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80400
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80402
+      }
+    }
+  },
+  {
+    "vnum": 80402,
+    "name": "&+LHigh in the Sharp Tooth Mountains&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 1,
+    "y": 0,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80403
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80401
+      }
+    }
+  },
+  {
+    "vnum": 80403,
+    "name": "&+LAbove a Mountain &+bStream&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 1,
+    "y": 0,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80404
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80402
+      }
+    }
+  },
+  {
+    "vnum": 80404,
+    "name": "&+bA Small Mountain Stream&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 1,
+    "y": 1,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80403
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80405
+      }
+    }
+  },
+  {
+    "vnum": 80405,
+    "name": "&+bThe Stream Gains Momentum&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 1,
+    "y": 2,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80404
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80406
+      }
+    }
+  },
+  {
+    "vnum": 80406,
+    "name": "&+bA Fork in the River&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 1,
+    "y": 3,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80407
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80420
+      }
+    }
+  },
+  {
+    "vnum": 80407,
+    "name": "&+bA Narrow Mountain Stream&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 2,
+    "y": 3,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80408
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80406
+      }
+    }
+  },
+  {
+    "vnum": 80408,
+    "name": "&+bA Small Mountain Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 3,
+    "y": 3,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80409
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80411
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80407
+      }
+    }
+  },
+  {
+    "vnum": 80409,
+    "name": "&+bA Small Mountain Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 4,
+    "y": 3,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80410
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80408
+      }
+    }
+  },
+  {
+    "vnum": 80410,
+    "name": "&+bThe Pool Overflows into a Waterfall&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 4,
+    "y": 4,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80409
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80411
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80412
+      }
+    }
+  },
+  {
+    "vnum": 80411,
+    "name": "&+bA Calm Part of the Pool&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 3,
+    "y": 4,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80408
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80410
+      }
+    }
+  },
+  {
+    "vnum": 80412,
+    "name": "&+bFalling With the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 4,
+    "y": 4,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80410
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80413
+      }
+    }
+  },
+  {
+    "vnum": 80413,
+    "name": "&+bScraping Past Some Sharp Stones&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 4,
+    "y": 4,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80412
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80414
+      }
+    }
+  },
+  {
+    "vnum": 80414,
+    "name": "&+bFalling in the Water Stream&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 4,
+    "y": 4,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80413
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80415
+      }
+    }
+  },
+  {
+    "vnum": 80415,
+    "name": "&+bFalling in the Water Stream&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 4,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80414
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80416
+      }
+    }
+  },
+  {
+    "vnum": 80416,
+    "name": "&+CThe Waterfall is Turned to Mist&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 4,
+    "y": 4,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80415
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80417
+      }
+    }
+  },
+  {
+    "vnum": 80417,
+    "name": "&+CFalling Through the Mist&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 4,
+    "y": 4,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80416
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80418
+      }
+    }
+  },
+  {
+    "vnum": 80418,
+    "name": "&+CFalling Through the Mist&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 4,
+    "y": 4,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80417
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80419
+      }
+    }
+  },
+  {
+    "vnum": 80419,
+    "name": "&+CFalling Through the Mist&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 4,
+    "y": 4,
+    "z": -4,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80418
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80095
+      }
+    }
+  },
+  {
+    "vnum": 80420,
+    "name": "&+bThe River Ends in a Waterfall&N",
+    "zone": 800,
+    "sector": 6,
+    "x": 1,
+    "y": 4,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80406
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80421
+      }
+    }
+  },
+  {
+    "vnum": 80421,
+    "name": "&+BFalling in the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 1,
+    "y": 4,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80422
+      }
+    }
+  },
+  {
+    "vnum": 80422,
+    "name": "&+BFalling in the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 1,
+    "y": 4,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80423
+      }
+    }
+  },
+  {
+    "vnum": 80423,
+    "name": "&+BFalling in the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 1,
+    "y": 4,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80424
+      }
+    }
+  },
+  {
+    "vnum": 80424,
+    "name": "&+BFalling in the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 1,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80425
+      }
+    }
+  },
+  {
+    "vnum": 80425,
+    "name": "&+BFalling in the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 1,
+    "y": 4,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80426
+      }
+    }
+  },
+  {
+    "vnum": 80426,
+    "name": "&+BFalling in the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 1,
+    "y": 4,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80427
+      }
+    }
+  },
+  {
+    "vnum": 80427,
+    "name": "&+BFalling in the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 1,
+    "y": 4,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80428
+      }
+    }
+  },
+  {
+    "vnum": 80428,
+    "name": "&+BFalling in the Waterfall&N",
+    "zone": 800,
+    "sector": 8,
+    "x": 1,
+    "y": 4,
+    "z": -4,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80087
+      }
+    }
+  },
+  {
+    "vnum": 80429,
+    "name": "&+RMOB HOLDING ROOM&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {}
+  },
+  {
+    "vnum": 80430,
+    "name": "&+GMob spreading-Jungle Floor 1&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80431
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80433
+      }
+    }
+  },
+  {
+    "vnum": 80431,
+    "name": "&+GMob spreading-Jungle Floor 2&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80150
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80432
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80146
+      }
+    }
+  },
+  {
+    "vnum": 80432,
+    "name": "&+GMob spreading-Jungle Floor 3&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 2,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80132
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80138
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80141
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80431
+      }
+    }
+  },
+  {
+    "vnum": 80433,
+    "name": "&+GMob spreading-Jungle Floor 4&N",
+    "zone": 800,
+    "sector": 0,
+    "x": -1,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80075
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80077
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80434
+      }
+    }
+  },
+  {
+    "vnum": 80434,
+    "name": "&+GMob spreading-Jungle Floor 5&N",
+    "zone": 800,
+    "sector": 0,
+    "x": -2,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80064
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80433
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80058
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80435
+      }
+    }
+  },
+  {
+    "vnum": 80435,
+    "name": "&+GMob spreading-Jungle Floor 6&N",
+    "zone": 800,
+    "sector": 0,
+    "x": -3,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80030
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80434
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80034
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80436
+      }
+    }
+  },
+  {
+    "vnum": 80436,
+    "name": "&+GMob spreading-Jungle Floor 7&N",
+    "zone": 800,
+    "sector": 0,
+    "x": -4,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80008
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80435
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80011
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80027
+      }
+    }
+  },
+  {
+    "vnum": 80437,
+    "name": "&+GMob spreading-Jungle Canopy 1&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80179
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80438
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80183
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80439
+      }
+    }
+  },
+  {
+    "vnum": 80438,
+    "name": "&+GMob spreading-Jungle Canopy 2&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80179
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80221
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80211
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80437
+      }
+    }
+  },
+  {
+    "vnum": 80439,
+    "name": "&+GMob spreading-Jungle Canopy 2&N",
+    "zone": 800,
+    "sector": 0,
+    "x": -1,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80206
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80437
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80223
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80174
+      }
+    }
+  },
+  {
+    "vnum": 80440,
+    "name": "&+GMob Load-Canopy&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80438
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80439
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80437
+      }
+    }
+  },
+  {
+    "vnum": 80441,
+    "name": "&+RDrow hunter load room&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80430
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80429
+      }
+    }
+  },
+  {
+    "vnum": 80442,
+    "name": "Mistwind's Load room",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80366
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80429
+      }
+    }
+  },
+  {
+    "vnum": 80443,
+    "name": "Scout Load--25%",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80431
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80429
+      }
+    }
+  },
+  {
+    "vnum": 80444,
+    "name": "Elemental Ranger Load Room",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 25405
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 23250
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 24501
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 23805
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80429
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80429
+      }
+    }
+  },
+  {
+    "vnum": 80445,
+    "name": "&+LA Steep Path&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 17,
+    "y": 2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80446
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80138
+      }
+    }
+  },
+  {
+    "vnum": 80446,
+    "name": "&+LEven With the &+GCanopy&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 17,
+    "y": 2,
+    "z": 2,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80447
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80445
+      }
+    }
+  },
+  {
+    "vnum": 80447,
+    "name": "&+LA Slippery Cliff Face&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 17,
+    "y": 2,
+    "z": 3,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80448
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80446
+      }
+    }
+  },
+  {
+    "vnum": 80448,
+    "name": "&+LA Slippery Cliff Face&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 17,
+    "y": 2,
+    "z": 4,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80449
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80447
+      }
+    }
+  },
+  {
+    "vnum": 80449,
+    "name": "&+LA Slippery Cliff Face&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 17,
+    "y": 2,
+    "z": 5,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80450
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80448
+      }
+    }
+  },
+  {
+    "vnum": 80450,
+    "name": "&+LA Slippery Cliff Face&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 17,
+    "y": 2,
+    "z": 6,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80451
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80449
+      }
+    }
+  },
+  {
+    "vnum": 80451,
+    "name": "&+gAbove a Verdant Jungle&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 17,
+    "y": 2,
+    "z": 7,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80466
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80452
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80450
+      }
+    }
+  },
+  {
+    "vnum": 80452,
+    "name": "&+LA Narrow Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 17,
+    "y": 3,
+    "z": 7,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80451
+      },
+      "9": {
+        "door_flag": 0,
+        "to_room": 80453
+      }
+    }
+  },
+  {
+    "vnum": 80453,
+    "name": "&+LA Narrow Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 80454
+      },
+      "6": {
+        "door_flag": 0,
+        "to_room": 80452
+      }
+    }
+  },
+  {
+    "vnum": 80454,
+    "name": "&+LA Steep Mountain Path&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 0,
+    "z": -1,
+    "stub": false,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80453
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80455
+      }
+    }
+  },
+  {
+    "vnum": 80455,
+    "name": "&+LA Tight Turn&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 0,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80456
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80454
+      }
+    }
+  },
+  {
+    "vnum": 80456,
+    "name": "&+LA Twisting Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 1,
+    "y": 0,
+    "z": -2,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80455
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80457
+      }
+    }
+  },
+  {
+    "vnum": 80457,
+    "name": "&+LA Twisting Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 1,
+    "y": 0,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 5,
+        "to_room": 80461
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80458
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80456
+      }
+    }
+  },
+  {
+    "vnum": 80458,
+    "name": "&+LA Twisting Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 0,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80457
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80459
+      }
+    }
+  },
+  {
+    "vnum": 80459,
+    "name": "&+LA Twisting Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 1,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80458
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 80460
+      }
+    }
+  },
+  {
+    "vnum": 80460,
+    "name": "&+LA Twisting Mountain Pass&N",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 1,
+    "z": -4,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 228371
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 80459
+      }
+    }
+  },
+  {
+    "vnum": 80461,
+    "name": "&+LEntryway to a Large Cave&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": -1,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80462
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 80457
+      }
+    }
+  },
+  {
+    "vnum": 80462,
+    "name": "&+LA Massive Mountain Lair&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": -2,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80463
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 80465
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80461
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80464
+      }
+    }
+  },
+  {
+    "vnum": 80463,
+    "name": "&+LA Massive Mountain Lair&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 1,
+    "y": -3,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80462
+      }
+    }
+  },
+  {
+    "vnum": 80464,
+    "name": "&+LA Massive Mountain Lair&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 0,
+    "y": -2,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80462
+      }
+    }
+  },
+  {
+    "vnum": 80465,
+    "name": "&+LA Massive Mountain Lair&N",
+    "zone": 800,
+    "sector": 0,
+    "x": 2,
+    "y": -2,
+    "z": -3,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80462
+      }
+    }
+  },
+  {
+    "vnum": 80466,
+    "name": "&+yAlong a Mountain Trail&n",
+    "zone": 800,
+    "sector": 5,
+    "x": 18,
+    "y": 2,
+    "z": 7,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80467
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 80451
+      }
+    }
+  },
+  {
+    "vnum": 80467,
+    "name": "&+yAlong a Mountain Trail&n",
+    "zone": 800,
+    "sector": 5,
+    "x": 19,
+    "y": 2,
+    "z": 7,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80466
+      },
+      "8": {
+        "door_flag": 0,
+        "to_room": 80468
+      }
+    }
+  },
+  {
+    "vnum": 80468,
+    "name": "&+yAlong a Mountain Trail&n",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80469
+      },
+      "7": {
+        "door_flag": 0,
+        "to_room": 80467
+      }
+    }
+  },
+  {
+    "vnum": 80469,
+    "name": "&+yAlong a Mountain Trail&n",
+    "zone": 800,
+    "sector": 5,
+    "x": 0,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 568516
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 80468
+      }
+    }
+  },
+  {
+    "vnum": 16950,
+    "name": "Stub Room 16950",
+    "zone": null,
+    "sector": null,
+    "x": -1,
+    "y": 0,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80000
+      }
+    }
+  },
+  {
+    "vnum": 16951,
+    "name": "Stub Room 16951",
+    "zone": null,
+    "sector": null,
+    "x": -1,
+    "y": 1,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80001
+      }
+    }
+  },
+  {
+    "vnum": 16952,
+    "name": "Stub Room 16952",
+    "zone": null,
+    "sector": null,
+    "x": -1,
+    "y": 2,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80002
+      }
+    }
+  },
+  {
+    "vnum": 16008,
+    "name": "Stub Room 16008",
+    "zone": null,
+    "sector": null,
+    "x": 0,
+    "y": 0,
+    "z": -1,
+    "stub": true,
+    "exits": {
+      "4": {
+        "door_flag": 0,
+        "to_room": 80398
+      }
+    }
+  },
+  {
+    "vnum": 25405,
+    "name": "Stub Room 25405",
+    "zone": null,
+    "sector": null,
+    "x": 0,
+    "y": -1,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 80444
+      }
+    }
+  },
+  {
+    "vnum": 23250,
+    "name": "Stub Room 23250",
+    "zone": null,
+    "sector": null,
+    "x": 1,
+    "y": 0,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80444
+      }
+    }
+  },
+  {
+    "vnum": 24501,
+    "name": "Stub Room 24501",
+    "zone": null,
+    "sector": null,
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80444
+      }
+    }
+  },
+  {
+    "vnum": 23805,
+    "name": "Stub Room 23805",
+    "zone": null,
+    "sector": null,
+    "x": -1,
+    "y": 0,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 80444
+      }
+    }
+  },
+  {
+    "vnum": 228371,
+    "name": "Stub Room 228371",
+    "zone": null,
+    "sector": null,
+    "x": 0,
+    "y": 2,
+    "z": -4,
+    "stub": true,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 80460
+      }
+    }
+  },
+  {
+    "vnum": 568516,
+    "name": "Stub Room 568516",
+    "zone": null,
+    "sector": null,
+    "x": 1,
+    "y": -1,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "3": {
+        "door_flag": 0,
+        "to_room": 80469
+      }
+    }
+  }
+]
