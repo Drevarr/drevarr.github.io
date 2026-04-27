@@ -1,0 +1,1342 @@
+[
+  {
+    "vnum": 10800,
+    "name": "&+gA Dark Path Through The Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10801
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 517668
+      }
+    }
+  },
+  {
+    "vnum": 10801,
+    "name": "&+gThe Turning Point&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 10805
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10800
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10802
+      }
+    }
+  },
+  {
+    "vnum": 10802,
+    "name": "A Rough Cobblestone Path",
+    "zone": 108,
+    "sector": 3,
+    "x": -1,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10803
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10801
+      }
+    }
+  },
+  {
+    "vnum": 10803,
+    "name": "A Cobblestone Path Through the Forest",
+    "zone": 108,
+    "sector": 3,
+    "x": -1,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 10802
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10804
+      }
+    }
+  },
+  {
+    "vnum": 10804,
+    "name": "The End of the Path",
+    "zone": 108,
+    "sector": 3,
+    "x": -2,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 10803
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10853
+      }
+    }
+  },
+  {
+    "vnum": 10805,
+    "name": "&+gA Dark Path In The Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10806
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10801
+      }
+    }
+  },
+  {
+    "vnum": 10806,
+    "name": "&+gThe Faint Remains Of A Path&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10829
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10805
+      }
+    }
+  },
+  {
+    "vnum": 10807,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": -2,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10827
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10808
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10812
+      }
+    }
+  },
+  {
+    "vnum": 10808,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": -2,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 10809
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10813
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10807
+      }
+    }
+  },
+  {
+    "vnum": 10809,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10833
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10810
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10814
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10808
+      }
+    }
+  },
+  {
+    "vnum": 10810,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 2,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 10811
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10815
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10809
+      }
+    }
+  },
+  {
+    "vnum": 10811,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 3,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10831
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10816
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10810
+      }
+    }
+  },
+  {
+    "vnum": 10812,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": -3,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10807
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10813
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10817
+      },
+      "3": {
+        "door_flag": 5,
+        "to_room": 10832
+      }
+    }
+  },
+  {
+    "vnum": 10813,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 0,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10808
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10814
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10818
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10812
+      }
+    }
+  },
+  {
+    "vnum": 10814,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10809
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10815
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10819
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10813
+      }
+    }
+  },
+  {
+    "vnum": 10815,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 2,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10810
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10816
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10820
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10814
+      }
+    }
+  },
+  {
+    "vnum": 10816,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 3,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10811
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10836
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10821
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10815
+      }
+    }
+  },
+  {
+    "vnum": 10817,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": -1,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10812
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10818
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10822
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10821
+      }
+    }
+  },
+  {
+    "vnum": 10818,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 0,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10813
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10819
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10823
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10817
+      }
+    }
+  },
+  {
+    "vnum": 10819,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10814
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10820
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10824
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10818
+      }
+    }
+  },
+  {
+    "vnum": 10820,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 2,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10815
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10821
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10825
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10819
+      }
+    }
+  },
+  {
+    "vnum": 10821,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 3,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10816
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10817
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10826
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10820
+      }
+    }
+  },
+  {
+    "vnum": 10822,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": -1,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10817
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10823
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10827
+      }
+    }
+  },
+  {
+    "vnum": 10823,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 0,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10818
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10824
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10828
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10822
+      }
+    }
+  },
+  {
+    "vnum": 10824,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10819
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10825
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10829
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10823
+      }
+    }
+  },
+  {
+    "vnum": 10825,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 2,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10820
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10826
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10830
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10824
+      }
+    }
+  },
+  {
+    "vnum": 10826,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 3,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10821
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10831
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10825
+      }
+    }
+  },
+  {
+    "vnum": 10827,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": -1,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10822
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10828
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10807
+      }
+    }
+  },
+  {
+    "vnum": 10828,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 0,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10823
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10829
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10827
+      }
+    }
+  },
+  {
+    "vnum": 10829,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10824
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10830
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10806
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10828
+      }
+    }
+  },
+  {
+    "vnum": 10830,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 2,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10825
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10831
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10829
+      }
+    }
+  },
+  {
+    "vnum": 10831,
+    "name": "&+gSomewhere Within Haunted Wood Forest&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 3,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10826
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10811
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10830
+      }
+    }
+  },
+  {
+    "vnum": 10832,
+    "name": "&+LCaught In A &+mSpider's Web&n",
+    "zone": 108,
+    "sector": 3,
+    "x": -4,
+    "y": -1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 10812
+      }
+    }
+  },
+  {
+    "vnum": 10833,
+    "name": "&+yBefore A Small Hut&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 8,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 10834
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10809
+      }
+    }
+  },
+  {
+    "vnum": 10834,
+    "name": "&+LWithin A Dark Hut&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 1,
+    "y": 9,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 10833
+      }
+    }
+  },
+  {
+    "vnum": 10835,
+    "name": "Mob Load Room",
+    "zone": 108,
+    "sector": 3,
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10807
+      },
+      "1": {
+        "door_flag": 0,
+        "to_room": 10813
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10821
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10829
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 10812
+      },
+      "5": {
+        "door_flag": 0,
+        "to_room": 10824
+      }
+    }
+  },
+  {
+    "vnum": 10836,
+    "name": "&+yA Dirty Trail&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 4,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10837
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10816
+      }
+    }
+  },
+  {
+    "vnum": 10837,
+    "name": "&+yA Dirty Trail&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 4,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 10838
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10836
+      }
+    }
+  },
+  {
+    "vnum": 10838,
+    "name": "&+yA Bend In The Trail&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 5,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10839
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10837
+      }
+    }
+  },
+  {
+    "vnum": 10839,
+    "name": "&+yA Sandy Shore&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 5,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10840
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10838
+      }
+    }
+  },
+  {
+    "vnum": 10840,
+    "name": "&+bOn A Slow Moving River&n",
+    "zone": 108,
+    "sector": 7,
+    "x": 5,
+    "y": 4,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10841
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10839
+      }
+    }
+  },
+  {
+    "vnum": 10841,
+    "name": "&+yThe Northern Shore&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 5,
+    "y": 5,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10842
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10840
+      }
+    }
+  },
+  {
+    "vnum": 10842,
+    "name": "&+cBefore Some Poorly-Made Gates&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 5,
+    "y": 6,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 10843
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10841
+      }
+    }
+  },
+  {
+    "vnum": 10843,
+    "name": "&+cA Dirty Road Through The Settlement&n",
+    "zone": 108,
+    "sector": 3,
+    "x": 5,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10846
+      },
+      "1": {
+        "door_flag": 1,
+        "to_room": 10844
+      },
+      "2": {
+        "door_flag": 1,
+        "to_room": 10842
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10845
+      }
+    }
+  },
+  {
+    "vnum": 10844,
+    "name": "&+yThe Nursery&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 6,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "3": {
+        "door_flag": 1,
+        "to_room": 10843
+      }
+    }
+  },
+  {
+    "vnum": 10845,
+    "name": "&+yA Training Field&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 4,
+    "y": 7,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 10843
+      }
+    }
+  },
+  {
+    "vnum": 10846,
+    "name": "&+cA Dirty Road Through The Settlement&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 5,
+    "y": 8,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10848
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10843
+      },
+      "3": {
+        "door_flag": 1,
+        "to_room": 10847
+      }
+    }
+  },
+  {
+    "vnum": 10847,
+    "name": "&+yWithin A Warrior's Tent&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 4,
+    "y": 8,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 10846
+      }
+    }
+  },
+  {
+    "vnum": 10848,
+    "name": "&+cBefore A Small Well&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 5,
+    "y": 9,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10851
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10846
+      },
+      "3": {
+        "door_flag": 0,
+        "to_room": 10849
+      }
+    }
+  },
+  {
+    "vnum": 10849,
+    "name": "&+yA Small Dirt Path&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 4,
+    "y": 9,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 10848
+      },
+      "3": {
+        "door_flag": 1,
+        "to_room": 10850
+      }
+    }
+  },
+  {
+    "vnum": 10850,
+    "name": "&+yThe Barracks&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 3,
+    "y": 9,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 1,
+        "to_room": 10849
+      }
+    }
+  },
+  {
+    "vnum": 10851,
+    "name": "&+cA Dirty Road Through The Settlement&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 5,
+    "y": 10,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 1,
+        "to_room": 10852
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10848
+      }
+    }
+  },
+  {
+    "vnum": 10852,
+    "name": "&+yThe Chief Gnoll's Tent&n",
+    "zone": 108,
+    "sector": 2,
+    "x": 5,
+    "y": 11,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 1,
+        "to_room": 10851
+      }
+    }
+  },
+  {
+    "vnum": 10853,
+    "name": "&+yBefore A Large Oak Tree&n",
+    "zone": 108,
+    "sector": 2,
+    "x": -3,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "1": {
+        "door_flag": 0,
+        "to_room": 10804
+      },
+      "3": {
+        "door_flag": 1,
+        "to_room": 10854
+      }
+    }
+  },
+  {
+    "vnum": 10854,
+    "name": "&+yThe Foyer of the Oak Tree Inn&n",
+    "zone": 108,
+    "sector": 0,
+    "x": -4,
+    "y": 2,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10855
+      },
+      "1": {
+        "door_flag": 1,
+        "to_room": 10853
+      },
+      "2": {
+        "door_flag": 0,
+        "to_room": 10856
+      },
+      "4": {
+        "door_flag": 0,
+        "to_room": 10857
+      }
+    }
+  },
+  {
+    "vnum": 10855,
+    "name": "&+gA Quiet Elven Shop&n",
+    "zone": 108,
+    "sector": 0,
+    "x": -4,
+    "y": 3,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "2": {
+        "door_flag": 0,
+        "to_room": 10854
+      }
+    }
+  },
+  {
+    "vnum": 10856,
+    "name": "&+mBeautifully Furnished Living Quarters&n",
+    "zone": 108,
+    "sector": 2,
+    "x": -4,
+    "y": 1,
+    "z": 0,
+    "stub": false,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10854
+      }
+    }
+  },
+  {
+    "vnum": 10857,
+    "name": "&+gThe Reception Room of the &+yOak Tree Inn&n",
+    "zone": 108,
+    "sector": 0,
+    "x": -4,
+    "y": 2,
+    "z": 1,
+    "stub": false,
+    "exits": {
+      "5": {
+        "door_flag": 0,
+        "to_room": 10854
+      }
+    }
+  },
+  {
+    "vnum": 517668,
+    "name": "Stub Room 517668",
+    "zone": null,
+    "sector": null,
+    "x": 0,
+    "y": -1,
+    "z": 0,
+    "stub": true,
+    "exits": {
+      "0": {
+        "door_flag": 0,
+        "to_room": 10800
+      }
+    }
+  }
+]
