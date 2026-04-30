@@ -84,6 +84,33 @@
 	.zone-item:hover {
 	  background: #05df72;
 	}
+  /* icon credits */
+  .map-credit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  color: #aaa;
+  padding: 8px;
+  border-top: 1px solid #333;
+  margin-top: 10px;
+}
+
+.map-credit a {
+  color: #6cb6ff;
+  text-decoration: none;
+}
+
+.map-credit a:hover {
+  text-decoration: underline;
+}
+
+.credit-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;
+}
+
 	/* Legend */
 	.legend-box {
 	  display: inline-block;
@@ -162,11 +189,27 @@
 											<div>
 												<span class="legend-box"></span> Zone Label
 											</div>
+                      <div>
+                        <span><img src="dragon.png" alt="Dragon icon" class="credit-icon"></span> Dragon Flight
+											</div>
+                      <div>                        
+                        <span><img src="helm.png" alt="Helm" class="credit-icon"></span> Ferry Stop
+											</div>
 										</div>
 										<div class="panel">
 											<h3>Zone List</h3>
 											<div id="zone-list"></div>
 										</div>
+                    <div class="map-credit">
+                      <img src="dragon.png" alt="Dragon icon" class="credit-icon">
+                      <a href="https://www.flaticon.com/free-icons/dragon" target="_blank">
+                        Dragon icons by Icongeek26 - Flaticon
+                      </a>
+                      <img src="helm.png" alt="Helm" class="credit-icon">
+                      <a href="https://www.flaticon.com/free-icons/rudder" target="_blank">
+                        Rudder icons created by Freepik - Flaticon
+                      </a>                      
+                    </div>
 									</aside>
 									<div id="map"></div>
 									<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -179,6 +222,45 @@
   const mapWidth = 400;
   const mapHeight = 400;
   const startingVnum = 500000;
+
+var dragonIcon = L.icon({
+    iconUrl: 'dragon.png',
+    iconSize:     [24, 24], // size of the icon
+    iconAnchor:   [0, 24], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+var ferryIcon = L.icon({
+    iconUrl: 'helm.png',
+    iconSize:     [24, 24], // size of the icon
+    iconAnchor:   [0, 24], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+});
+
+const ferryRoutes = [
+  {start: 635261, name: "Wave Dancer: Sails to Quietus Quay, Jade Empire and Myrabolus"},
+  {start: 587128, name: "Seaspray: Sails to A Desolate Island, Bloodstone Keep and Venan'Trut"},
+  {start: 521443, name: "Stalval: Sails to Khomani-Khan, Sarmiz'Duul, Tharnadia"},
+  {start: 570422, name: "Rickety Ferry : Sails to Moonshaes, Fort Boyard, Tharnadia"}
+]
+
+const dragonRoutes = [
+  { start: 514072, name: "Ugta" },
+  { start: 519043, name: "Kimordril" },
+  { start: 522247, name: "Clan Shatter Stone" },
+  { start: 543662, name: "Fort Khorcalator" },
+  { start: 543701, name: "Myrabolus, The City of Torrhan" },
+  { start: 545407, name: "Fort Boyard, Sarmiz'Duul, The City of Torrhan" },
+  { start: 563522, name: "Venan'Trut" },
+  { start: 576577, name: "A Desolate Island" },
+  { start: 580080, name: "Venan'Trut" },
+  { start: 582084, name: "Ugta" },
+  { start: 588326, name: "Bloodstone Keep" },  
+  { start: 606262, name: "Quietus Quay, Storm Port" },
+  { start: 619771, name: "A Huge Cavern on the Bloodfist Mountains" },
+  { start: 622276, name: "Venan'Trut" },
+  { start: 631413, name: "Helgor Outpost" },
+  { start: 635756, name: "Bloodstone Keep" }
+];
 
 const zones = [
   { vnum: 568110, name: "A Dark and Twisted Wood" },
@@ -451,6 +533,7 @@ const zones = [
 
   // --- INIT MAP ---
   const map = L.map('map', {
+    zoomAnimation: false,
     crs: L.CRS.Simple,
     zoomDelta: 0.25,
     zoomSnap: 0.25,
@@ -505,6 +588,18 @@ const zones = [
       tileX * squareSize
     ];
   }
+
+dragonRoutes.forEach(m => {
+  L.marker(vnumToLatLng(m.start), {icon: dragonIcon})
+    .addTo(map)
+    .bindPopup("Fly to: " + m.name);
+});
+
+ferryRoutes.forEach(m => {
+  L.marker(vnumToLatLng(m.start), {icon: ferryIcon})
+    .addTo(map)
+    .bindPopup(m.name);
+});
 
 function createZoneLabel(zone) {
   return L.marker(vnumToLatLng(zone.vnum), {
@@ -661,8 +756,8 @@ requestAnimationFrame(() => {
 const fitZoom = map.getBoundsZoom(bounds);
 
 // allow zooming out 2 levels from fitted view
-map.setMinZoom(fitZoom - 1);
-map.setMaxZoom(fitZoom + 3);
+map.setMinZoom(fitZoom - 2);
+map.setMaxZoom(fitZoom + 2);
 });
 
 // Toggle labels
