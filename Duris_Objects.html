@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Item Explorer</title>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+
+<style>
+  body { font-family: Arial; margin: 0; display: flex; height: 100vh; }
+  #sidebar { width: 260px; padding: 10px; border-right: 1px solid #ccc; overflow-y: auto; }
+  #main { flex: 1; display: flex; flex-direction: column; }
+  #searchBar { padding: 10px; border-bottom: 1px solid #ccc; }
+  #results { flex: 1; overflow-y: auto; }
+
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 6px; border-bottom: 1px solid #eee; text-align: left; }
+  th { cursor: pointer; background: #f5f5f5; }
+
+  .tag { display: inline-block; padding: 2px 6px; margin: 1px; background: #eee; border-radius: 4px; font-size: 11px; }
+</style>
+</head>
+
+<body>
+
+<div id="sidebar">
+  <h3>Filters</h3>
+
+  <label>Item Type</label>
+  <select id="typeFilter">
+    <option value="">All</option>
+  </select>
+
+  <h4>Aff Flags</h4>
+  <div id="affFlags"></div>
+
+  <h4>Affects</h4>
+  <div id="affects"></div>
+
+  <h4>Value Notes</h4>
+  <div id="valueNotes"></div>
+</div>
+
+<div id="main">
+  <div id="searchBar">
+    <input type="text" id="searchInput" placeholder="Search items..." style="width: 100%; padding: 6px;">
+  </div>
+
+  <div id="results">
+    <table id="table">
+      <thead>
+        <tr>
+          <th data-sort="name">Name</th>
+          <th data-sort="item_type">Type</th>
+          <th>Affects</th>
+          <th>Flags</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+let items = [];
+let fuse;
+let currentSort = { key: "name", asc: true };
+let filters = { type: "", affFlags: new Set(), affects: new Set(), notes: new Set() };
+
+fetch("items.json")
+  .then(r => r.json())
+  .then(data => {
+    items = data;
+
+    fuse = new Fuse(items, {
+      keys: [
+        { name: "name", weight: 0.5 },
+        { name: "item_type", weight: 0.2 },
+        { name: "affects", weight: 0.15 },
+        { name: "aff_flags", weight: 0.15 },
+        { name: "item_value_notes", weight: 0.2 }
+      ],
+      threshold: 0.4,
+      ignoreLocation: true
+    });
+
+    initFilters();
+    render(items);
+  });
+
+function initFilters() {
+  const typeSet = new Set();
+  const affFlagSet = new Set();
+  const affectSet = new Set();
+  const noteSet = new Set();
+
+  items.forEach(i => {
+    typeSet.add(i.item_type);
+    (i.aff_flags || []).forEach(f => affFlagSet.add(f));
+    (i.affects || []).forEach(a => affectSet.add(a));
+    Object.keys(i.item_value_notes || {}).forEach(n => noteSet.add(n));
+  });
+
+  // Populate dropdown
+  const typeFilter = document.getElementById("typeFilter");
+  typeSet.forEach(t => {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t;
+    typeFilter.appendChild(opt);
+  });
+
+  typeFilter.onchange = e => {
+    filters.type = e.target.value;
+    update();
+  };
+
+  buildCheckboxes("affFlags", affFlagSet, filters.affFlags);
+  buildCheckboxes("affects", affectSet, filters.affects);
+  buildCheckboxes("valueNotes", noteSet, filters.notes);
+}
+
+function buildCheckboxes(id, values, set) {
+  const container = document.getElementById(id);
+  values.forEach(v => {
+    const label = document.createElement("label");
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+
+    cb.onchange = () => {
+      cb.checked ? set.add(v) : set.delete(v);
+      update();
+    };
+
+    label.appendChild(cb);
+    label.append(" " + v);
+    container.appendChild(label);
+    container.appendChild(document.createElement("br"));
+  });
+}
+
+function applyFilters(data) {
+  return data.filter(i => {
+    if (filters.type && i.item_type !== filters.type) return false;
+
+    if (filters.affFlags.size &&
+        ![...filters.affFlags].every(f => (i.aff_flags || []).includes(f)))
+        return false;
+
+    if (filters.affects.size &&
+        ![...filters.affects].every(a => (i.affects || []).includes(a)))
+        return false;
+
+    if (filters.notes.size &&
+        ![...filters.notes].every(n => n in (i.item_value_notes || {})))
+        return false;
+
+    return true;
+  });
+}
+
+function update() {
+  const query = document.getElementById("searchInput").value.trim();
+  let result = query ? fuse.search(query).map(r => r.item) : items;
+  result = applyFilters(result);
+  result = sortData(result);
+  render(result);
+}
+
+document.getElementById("searchInput").oninput = update;
+
+function sortData(data) {
+  return [...data].sort((a, b) => {
+    const v1 = a[currentSort.key] || "";
+    const v2 = b[currentSort.key] || "";
+    return currentSort.asc ? v1.localeCompare(v2) : v2.localeCompare(v1);
+  });
+}
+
+document.querySelectorAll("th[data-sort]").forEach(th => {
+  th.onclick = () => {
+    const key = th.dataset.sort;
+    currentSort.asc = currentSort.key === key ? !currentSort.asc : true;
+    currentSort.key = key;
+    update();
+  };
+});
+
+function render(data) {
+  const tbody = document.querySelector("#table tbody");
+  tbody.innerHTML = "";
+
+  data.forEach(i => {
+    const tr = document.createElement("tr");
+
+    tr.innerHTML = `
+      <td>${i.name || ""}</td>
+      <td>${i.item_type || ""}</td>
+      <td>${(i.affects || []).map(a => `<span class="tag">${a}</span>`).join("")}</td>
+      <td>${(i.aff_flags || []).map(f => `<span class="tag">${f}</span>`).join("")}</td>
+      <td>${formatNotes(i.item_value_notes)}</td>
+    `;
+
+    tbody.appendChild(tr);
+  });
+}
+
+function formatNotes(notes) {
+  if (!notes) return "";
+  return Object.entries(notes)
+    .map(([k, v]) => `<span class="tag">${k}: ${v}</span>`)
+    .join("");
+}
+</script>
+
+</body>
+</html>

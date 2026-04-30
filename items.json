@@ -1,0 +1,1110 @@
+{
+  "10800": {
+    "vnum": 10800,
+    "name_list": "earring diamond",
+    "short_description": "&+ba tiny diamond earring&n",
+    "long_description": "&+bA tiny diamond earring lies here.&n",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_EARRING"
+    ],
+    "extra1_flags": [
+      "ITEM_GLOW",
+      "ITEM_SECRET"
+    ],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      4,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 4,
+      "Prestige": 0,
+      "Warmth": 0,
+      "Material Type": "MAT_CLOTH"
+    },
+    "weight": 1,
+    "worth": 5902,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_CON",
+        3
+      ],
+      [
+        "APPLY_HITROLL",
+        1
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "earring diamond",
+        "  This tiny diamond earring was made long ago in the elven kindgom, however,\nit was lost.  Over the years it has withstood the elements quite well and\nlooks almost brand new.  There is a faint glow to the earring, and it is\nwarm to the touch.\n"
+      ]
+    ]
+  },
+  "10801": {
+    "vnum": 10801,
+    "name_list": "bracelet metal",
+    "short_description": "&+ya jagged &+Wmetal&n bracelet&n",
+    "long_description": "&+yA jagged &+Wmetal&+y bracelet lies here.&n",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_WRIST"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      1,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 1,
+      "Prestige": 0,
+      "Warmth": 0,
+      "Material Type": "MAT_CLOTH"
+    },
+    "weight": 2,
+    "worth": 7592,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_DAMROLL",
+        1
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "bracelet metal",
+        "This bracelet is made out of some rare metal from the Underdark.  There\nare several, rather large, barbs that point outward.\n"
+      ]
+    ]
+  },
+  "10802": {
+    "vnum": 10802,
+    "name_list": "canoe",
+    "short_description": "&+ya canoe&n",
+    "long_description": "&+ySomeone has left their canoe here.&n",
+    "item_type": "ITEM_BOAT",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_HOLD"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Unknown Type": "ITEM_BOAT",
+      "Raw Values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "weight": 50,
+    "worth": 5000,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [],
+    "extra_descriptions": [
+      [
+        "canoe",
+        "  This is a poorly made canoe, simply a dug-out tree.\n"
+      ]
+    ]
+  },
+  "10803": {
+    "vnum": 10803,
+    "name_list": "raft",
+    "short_description": "&+ya small raft&n",
+    "long_description": "&+ySomeone has left behind a small raft.&n",
+    "item_type": "ITEM_BOAT",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_HOLD"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Unknown Type": "ITEM_BOAT",
+      "Raw Values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "weight": 60,
+    "worth": 4004,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [],
+    "extra_descriptions": [
+      [
+        "raft",
+        "This poorly made raft barely appears to support someone.\n"
+      ]
+    ]
+  },
+  "10804": {
+    "vnum": 10804,
+    "name_list": "eyepatch leather",
+    "short_description": "&+ya dirty leather eyepatch&n",
+    "long_description": "&+yA dirty leather eyepatch lies here.&n",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_EYES"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 5,
+      "Prestige": 0,
+      "Warmth": 0,
+      "Material Type": "MAT_CLOTH"
+    },
+    "weight": 1,
+    "worth": 494,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_HITROLL",
+        1
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "eyepatch leather",
+        "  This leather eyepatch is small and barely covers on eye.  It hasn't been\nwashed in quite some time.\n"
+      ]
+    ]
+  },
+  "10805": {
+    "vnum": 10805,
+    "name_list": "spear",
+    "short_description": "&+ra blood-stained spear&n",
+    "long_description": "&+rA blood-stained spear lies here.&n",
+    "item_type": "ITEM_WEAPON",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WIELD"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      8,
+      5,
+      2,
+      11,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Type": "WEAPON_POLEARM",
+      "Damage": "5D2",
+      "Proc": 0,
+      "Proc Level": 0,
+      "Proc Chance": null
+    },
+    "weight": 4,
+    "worth": 1282,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_HITROLL",
+        2
+      ],
+      [
+        "APPLY_DAMROLL",
+        2
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "spear",
+        "  This long metal spear is quite stained in blood.\n"
+      ]
+    ]
+  },
+  "10806": {
+    "vnum": 10806,
+    "name_list": "ring emerald",
+    "short_description": "&+ga polished emerald ring&n",
+    "long_description": "&+rA small ring lies here.&n",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_FINGER"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      1,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 1,
+      "Prestige": 0,
+      "Warmth": 0,
+      "Material Type": "MAT_CLOTH"
+    },
+    "weight": 1,
+    "worth": 10922,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_HIT",
+        5
+      ],
+      [
+        "APPLY_MANA",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "ring emerald",
+        "  This elven made ring contains a large glowing emerald.\n"
+      ]
+    ]
+  },
+  "10807": {
+    "vnum": 10807,
+    "name_list": "pastry",
+    "short_description": "an &+celven &+Wpastry&n",
+    "long_description": "&+cAn elven pastry had been discarded here.",
+    "item_type": "ITEM_FOOD",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      24,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Duration": 24,
+      "Hit Regen": 30,
+      "Move Regen": 2,
+      "Str/Con": 0,
+      "Agi/Dex": 0,
+      "Int/Wis": 0,
+      "Hit/Dam": 0,
+      "Poison": "NO"
+    },
+    "weight": 1,
+    "worth": 87,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [],
+    "extra_descriptions": [
+      [
+        "pastry",
+        "  This elven pastry had been beautiful prepared.\n"
+      ]
+    ]
+  },
+  "10808": {
+    "vnum": 10808,
+    "name_list": "water barrel",
+    "short_description": "&+ya small water barrel&n",
+    "long_description": "&+yA small water barrel lies here.&n",
+    "item_type": "ITEM_DRINKCON",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      50,
+      50,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Unknown Type": "ITEM_DRINKCON",
+      "Raw Values": [
+        50,
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "weight": 5,
+    "worth": 1928,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [],
+    "extra_descriptions": [
+      [
+        "barrel water",
+        "  This oak barrel is small and relatively light weight, while still holding\na large amount of water.\n"
+      ]
+    ]
+  },
+  "10809": {
+    "vnum": 10809,
+    "name_list": "pants silk",
+    "short_description": "&+ba pair of &+Bsilk&n &+bpants&n",
+    "long_description": "A pair of silk pants lies here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_CLOTH",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_LEGS"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      5,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 5,
+      "Prestige": 1,
+      "Warmth": 5,
+      "Material Type": "MAT_FLESH"
+    },
+    "weight": 1,
+    "worth": 2222,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_MOVE",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "pants silk",
+        "  This is a pair of beautifully woven silk pants.\n"
+      ]
+    ]
+  },
+  "10810": {
+    "vnum": 10810,
+    "name_list": "shirt",
+    "short_description": "&+ba &+Bsilk &+bshirt&n",
+    "long_description": "A silk shirt lies here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_CLOTH",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_BODY"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      8,
+      3,
+      234,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 8,
+      "Prestige": 234,
+      "Warmth": 3,
+      "Material Type": "MAT_FLESH"
+    },
+    "weight": 0,
+    "worth": 2222,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_MOVE",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "shirt",
+        "  This is an elven made silk shirt.\n"
+      ]
+    ]
+  },
+  "10811": {
+    "vnum": 10811,
+    "name_list": "veil",
+    "short_description": "&+ba &+Bsilk &+bveil&n",
+    "long_description": "A silk veil lies here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_CLOTH",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_FACE"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      13,
+      4,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 5,
+      "Prestige": 4,
+      "Warmth": 13,
+      "Material Type": "MAT_FLESH"
+    },
+    "weight": 0,
+    "worth": 2222,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_MOVE",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "veil",
+        "  This elven-crafted veil is made of the finest silk.\n"
+      ]
+    ]
+  },
+  "10812": {
+    "vnum": 10812,
+    "name_list": "sleeves",
+    "short_description": "&+ba pair of &+Bsilk &+bsleeves&n",
+    "long_description": "Some sleeves lie here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_CLOTH",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_ARMS"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      8,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 5,
+      "Prestige": 1,
+      "Warmth": 8,
+      "Material Type": "MAT_FLESH"
+    },
+    "weight": 1,
+    "worth": 2922,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_MOVE",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "sleeves",
+        "   These loose fitting sleeves are made out of a fine blue silk.\n"
+      ]
+    ]
+  },
+  "10813": {
+    "vnum": 10813,
+    "name_list": "belt",
+    "short_description": "&+ba &+Bsilk &+blined belt&n",
+    "long_description": "A belt lies here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_CLOTH",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_WAIST"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      10,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 5,
+      "Prestige": 0,
+      "Warmth": 10,
+      "Material Type": "MAT_FLESH"
+    },
+    "weight": 0,
+    "worth": 2222,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_MOVE",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "belt",
+        "  This belt is made of the best elvish silk.\n"
+      ]
+    ]
+  },
+  "10814": {
+    "vnum": 10814,
+    "name_list": "boots",
+    "short_description": "&+ba pair of &+Bsilk&n &+bboots&n",
+    "long_description": "A pair of boots lies here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_CLOTH",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_FEET"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      6,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 5,
+      "Prestige": 1,
+      "Warmth": 6,
+      "Material Type": "MAT_FLESH"
+    },
+    "weight": 0,
+    "worth": 2222,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_MOVE",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "boots",
+        "  These silk boots fit comfortably, though they provide little protection.\n"
+      ]
+    ]
+  },
+  "10815": {
+    "vnum": 10815,
+    "name_list": "scarf",
+    "short_description": "&+ba &+Bsilk &+bscarf&n",
+    "long_description": "A scarf lies here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_CLOTH",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_NECK"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      2,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 5,
+      "Prestige": 2,
+      "Warmth": 2,
+      "Material Type": "MAT_FLESH"
+    },
+    "weight": 0,
+    "worth": 2222,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_MOVE",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "scarf",
+        "   This silk scarf provides much warmf to the neck area.\n"
+      ]
+    ]
+  },
+  "10816": {
+    "vnum": 10816,
+    "name_list": "wristband band",
+    "short_description": "&+ba &+Bsilk &+bwristband&n",
+    "long_description": "A wristband lies here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_CLOTH",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_WRIST"
+    ],
+    "extra1_flags": [],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      11,
+      10,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 5,
+      "Prestige": 10,
+      "Warmth": 11,
+      "Material Type": "MAT_FLESH"
+    },
+    "weight": 0,
+    "worth": 2222,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_MOVE",
+        5
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "wristband band",
+        "  This elven wristband fits snug, though providing little real protection.\n"
+      ]
+    ]
+  },
+  "10817": {
+    "vnum": 10817,
+    "name_list": "scimitar emerald",
+    "short_description": "&+gan emerald scimitar&n",
+    "long_description": "&+gAn emerald scimitar lies here.&n",
+    "item_type": "ITEM_WEAPON",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WIELD"
+    ],
+    "extra1_flags": [
+      "ITEM_GLOW",
+      "ITEM_ALLOWED_CLASSES"
+    ],
+    "extra2_flags": [],
+    "anti1_flags": [
+      "ALL",
+      "Warrior",
+      "Monk",
+      "Mercenary",
+      "MindFlayer",
+      "Alchemist",
+      "Berserker",
+      "Illusionist",
+      "Blighter",
+      "Ethermancer"
+    ],
+    "anti2_flags": [],
+    "item_values": [
+      5,
+      1,
+      5,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Type": "WEAPON_LONGSWORD",
+      "Damage": "1D5",
+      "Proc": 0,
+      "Proc Level": 0,
+      "Proc Chance": null
+    },
+    "weight": 1,
+    "worth": 10292,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_HITROLL",
+        4
+      ],
+      [
+        "APPLY_DAMROLL",
+        2
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "scimitar emerald",
+        "  This beautifully crafted emerald scimitar weighs almost nothing and\nappears extremely sharp.\n"
+      ]
+    ]
+  },
+  "10818": {
+    "vnum": 10818,
+    "name_list": "necklace jade",
+    "short_description": "&+ga jade necklace&n",
+    "long_description": "&+gA jade necklace has been left here.",
+    "item_type": "ITEM_ARMOR",
+    "material": "MAT_IRON",
+    "size": "MEDIUM",
+    "space": 0,
+    "craftsmanship": "AVERAGE",
+    "damage_resist": 0,
+    "wear_flags": [
+      "ITEM_TAKE",
+      "ITEM_WEAR_NECK"
+    ],
+    "extra1_flags": [
+      "ITEM_GLOW"
+    ],
+    "extra2_flags": [],
+    "anti1_flags": [],
+    "anti2_flags": [],
+    "item_values": [
+      4,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "item_value_notes": {
+      "Armor Class": 4,
+      "Prestige": 0,
+      "Warmth": 0,
+      "Material Type": "MAT_CLOTH"
+    },
+    "weight": 2,
+    "worth": 11922,
+    "condition": 100,
+    "aff1": [],
+    "aff2": [],
+    "aff3": [],
+    "aff4": [],
+    "aff5": [],
+    "affects": [
+      [
+        "APPLY_HIT",
+        10
+      ],
+      [
+        "APPLY_MANA",
+        8
+      ]
+    ],
+    "extra_descriptions": [
+      [
+        "necklace jade",
+        "   This well-crafted elven necklace is studded with jade.\n"
+      ]
+    ]
+  }
+}
