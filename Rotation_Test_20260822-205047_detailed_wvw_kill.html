@@ -16653,7 +16653,13 @@ function computePlayersHealingGraphData(graph, data, yaxis) {
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="d-flex flex-wrap align-items-center mb-2" style="gap: 8px;">
-                                    <label class="form-label font-weight-bold mb-0">Skills</label>
+                                    <label class="form-label font-weight-bold mb-0">Profession</label>
+                                    <select class="form-control form-control-sm" style="max-width: 180px;"
+                                            v-model="selectedProfession" @change="onProfessionChange">
+                                        <option value="">All Professions</option>
+                                        <option v-for="prof in allProfessions" :key="'prof-'+prof" :value="prof">{{ prof }}</option>
+                                    </select>
+                                    <label class="form-label font-weight-bold mb-0 ml-2">Skills</label>
                                     <input type="text" class="form-control form-control-sm" style="max-width: 220px;"
                                            placeholder="Search skills..." v-model.trim="skillSearch">
                                     <button class="btn btn-sm btn-outline-secondary" @click="selectAllSkills">Select All</button>
@@ -16708,7 +16714,8 @@ function computePlayersHealingGraphData(graph, data, yaxis) {
                 selectedSkills: [],
                 filteredData: [],
                 rawEntries: [],
-                skillSearch: ''
+                skillSearch: '',
+                selectedProfession: ''
             };
         },
 
@@ -16861,10 +16868,21 @@ function computePlayersHealingGraphData(graph, data, yaxis) {
 
                 var entries = this.rawEntries;
 
-                // Filter by selected skills only
-                if (this.selectedSkills.length > 0) {
+                // If no skills selected, return empty
+                if (this.selectedSkills.length === 0) {
+                    this.filteredData = [];
+                    return [];
+                }
+
+                // Filter by selected skills
+                entries = entries.filter(function (e) {
+                    return this.selectedSkills.indexOf(e.skillId) !== -1;
+                }.bind(this));
+
+                // Filter by selected profession
+                if (this.selectedProfession) {
                     entries = entries.filter(function (e) {
-                        return this.selectedSkills.indexOf(e.skillId) !== -1;
+                        return e.profession === this.selectedProfession;
                     }.bind(this));
                 }
 
@@ -17169,6 +17187,23 @@ function computePlayersHealingGraphData(graph, data, yaxis) {
 
             deselectAllSkills: function () {
                 this.selectedSkills = [];
+                this.selectedProfession = '';  // Reset profession filter too
+            },
+
+            onProfessionChange: function () {
+                // When a profession is selected, auto-select all its skills
+                if (this.selectedProfession) {
+                    var self = this;
+                    var profSkillIds = this.allSkills
+                        .filter(function (skill) {
+                            // Find the profession for this skill by checking rawEntries
+                            return self.rawEntries.some(function (e) {
+                                return e.skillId === skill.id && e.profession === self.selectedProfession;
+                            });
+                        })
+                        .map(function (s) { return s.id; });
+                    this.selectedSkills = profSkillIds;
+                }
             },
 
             toggleSkill: function (skillId) {
